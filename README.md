@@ -50,7 +50,7 @@ bash run_plot.sh
 ``````
 Metrics of all methods
 ``````
-bash run_plot.sh 
+bash run_metrics.sh 
 ``````
 ## Multi-level graph visualization
 
@@ -63,7 +63,7 @@ bash run_plot.sh
 * Eigen
 * cmake
 ### Dataset
-`{6: "amazon",7: "youtube", 8: "dblp",9: "orkut",10: "it", 11: "tw"}`
+`{6: "amazon", 7: "youtube", 8: "dblp", 9: "orkut", 10: "it", 11: "tw"}`
                              
 ### Clustering algorithm: Louvain+
 #### Location
@@ -86,7 +86,7 @@ cmake -DCMAKE_BUILD_TYPE=Release .; make;
 where
 ```
 -f: input file.
--a: 0 is conventional Louvain; 1 is LouvainPlus.
+-a: 0 is conventional Louvain; 1 is Louvain+.
 -k: threshold of partition size; default=25.
 -v: verbose mode.
 -o: output the partition.
