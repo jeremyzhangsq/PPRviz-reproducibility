@@ -38,7 +38,7 @@ where
 * `pivot_comp`: pivot-MDS is supported by `tulip`
 * `simrank_comp`: Simrank is supported by `networkx`
 * `maxent`: Kadraw's single level is supported by `networkit`
-* `gf,le,lle,node2vec,sdne`: node embedding methods are supported by [GEM][https://github.com/palash1992/GEM]. We store the embeddings in `PPRviz-reproducibility/gem_pos/`.
+* `gf,le,lle,node2vec,sdne`: node embedding methods are supported by [GEM](https://github.com/palash1992/GEM). We store the embeddings in `PPRviz-reproducibility/gem_pos/`.
 #### Support mode
 ``````
 --mode={"plot","metrics"}
