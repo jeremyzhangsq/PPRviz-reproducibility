@@ -2,14 +2,14 @@
 
 ## Single-level graph visualization
 
-###Requirements
+### Requirements
 * Ubuntu
 * python2.7 and python3.7
 * sklearn, fa2l, networkx, tulip and networkit
-###Location
+### Location
 * source code: `PPRviz-reproducibility/PPRVizS/`
 * visualization output: `PPRviz-reproducibility/pprvizs_output/`
-###Run layout algorithm
+### Run layout algorithm
 ```
 python benchmark.py [--data file_no] [--repeat times] [--mode support_mode] [--algo layout];
 ```
@@ -17,7 +17,7 @@ For example,
 ```
 python2.7 benchmark.py --data 0 --repeat 10 --mode metrics --algo pprvizs;
 ```
-###Input arguments
+### Input arguments
 #### Datasets
 Location: `PPRviz-reproducibility/dataset`
 ``````
