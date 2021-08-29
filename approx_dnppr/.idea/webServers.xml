@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8b99adc7-8801-4195-81da-085b9b57cd94" name="sigx2">
+        <fileTransfer rootFolder="/home/zhangsq/gviz-ppr/" accessType="SFTP" host="sigx3.d2.comp.nus.edu.sg" port="22" sshConfigId="74621528-640c-483d-9c0f-d1b595a7295e" sshConfig="zhangsq@sigx3.d2.comp.nus.edu.sg:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

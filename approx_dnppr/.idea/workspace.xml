@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="approx_dnppr" targetName="approx_dnppr" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
+      <configuration PROFILE_NAME="Release" CONFIG_NAME="Release" ENABLED="true" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3a22b49b-0730-47d6-9f07-4b6c1a574645" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../PPRVizS/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PPRVizS/evaluate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/app/configuration.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/app/draw_from_coordinates.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/app/evaluator.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/app/graphchecker.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/app/kadraw.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/app/parse_parameters.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/Makefile.nmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/argtable3.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/argtable3.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/examples/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/examples/Makefile.nmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/examples/echo.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/examples/ls.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/examples/multisyntax.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/examples/mv.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/examples/myprog.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/examples/myprog_C89.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/examples/testargtable3.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/examples/uname.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/tests/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/tests/CuTest.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/tests/CuTest.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/tests/Makefile.nmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/tests/testall.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/tests/testargdate.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/tests/testargdbl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/tests/testargfile.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/tests/testargint.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/tests/testarglit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/tests/testargrex.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/argtable3-3.0.3/tests/testargstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/gnuplots/gnu.plot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/gnuplots/histo.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/gnuplots/histo.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/extern/gnuplots/output.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/algorithms/shortest_paths.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/algorithms/shortest_paths.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/burn_drawing/burn_drawing.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/burn_drawing/burn_drawing.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/data_structure/graph_access.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/data_structure/graph_hierarchy.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/data_structure/graph_hierarchy.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/data_structure/priority_queues/bucket_pq.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/data_structure/priority_queues/maxNodeHeap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/data_structure/priority_queues/minNodeHeap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/data_structure/priority_queues/priority_queue_interface.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/data_structure/union_find.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/definitions.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/coarsening/clustering/node_ordering.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/coarsening/clustering/node_ordering.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/coarsening/clustering/size_constraint_label_propagation.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/coarsening/clustering/size_constraint_label_propagation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/coarsening/coarsening.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/coarsening/coarsening.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/coarsening/coarsening_configurator.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/coarsening/coarsening_configurator.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/coarsening/contraction.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/coarsening/contraction.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/coarsening/matching/compare_degrees.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/coarsening/matching/matching.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/coarsening/matching/matching.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/coarsening/stop_rules/stop_rules.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/graph_drawer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/graph_drawer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/uncoarsening/boundary_lookup.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/uncoarsening/complete_boundary.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/uncoarsening/complete_boundary.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/uncoarsening/local_optimizer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/uncoarsening/local_optimizer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/uncoarsening/partial_boundary.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/uncoarsening/partial_boundary.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/uncoarsening/uncoarsening.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/drawing/uncoarsening/uncoarsening.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/io/graph_io.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/io/graph_io.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/tools/graph_extractor.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/tools/graph_extractor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/tools/macros_assertions.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/tools/macros_common.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/tools/mpi_tools.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/tools/mpi_tools.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/tools/quality_metrics.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/tools/quality_metrics.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/tools/random_functions.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/tools/random_functions.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/lib/tools/timer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KaDraw/multilevel-KaDraw.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizL/load-superppr-viz.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PPRVizL/load-superppr-viz.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizS/benchmark.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PPRVizS/benchmark.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizS/embedding/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizS/embedding/gf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizS/embedding/lap.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizS/embedding/lle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizS/embedding/node2vec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizS/embedding/sdne.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizS/embedding/sdne_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizS/embedding/static_graph_embedding.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizS/mds.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PPRVizS/mds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizS/metrics.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizS/ppr-relative.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizS/pprviz.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PPRVizS/pprviz.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizS/run_aesthetics.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizS/run_viz.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizS/run_viz2.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizS/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizS/utils/embed_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizS/utils/evaluation_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizS/utils/graph_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizS/utils/plot_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPRVizS/viz.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/approx_dnppr.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPCheckVersion.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPCheckVersion.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FindOpenMP/ompver_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FindOpenMP/ompver_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/approx_dnppr.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/approx_dnppr.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/approx_dnppr.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/approx_dnppr.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/approx_dnppr.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/approx_dnppr.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/approx_dnppr.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/approx_dnppr.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/approx_dnppr.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/approx_dnppr.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/approx_dnppr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/approx_dnppr.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.17.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.17.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.17.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.17.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.17.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/FindOpenMP/OpenMPCheckVersion.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/FindOpenMP/OpenMPCheckVersion.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/FindOpenMP/OpenMPTryFlag.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/FindOpenMP/ompver_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/FindOpenMP/ompver_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/approx_dnppr.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/approx_dnppr.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/approx_dnppr.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/approx_dnppr.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/approx_dnppr.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/approx_dnppr.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/approx_dnppr.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/approx_dnppr.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/approx_dnppr.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/approx_dnppr.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/Testing/Temporary/LastTest.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/approx_dnppr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/approx_dnppr.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/delta_scale.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/freq.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/freq_fwdpr.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/freq_fwdprbwd.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fwdpr.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/louvain.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multilevel-FORA.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/query.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rwuse.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sota_compare.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/threadout.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/threadoutmac.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twrandwalks.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workload.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataset/david.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataset/dolphin.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataset/elegans.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataset/jazz.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataset/les.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataset/terrorist.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eva_util/MinimumBoundingBox.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PPRVizS/MinimumBoundingBox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eva_util/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eva_util/evaluate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/.idea/index_construct.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/.idea/sshConfigs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/.idea/webServers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/algo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/build.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/delta_scale.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/delta_scale.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/graph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/lib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/louvain.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/multilevel-FORA.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/out.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/out1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/query.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/run.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/threadout.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/threadoutmac.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/twrandwalks.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interact_fora/workload.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/.idea/louvain.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/.idea/sshConfigs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/.idea/webServers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../louvain/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/3.18.0-rc3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/3.18.0-rc3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/3.18.0-rc3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/3.18.0-rc3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/3.18.0-rc3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/3.18.0-rc3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/3.18.0-rc3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/3.18.0-rc3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/louvain.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/louvain.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/louvain.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/louvain.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/louvain.dir/community.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/louvain.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/louvain.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/louvain.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/louvain.dir/function.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/louvain.dir/graph.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/louvain.dir/graph_binary.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/louvain.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/louvain.dir/main_community.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/louvain.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community-release/louvain" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../louvain/community.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/community.h" beforeDir="false" afterPath="$PROJECT_DIR$/../louvain/community.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/convert" beforeDir="false" afterPath="$PROJECT_DIR$/../louvain/convert" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/err.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/function.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/function.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/graph.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../louvain/graph.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/../louvain/graph.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/graph.tree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/graph_binary.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../louvain/graph_binary.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/graph_binary.h" beforeDir="false" afterPath="$PROJECT_DIR$/../louvain/graph_binary.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/hierarchy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/idx2bin.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/main_community.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../louvain/main_community.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/main_convert.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../louvain/main_convert.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/main_convert.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/main_hierarchy.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/main_hierarchy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/main_random.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/run.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/small.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../louvain/std.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/examples/clean_project.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/examples/coarsen.parms" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/examples/coarsest.parms" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/examples/default_parms" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/examples/final.parms" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/examples/parallel/parallel.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/examples/parallel/yeast.sim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/examples/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/examples/realtime/realtime.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/examples/realtime/yeast.sim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/examples/realtime/yeast_90.sim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/examples/recursive/recursive.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/examples/recursive/yeast.sim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/examples/recursive_layout.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/examples/refine.parms" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/examples/serial/serial.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/examples/serial/yeast.sim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/license.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/obj/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/Configuration.gnu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/Configuration.gnu_parallel" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/Configuration.intel" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/Configuration.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/Configuration.win32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/DensityGrid.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/DensityGrid.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/Node.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/average_link.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/average_link.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/average_link_clust.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/average_link_clust.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/average_link_parse.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/average_link_parse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/coarsen.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/coarsen_parse.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/coarsen_parse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/graph.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/graph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/layout.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/layout.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/parse.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/parse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/recoord.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/recoord_parse.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/recoord_parse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/refine.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/refine_parse.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/refine_parse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/truncate.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/truncate_parse.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/OpenOrd/src/truncate_parse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/bksvd.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/cluster-ppr-relative.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/cluster.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/convert_outdegree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/degree-distribution.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/emb/woman.16.bbin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/emb/woman.16.fbin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/fwdpush-test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/gen_ppr_embedding.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/load_multilevel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/max-test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/online-refine.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/ppr-absolute.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/ppr_emb.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/ppr_emb_run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/relativeMDS-test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/renumber.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscs/tes-ppr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/examples/coarsen.parms" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/examples/coarsest.parms" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/examples/final.parms" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/examples/recursive/20.parms" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/examples/recursive/20_2.parms" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/examples/recursive/20_3.parms" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/examples/recursive/coarsen.parms" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/examples/recursive/coarsest.parms" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/examples/recursive/final.parms" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/examples/recursive/multilevel-openOrd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/examples/recursive/refine.parms" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/examples/refine.parms" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/examples/yeast.parms" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/Configuration.gnu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/Configuration.gnu_parallel" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/Configuration.intel" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/Configuration.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/Configuration.win32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/DensityGrid.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/DensityGrid.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/Node.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/average_link.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/average_link.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/average_link_clust.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/average_link_clust.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/average_link_parse.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/average_link_parse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/coarsen.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/coarsen_parse.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/coarsen_parse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/graph.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/graph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/layout.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/layout.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/parse.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/parse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/recoord.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/recoord_parse.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/recoord_parse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/refine.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/refine_parse.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/refine_parse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/truncate.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/truncate_parse.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../openords/src/truncate_parse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pprval/twitters-c1_l1_0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../preprocess_util/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../preprocess_util/clique-layout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../preprocess_util/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../preprocess_util/format-converter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../preprocess_util/gen-attr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../preprocess_util/ppr-example.py" beforeDir="false" />
+    </list>
+    <list id="5822a496-c6d6-4bc9-9c9f-36da012cd05a" name="Revert &quot;use rand_r for thread safety&quot;" comment="Revert &quot;use rand_r for thread safety&quot;&#10;&#10;This reverts commit e776f7fa" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="openmp" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="ProjectId" id="1go9SThgpLZsjmBAwmjPwQhC7mn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/plumed-smacof" />
+      <recent name="$PROJECT_DIR$/plumed-smacof/tools" />
+      <recent name="$PROJECT_DIR$/plumed-smacof/dimred" />
+      <recent name="$PROJECT_DIR$/" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/plumed-smacof" />
+    </key>
+  </component>
+  <component name="RunManager" selected="CMake Application.approx_dnppr">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="approx_dnppr" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-f 6 -alg taupush -build 0 -sample 1 -random 1 -embed 1" REDIRECT_INPUT="false" ELEVATE="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="approx_dnppr" TARGET_NAME="approx_dnppr" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="approx_dnppr" RUN_TARGET_NAME="approx_dnppr">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="index_construct" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-f 6 -build 0 -ol 0 -verbose 0 -nthread 64 -sample 1" REDIRECT_INPUT="false" ELEVATE="false" WORKING_DIR="file://$PROJECT_DIR$/" PASS_PARENT_ENVS_2="true" PROJECT_NAME="approx_dnppr" TARGET_NAME="interact_fora" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="approx_dnppr" RUN_TARGET_NAME="interact_fora">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.index_construct" />
+      <item itemvalue="CMake Application.approx_dnppr" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3a22b49b-0730-47d6-9f07-4b6c1a574645" name="Default Changelist" comment="" />
+      <created>1598770078161</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598770078161</updated>
+      <workItem from="1598770082424" duration="14000" />
+      <workItem from="1598770103081" duration="17817000" />
+      <workItem from="1598852892046" duration="4258000" />
+      <workItem from="1598857677445" duration="11046000" />
+      <workItem from="1598924103928" duration="17218000" />
+      <workItem from="1599018406394" duration="1592000" />
+      <workItem from="1599048736868" duration="2574000" />
+      <workItem from="1601000878593" duration="50499000" />
+      <workItem from="1601176175493" duration="122000" />
+      <workItem from="1601178791304" duration="7195000" />
+      <workItem from="1601955608230" duration="420000" />
+      <workItem from="1602252783006" duration="488000" />
+      <workItem from="1603539722716" duration="870000" />
+      <workItem from="1603858739972" duration="5161000" />
+      <workItem from="1603871294515" duration="1580000" />
+      <workItem from="1605580748540" duration="1503000" />
+      <workItem from="1605601059582" duration="853000" />
+      <workItem from="1605602006137" duration="174000" />
+      <workItem from="1605602197810" duration="10037000" />
+      <workItem from="1606096872953" duration="100273000" />
+      <workItem from="1606616008430" duration="7518000" />
+      <workItem from="1606705515251" duration="37209000" />
+      <workItem from="1606974237005" duration="63000" />
+      <workItem from="1607433705436" duration="1661000" />
+      <workItem from="1607497613787" duration="28795000" />
+      <workItem from="1607956442822" duration="1787000" />
+      <workItem from="1608111640669" duration="7397000" />
+      <workItem from="1608287462915" duration="2625000" />
+      <workItem from="1608712805593" duration="6508000" />
+      <workItem from="1608879492818" duration="8959000" />
+      <workItem from="1609127480537" duration="7685000" />
+      <workItem from="1609171010680" duration="3001000" />
+      <workItem from="1609233071536" duration="35475000" />
+      <workItem from="1609716902136" duration="15769000" />
+      <workItem from="1609806605743" duration="23884000" />
+      <workItem from="1610117453459" duration="869000" />
+      <workItem from="1610166474923" duration="5198000" />
+      <workItem from="1610425602398" duration="1125000" />
+      <workItem from="1610635096180" duration="963000" />
+      <workItem from="1610721190625" duration="22850000" />
+      <workItem from="1610864101814" duration="10889000" />
+      <workItem from="1610991264446" duration="3943000" />
+      <workItem from="1611035025367" duration="10055000" />
+      <workItem from="1611156538356" duration="74000" />
+      <workItem from="1611209694434" duration="442000" />
+      <workItem from="1611469470516" duration="12226000" />
+      <workItem from="1611590228705" duration="66000" />
+      <workItem from="1611590406140" duration="1008000" />
+      <workItem from="1611625684178" duration="927000" />
+      <workItem from="1611630392933" duration="2879000" />
+      <workItem from="1611931617567" duration="288000" />
+      <workItem from="1611974261354" duration="240000" />
+      <workItem from="1612233162317" duration="5170000" />
+      <workItem from="1612779472546" duration="24000" />
+      <workItem from="1621480685466" duration="53362000" />
+      <workItem from="1621751175440" duration="7672000" />
+      <workItem from="1622709484100" duration="149000" />
+      <workItem from="1622712053664" duration="51991000" />
+      <workItem from="1623381928237" duration="912000" />
+      <workItem from="1623477531756" duration="24453000" />
+      <workItem from="1623809302975" duration="5198000" />
+      <workItem from="1624026704305" duration="216000" />
+      <workItem from="1624621141676" duration="284000" />
+      <workItem from="1624627759043" duration="23444000" />
+      <workItem from="1625204191969" duration="1073000" />
+      <workItem from="1625494094973" duration="2285000" />
+      <workItem from="1625922632048" duration="68442000" />
+      <workItem from="1626661051219" duration="239000" />
+      <workItem from="1626943279615" duration="18159000" />
+      <workItem from="1627008785553" duration="25796000" />
+      <workItem from="1627317232166" duration="8479000" />
+      <workItem from="1627559441018" duration="2452000" />
+      <workItem from="1627650087009" duration="1897000" />
+      <workItem from="1628321904944" duration="5000" />
+      <workItem from="1628439792731" duration="972000" />
+      <workItem from="1628444169717" duration="4141000" />
+      <workItem from="1628910302487" duration="1000" />
+      <workItem from="1629471692133" duration="911000" />
+      <workItem from="1629820993027" duration="1366000" />
+      <workItem from="1630139112616" duration="3667000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="openmp" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="rw_idx_info_offset" language="ObjectiveC" />
+        <watch expression="rw_idx_info_size" language="ObjectiveC" />
+        <watch expression="leaf2id" language="ObjectiveC" />
+        <watch expression="virtual_fwd_idx" language="ObjectiveC" />
+        <watch expression="pr" language="ObjectiveC" />
+        <watch expression="graph" language="ObjectiveC" />
+        <watch expression="bwd_idx_info_offset" language="ObjectiveC" />
+        <watch expression="bwd_idx_in_cluster" language="ObjectiveC" />
+        <watch expression="bwd_idx_info" language="ObjectiveC" />
+        <watch expression="hubcluster" language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

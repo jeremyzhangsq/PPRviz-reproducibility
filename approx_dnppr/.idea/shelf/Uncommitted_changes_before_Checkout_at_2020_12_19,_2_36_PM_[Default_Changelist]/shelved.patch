@@ -1,0 +1,732 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"CMakeRunConfigurationManager\" shouldGenerate=\"true\" shouldDeleteObsolete=\"true\">\n    <generated>\n      <config projectName=\"interact_fora\" targetName=\"interact_fora\" />\n    </generated>\n  </component>\n  <component name=\"CMakeSettings\" AUTO_RELOAD=\"true\">\n    <configurations>\n      <configuration PROFILE_NAME=\"Debug\" CONFIG_NAME=\"Debug\" ENABLED=\"true\" />\n      <configuration PROFILE_NAME=\"Release\" CONFIG_NAME=\"Release\" ENABLED=\"true\" />\n    </configurations>\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"3a22b49b-0730-47d6-9f07-4b6c1a574645\" name=\"Default Changelist\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/../.gitignore\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../.gitignore\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../README.md\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../baseline-multilevel.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../baseline-multilevel.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../baseline.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../baseline.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../cluster-ppr-relative.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../cluster-ppr-relative.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../config.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../config.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../evaluate.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../evaluate.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/.gitignore\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/CMakeLists.txt\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/algo.h\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeCache.txt\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/3.16.5/CMakeCCompiler.cmake\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/3.16.5/CMakeCXXCompiler.cmake\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_C.bin\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_CXX.bin\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/3.16.5/CMakeSystem.cmake\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/a.out\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdCXX/CMakeCXXCompilerId.cpp\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdCXX/a.out\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/CMakeOutput.log\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/Makefile.cmake\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/Makefile2\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/TargetDirectories.txt\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/clion-environment.txt\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/clion-log.txt\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/cmake.check_cache\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/index_construct.dir/CXX.includecache\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/index_construct.dir/DependInfo.cmake\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/index_construct.dir/build.make\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/index_construct.dir/cmake_clean.cmake\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/index_construct.dir/depend.internal\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/index_construct.dir/depend.make\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/index_construct.dir/flags.make\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/index_construct.dir/link.txt\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/index_construct.dir/main.cpp.o\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/index_construct.dir/progress.make\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/CMakeFiles/progress.marks\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/Makefile\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/cmake_install.cmake\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/index_construct\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-debug/index_construct.cbp\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeCache.txt\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/3.16.5/CMakeCCompiler.cmake\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/3.16.5/CMakeCXXCompiler.cmake\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_C.bin\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_CXX.bin\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/3.16.5/CMakeSystem.cmake\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/3.16.5/CompilerIdC/a.out\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/3.16.5/CompilerIdCXX/CMakeCXXCompilerId.cpp\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/3.16.5/CompilerIdCXX/a.out\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/CMakeDirectoryInformation.cmake\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/CMakeOutput.log\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/Makefile.cmake\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/Makefile2\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/TargetDirectories.txt\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/clion-environment.txt\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/clion-log.txt\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/cmake.check_cache\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/index_construct.dir/CXX.includecache\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/index_construct.dir/DependInfo.cmake\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/index_construct.dir/build.make\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/index_construct.dir/cmake_clean.cmake\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/index_construct.dir/depend.internal\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/index_construct.dir/depend.make\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/index_construct.dir/flags.make\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/index_construct.dir/link.txt\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/index_construct.dir/main.cpp.o\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/index_construct.dir/progress.make\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/CMakeFiles/progress.marks\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/Makefile\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/cmake_install.cmake\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/index_construct\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/cmake-build-release/index_construct.cbp\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/graph.h\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/lib.h\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/main.cpp\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/sparsehash/dense_hash_map\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/sparsehash/dense_hash_set\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/sparsehash/internal/densehashtable.h\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/sparsehash/internal/hashtable-common.h\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/sparsehash/internal/libc_allocator_with_realloc.h\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/sparsehash/internal/sparseconfig.h\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/sparsehash/internal/sparsehashtable.h\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/sparsehash/sparse_hash_map\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/sparsehash/sparse_hash_set\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/sparsehash/sparsetable\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/sparsehash/template_util.h\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../index_construct/sparsehash/type_traits.h\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/algo.h\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/algo.h\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/main.cpp\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/main.cpp\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../louvain/.idea/sshConfigs.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../louvain/.idea/sshConfigs.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../louvain/.idea/webServers.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../louvain/.idea/webServers.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../louvain/CMakeLists.txt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../louvain/CMakeLists.txt\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../online-refine.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../online-refine.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../openords/examples/recursive/multilevel-openOrd.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../openords/examples/recursive/multilevel-openOrd.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../openords/src/average_link_clust.cpp\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../openords/src/average_link_clust.cpp\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../openords/src/coarsen.cpp\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../openords/src/coarsen.cpp\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../openords/src/refine.cpp\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../openords/src/refine.cpp\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../renumber.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../renumber.py\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ClangdSettings\">\n    <option name=\"formatViaClangd\" value=\"false\" />\n  </component>\n  <component name=\"ExecutionTargetManager\" SELECTED_TARGET=\"CMakeBuildProfile:Debug\" />\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$/..\" value=\"master\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/..\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1go9SThgpLZsjmBAwmjPwQhC7mn\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"TERMINAL_CUSTOM_COMMANDS_GOT_IT\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"cf.first.check.clang-format\" value=\"false\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/plumed-smacof\" />\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\n    <property name=\"node.js.path.for.package.eslint\" value=\"project\" />\n    <property name=\"node.js.path.for.package.tslint\" value=\"project\" />\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\n    <property name=\"nodejs_interpreter_path.stuck_in_default_project\" value=\"undefined stuck path\" />\n    <property name=\"nodejs_npm_path_reset_for_default_project\" value=\"true\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"CMakeSettings\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$\" />\n      <recent name=\"$PROJECT_DIR$/plumed-smacof\" />\n    </key>\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/plumed-smacof\" />\n      <recent name=\"$PROJECT_DIR$/plumed-smacof/tools\" />\n      <recent name=\"$PROJECT_DIR$/plumed-smacof/dimred\" />\n      <recent name=\"$PROJECT_DIR$\" />\n      <recent name=\"$PROJECT_DIR$/\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"CMake Application.index_construct\">\n    <configuration default=\"true\" type=\"CLionExternalRunConfiguration\" factoryName=\"Application\" REDIRECT_INPUT=\"false\" ELEVATE=\"false\" PASS_PARENT_ENVS_2=\"true\">\n      <method v=\"2\">\n        <option name=\"CLION.EXTERNAL.BUILD\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"index_construct\" type=\"CMakeRunConfiguration\" factoryName=\"Application\" PROGRAM_PARAMS=\"-f 21 -build 0 -ol 0 -verbose 0 -nthread 4\" REDIRECT_INPUT=\"false\" ELEVATE=\"false\" WORKING_DIR=\"file://$PROJECT_DIR$/\" PASS_PARENT_ENVS_2=\"true\" PROJECT_NAME=\"interact_fora\" TARGET_NAME=\"interact_fora\" CONFIG_NAME=\"Debug\" RUN_TARGET_PROJECT_NAME=\"interact_fora\" RUN_TARGET_NAME=\"interact_fora\">\n      <method v=\"2\">\n        <option name=\"com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"interact_fora\" type=\"CMakeRunConfiguration\" factoryName=\"Application\" PROGRAM_PARAMS=\"-f 21 -build 0 -ol 0 -verbose 1\" REDIRECT_INPUT=\"false\" ELEVATE=\"false\" WORKING_DIR=\"file://$PROJECT_DIR$/\" PASS_PARENT_ENVS_2=\"true\" PROJECT_NAME=\"interact_fora\" TARGET_NAME=\"interact_fora\" CONFIG_NAME=\"Debug\" RUN_TARGET_PROJECT_NAME=\"interact_fora\" RUN_TARGET_NAME=\"interact_fora\">\n      <method v=\"2\">\n        <option name=\"com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"GradleAppRunConfiguration\" factoryName=\"Application\" REDIRECT_INPUT=\"false\" ELEVATE=\"false\" PASS_PARENT_ENVS_2=\"true\">\n      <method v=\"2\">\n        <option name=\"com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <list>\n      <item itemvalue=\"CMake Application.index_construct\" />\n      <item itemvalue=\"CMake Application.interact_fora\" />\n    </list>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"SvnConfiguration\">\n    <configuration />\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"3a22b49b-0730-47d6-9f07-4b6c1a574645\" name=\"Default Changelist\" comment=\"\" />\n      <created>1598770078161</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1598770078161</updated>\n      <workItem from=\"1598770082424\" duration=\"14000\" />\n      <workItem from=\"1598770103081\" duration=\"17817000\" />\n      <workItem from=\"1598852892046\" duration=\"4258000\" />\n      <workItem from=\"1598857677445\" duration=\"11046000\" />\n      <workItem from=\"1598924103928\" duration=\"17218000\" />\n      <workItem from=\"1599018406394\" duration=\"1592000\" />\n      <workItem from=\"1599048736868\" duration=\"2574000\" />\n      <workItem from=\"1601000878593\" duration=\"50499000\" />\n      <workItem from=\"1601176175493\" duration=\"122000\" />\n      <workItem from=\"1601178791304\" duration=\"7195000\" />\n      <workItem from=\"1601955608230\" duration=\"420000\" />\n      <workItem from=\"1602252783006\" duration=\"488000\" />\n      <workItem from=\"1603539722716\" duration=\"870000\" />\n      <workItem from=\"1603858739972\" duration=\"5161000\" />\n      <workItem from=\"1603871294515\" duration=\"1580000\" />\n      <workItem from=\"1605580748540\" duration=\"1503000\" />\n      <workItem from=\"1605601059582\" duration=\"853000\" />\n      <workItem from=\"1605602006137\" duration=\"174000\" />\n      <workItem from=\"1605602197810\" duration=\"10037000\" />\n      <workItem from=\"1606096872953\" duration=\"100273000\" />\n      <workItem from=\"1606616008430\" duration=\"7518000\" />\n      <workItem from=\"1606705515251\" duration=\"37209000\" />\n      <workItem from=\"1606974237005\" duration=\"63000\" />\n      <workItem from=\"1607433705436\" duration=\"1661000\" />\n      <workItem from=\"1607497613787\" duration=\"28795000\" />\n      <workItem from=\"1607956442822\" duration=\"1787000\" />\n      <workItem from=\"1608111640669\" duration=\"7397000\" />\n      <workItem from=\"1608287462915\" duration=\"2625000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <line-breakpoint enabled=\"true\" type=\"com.jetbrains.cidr.execution.debugger.OCBreakpointType\">\n          <url>file://$PROJECT_DIR$/algo.h</url>\n          <line>493</line>\n          <option name=\"timeStamp\" value=\"78\" />\n        </line-breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n    <watches-manager>\n      <configuration name=\"CMakeRunConfiguration\">\n        <watch expression=\"rw_idx_info_offset\" language=\"ObjectiveC\" />\n        <watch expression=\"rw_idx_info_size\" language=\"ObjectiveC\" />\n        <watch expression=\"num_hit_idx\" language=\"ObjectiveC\" />\n        <watch expression=\"num_total_rw\" language=\"ObjectiveC\" />\n        <watch expression=\"ppr_idx\" language=\"ObjectiveC\" />\n        <watch expression=\"superPPRDeg\" language=\"ObjectiveC\" />\n        <watch expression=\"reserve_stack\" language=\"ObjectiveC\" />\n        <watch expression=\"nnz\" language=\"ObjectiveC\" />\n        <watch expression=\"leaf2id\" language=\"ObjectiveC\" />\n        <watch expression=\"virtual_fwd_idx\" language=\"ObjectiveC\" />\n      </configuration>\n    </watches-manager>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -105,8 +105,9 @@
+       <change beforePath="$PROJECT_DIR$/../index_construct/sparsehash/template_util.h" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/../index_construct/sparsehash/type_traits.h" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/algo.h" beforeDir="false" afterPath="$PROJECT_DIR$/algo.h" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/multilevel-FORA.py" beforeDir="false" afterPath="$PROJECT_DIR$/multilevel-FORA.py" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/../louvain/.idea/sshConfigs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../louvain/.idea/sshConfigs.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/../louvain/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../louvain/.idea/webServers.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/../louvain/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../louvain/CMakeLists.txt" afterDir="false" />
+@@ -125,7 +126,7 @@
+   <component name="ClangdSettings">
+     <option name="formatViaClangd" value="false" />
+   </component>
+-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
++  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Release" />
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+@@ -144,7 +145,7 @@
+     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="cf.first.check.clang-format" value="false" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$/plumed-smacof" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+     <property name="node.js.detected.package.eslint" value="true" />
+     <property name="node.js.detected.package.tslint" value="true" />
+     <property name="node.js.path.for.package.eslint" value="project" />
+@@ -157,16 +158,16 @@
+     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+   </component>
+   <component name="RecentsManager">
+-    <key name="MoveFile.RECENT_KEYS">
++    <key name="CopyFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$" />
+-      <recent name="$PROJECT_DIR$/plumed-smacof" />
+-    </key>
+-    <key name="CopyFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/plumed-smacof" />
+       <recent name="$PROJECT_DIR$/plumed-smacof/tools" />
+       <recent name="$PROJECT_DIR$/plumed-smacof/dimred" />
++      <recent name="$PROJECT_DIR$/" />
++    </key>
++    <key name="MoveFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$" />
+-      <recent name="$PROJECT_DIR$/" />
++      <recent name="$PROJECT_DIR$/plumed-smacof" />
+     </key>
+   </component>
+   <component name="RunManager" selected="CMake Application.index_construct">
+@@ -252,15 +253,6 @@
+     </option>
+   </component>
+   <component name="XDebuggerManager">
+-    <breakpoint-manager>
+-      <breakpoints>
+-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+-          <url>file://$PROJECT_DIR$/algo.h</url>
+-          <line>493</line>
+-          <option name="timeStamp" value="78" />
+-        </line-breakpoint>
+-      </breakpoints>
+-    </breakpoint-manager>
+     <watches-manager>
+       <configuration name="CMakeRunConfiguration">
+         <watch expression="rw_idx_info_offset" language="ObjectiveC" />
+Index: ../louvain/.idea/sshConfigs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"SshConfigs\">\n    <configs>\n      <sshConfig authType=\"PASSWORD\" host=\"sigx1.d2.comp.nus.edu.sg\" id=\"afdd878b-48c3-45c1-9462-311065805ec1\" port=\"22\" nameFormat=\"DESCRIPTIVE\" username=\"zhangsq\" />\n    </configs>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../louvain/.idea/sshConfigs.xml b/../louvain/.idea/sshConfigs.xml
+--- a/../louvain/.idea/sshConfigs.xml	
++++ b/../louvain/.idea/sshConfigs.xml	
+@@ -2,7 +2,7 @@
+ <project version="4">
+   <component name="SshConfigs">
+     <configs>
+-      <sshConfig authType="PASSWORD" host="sigx1.d2.comp.nus.edu.sg" id="afdd878b-48c3-45c1-9462-311065805ec1" port="22" nameFormat="DESCRIPTIVE" username="zhangsq" />
++      <sshConfig authType="PASSWORD" host="sigx2.d2.comp.nus.edu.sg" id="afdd878b-48c3-45c1-9462-311065805ec1" port="22" nameFormat="DESCRIPTIVE" username="zhangsq" />
+     </configs>
+   </component>
+ </project>
+\ No newline at end of file
+Index: ../baseline.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import numpy as np\nimport networkx as nx\nimport sys\nimport time\nfrom sklearn.decomposition import PCA\nfrom fa2l import force_atlas2_layout\nfrom fa2 import ForceAtlas2\nimport matplotlib\nmatplotlib.use('Agg')\nfrom matplotlib import pyplot as plt\nfrom matplotlib.collections import LineCollection\nfrom sklearn import preprocessing\nfrom scipy.sparse import identity\nfrom random import shuffle\nfrom numpy import linalg as LA\nfrom evaluate import eva,cluster_extraction,normalize\nfrom pprviz import *\nfrom config import filelist\n\nif __name__ == '__main__':\n    path = \"/home/zhangsq/gviz-ppr/dataset/\" + filelist[int(sys.argv[1])]+\".txt\"\n    G = nx.convert_node_labels_to_integers(nx.read_edgelist(path, nodetype=int))\n    n, m = G.number_of_nodes(), G.number_of_edges()\n    print(filelist[int(sys.argv[1])], n, m)\n    edges = G.edges()\n\n    num_repeat = 5\n    arr0 = np.zeros(num_repeat)\n    arr1 = np.zeros(num_repeat)\n    arr2 = np.zeros(num_repeat)\n    arr3 = np.zeros(num_repeat)\n    arr4 = np.zeros(num_repeat)\n    arr5 = np.zeros(num_repeat)\n    arr6 = np.zeros(num_repeat)\n    # print(\"ForceAtlas2-LinLog\")\n    for iter in range(num_repeat):\n        start = time.time()\n        positions = force_atlas2_layout(G, iterations=700, gravity=0,\n                                        barnes_hut_theta=1.2, barnes_hut_optimize=True,\n                                        edge_weight_influence=1, jitter_tolerance=1,\n                                        scaling_ratio=2, strong_gravity_mode=False,\n                                        lin_log_mode=True)\n\n        t = time.time() - start\n        arr0[iter] = t\n        Xfa2ll = np.array([positions[i] for i in range(n)])\n        if iter==num_repeat-1:\n            plot(pos=Xfa2ll, edges=edges, name=\"./output/{}-fa2ll\".format(filelist[int(sys.argv[1])]))\n        arr1[iter], arr2[iter], arr3[iter], arr4[iter], arr5[iter],arr6[iter] = eva(G, Xfa2ll)\n\n    print(arr0.mean(), arr1.mean(), arr2.mean(), arr3.mean(), arr4.mean(), arr5.mean(), arr6.mean())\n    # print(arr0.var(), arr1.var(), arr2.var(), arr3.var(), arr4.var())\n\n    arr1 = np.zeros(num_repeat)\n    arr2 = np.zeros(num_repeat)\n    arr3 = np.zeros(num_repeat)\n    arr4 = np.zeros(num_repeat)\n    arr5 = np.zeros(num_repeat)\n    arr6 = np.zeros(num_repeat)\n    # print(\"ForceAtlas2\")\n    for iter in range(num_repeat):\n        start = time.time()\n        # forceatlas2 = ForceAtlas2(gravity=0, barnesHutTheta=1.2, barnesHutOptimize=True, edgeWeightInfluence=1, multiThreaded= False,\n        #                          jitterTolerance=1, scalingRatio=2, strongGravityMode=False, linLogMode=False,verbose=False)\n        # positions = forceatlas2.forceatlas2_networkx_layout(G,pos=None,iterations=700)\n        positions = force_atlas2_layout(G, iterations=700, gravity=0,\n                                        barnes_hut_theta=1.2, barnes_hut_optimize=True,\n                                        edge_weight_influence=1, jitter_tolerance=1,\n                                        scaling_ratio=2, strong_gravity_mode=False,\n                                        lin_log_mode=False)\n        t = time.time() - start\n        arr0[iter] = t\n        Xfa2 = np.array([positions[i] for i in range(n)])\n        if iter == num_repeat-1:\n            plot(pos=Xfa2, edges=edges, name=\"./output/{}-fa2\".format(filelist[int(sys.argv[1])]))\n        arr1[iter], arr2[iter], arr3[iter], arr4[iter], arr5[iter], arr6[iter] = eva(G, Xfa2)\n\n    print(arr0.mean(), arr1.mean(), arr2.mean(), arr3.mean(), arr4.mean(), arr5.mean(), arr6.mean())\n    # print(arr0.var(), arr1.var(), arr2.var(), arr3.var(), arr4.var())\n\n\n    # start = time.time()\n    # pos = dist_mds(G)\n    # t = time.time() - start\n    # plot(pos, edges, \"./output/{}-mds\".format(filelist[int(sys.argv[1])]))\n    #\n    # if filelist[int(sys.argv[1])] == \"email\":\n    #     normX = normalize(edges, pos)\n    #     cluster = cluster_extraction(normX,comm)\n    #     print(t, cluster)\n    # else:\n    #     a1, b1, c1, d1, e1 = eva(G, pos)\n    #     print(t, a1, b1, c1, d1, e1)\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../baseline.py b/../baseline.py
+--- a/../baseline.py	
++++ b/../baseline.py	
+@@ -22,60 +22,60 @@
+     G = nx.convert_node_labels_to_integers(nx.read_edgelist(path, nodetype=int))
+     n, m = G.number_of_nodes(), G.number_of_edges()
+     print(filelist[int(sys.argv[1])], n, m)
++    type = int(sys.argv[2])
+     edges = G.edges()
++    num_repeat = 1
+ 
+-    num_repeat = 5
+-    arr0 = np.zeros(num_repeat)
+-    arr1 = np.zeros(num_repeat)
+-    arr2 = np.zeros(num_repeat)
+-    arr3 = np.zeros(num_repeat)
+-    arr4 = np.zeros(num_repeat)
+-    arr5 = np.zeros(num_repeat)
+-    arr6 = np.zeros(num_repeat)
+-    # print("ForceAtlas2-LinLog")
+-    for iter in range(num_repeat):
+-        start = time.time()
+-        positions = force_atlas2_layout(G, iterations=700, gravity=0,
+-                                        barnes_hut_theta=1.2, barnes_hut_optimize=True,
+-                                        edge_weight_influence=1, jitter_tolerance=1,
+-                                        scaling_ratio=2, strong_gravity_mode=False,
+-                                        lin_log_mode=True)
++    if type==1:
++        arr0 = np.zeros(num_repeat)
++        arr1 = np.zeros(num_repeat)
++        arr2 = np.zeros(num_repeat)
++        arr3 = np.zeros(num_repeat)
++        arr4 = np.zeros(num_repeat)
++        # print("ForceAtlas2-LinLog")
++        for iter in range(num_repeat):
++            start = time.time()
++            positions = force_atlas2_layout(G, iterations=700, gravity=0,
++                                            barnes_hut_theta=1.2, barnes_hut_optimize=True,
++                                            edge_weight_influence=1, jitter_tolerance=1,
++                                            scaling_ratio=2, strong_gravity_mode=False,
++                                            lin_log_mode=True)
+ 
+-        t = time.time() - start
+-        arr0[iter] = t
+-        Xfa2ll = np.array([positions[i] for i in range(n)])
+-        if iter==num_repeat-1:
+-            plot(pos=Xfa2ll, edges=edges, name="./output/{}-fa2ll".format(filelist[int(sys.argv[1])]))
+-        arr1[iter], arr2[iter], arr3[iter], arr4[iter], arr5[iter],arr6[iter] = eva(G, Xfa2ll)
++            t = time.time() - start
++            arr0[iter] = t
++            Xfa2ll = np.array([positions[i] for i in range(n)])
++            # if iter==num_repeat-1:
++            #     plot(pos=Xfa2ll, edges=edges, name="./output/{}-fa2ll".format(filelist[int(sys.argv[1])]))
++            arr1[iter], arr2[iter], arr3[iter], arr4[iter] = eva(G, Xfa2ll)
+ 
+-    print(arr0.mean(), arr1.mean(), arr2.mean(), arr3.mean(), arr4.mean(), arr5.mean(), arr6.mean())
++        print(arr0.mean(), arr1.mean(), arr2.mean(), arr3.mean(), arr4.mean())
+     # print(arr0.var(), arr1.var(), arr2.var(), arr3.var(), arr4.var())
+ 
+-    arr1 = np.zeros(num_repeat)
+-    arr2 = np.zeros(num_repeat)
+-    arr3 = np.zeros(num_repeat)
+-    arr4 = np.zeros(num_repeat)
+-    arr5 = np.zeros(num_repeat)
+-    arr6 = np.zeros(num_repeat)
+-    # print("ForceAtlas2")
+-    for iter in range(num_repeat):
+-        start = time.time()
+-        # forceatlas2 = ForceAtlas2(gravity=0, barnesHutTheta=1.2, barnesHutOptimize=True, edgeWeightInfluence=1, multiThreaded= False,
+-        #                          jitterTolerance=1, scalingRatio=2, strongGravityMode=False, linLogMode=False,verbose=False)
+-        # positions = forceatlas2.forceatlas2_networkx_layout(G,pos=None,iterations=700)
+-        positions = force_atlas2_layout(G, iterations=700, gravity=0,
+-                                        barnes_hut_theta=1.2, barnes_hut_optimize=True,
+-                                        edge_weight_influence=1, jitter_tolerance=1,
+-                                        scaling_ratio=2, strong_gravity_mode=False,
+-                                        lin_log_mode=False)
+-        t = time.time() - start
+-        arr0[iter] = t
+-        Xfa2 = np.array([positions[i] for i in range(n)])
+-        if iter == num_repeat-1:
+-            plot(pos=Xfa2, edges=edges, name="./output/{}-fa2".format(filelist[int(sys.argv[1])]))
+-        arr1[iter], arr2[iter], arr3[iter], arr4[iter], arr5[iter], arr6[iter] = eva(G, Xfa2)
++    elif type==2:
++        arr0 = np.zeros(num_repeat)
++        arr1 = np.zeros(num_repeat)
++        arr2 = np.zeros(num_repeat)
++        arr3 = np.zeros(num_repeat)
++        arr4 = np.zeros(num_repeat)
++        # print("ForceAtlas2")
++        for iter in range(num_repeat):
++            start = time.time()
++            # forceatlas2 = ForceAtlas2(gravity=0, barnesHutTheta=1.2, barnesHutOptimize=True, edgeWeightInfluence=1, multiThreaded= False,
++            #                          jitterTolerance=1, scalingRatio=2, strongGravityMode=False, linLogMode=False,verbose=False)
++            # positions = forceatlas2.forceatlas2_networkx_layout(G,pos=None,iterations=700)
++            positions = force_atlas2_layout(G, iterations=700, gravity=0,
++                                            barnes_hut_theta=1.2, barnes_hut_optimize=True,
++                                            edge_weight_influence=1, jitter_tolerance=1,
++                                            scaling_ratio=2, strong_gravity_mode=False,
++                                            lin_log_mode=False)
++            t = time.time() - start
++            arr0[iter] = t
++            Xfa2 = np.array([positions[i] for i in range(n)])
++            # if iter == num_repeat-1:
++            #     plot(pos=Xfa2, edges=edges, name="./output/{}-fa2".format(filelist[int(sys.argv[1])]))
++            arr1[iter], arr2[iter], arr3[iter], arr4[iter] = eva(G, Xfa2)
+ 
+-    print(arr0.mean(), arr1.mean(), arr2.mean(), arr3.mean(), arr4.mean(), arr5.mean(), arr6.mean())
++        print(arr0.mean(), arr1.mean(), arr2.mean(), arr3.mean(), arr4.mean())
+     # print(arr0.var(), arr1.var(), arr2.var(), arr3.var(), arr4.var())
+ 
+ 
+Index: ../louvain/.idea/webServers.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"WebServers\">\n    <option name=\"servers\">\n      <webServer id=\"422ef7b9-25ff-46f1-aceb-aa5ce6b0f526\" name=\"sigx\">\n        <fileTransfer rootFolder=\"/home/zhangsq/gviz-ppr/louvain\" accessType=\"SFTP\" host=\"sigx1.d2.comp.nus.edu.sg\" port=\"22\" sshConfigId=\"afdd878b-48c3-45c1-9462-311065805ec1\" sshConfig=\"zhangsq@sigx1.d2.comp.nus.edu.sg:22 password\">\n          <advancedOptions>\n            <advancedOptions dataProtectionLevel=\"Private\" passiveMode=\"true\" shareSSLContext=\"true\" />\n          </advancedOptions>\n        </fileTransfer>\n      </webServer>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../louvain/.idea/webServers.xml b/../louvain/.idea/webServers.xml
+--- a/../louvain/.idea/webServers.xml	
++++ b/../louvain/.idea/webServers.xml	
+@@ -3,7 +3,7 @@
+   <component name="WebServers">
+     <option name="servers">
+       <webServer id="422ef7b9-25ff-46f1-aceb-aa5ce6b0f526" name="sigx">
+-        <fileTransfer rootFolder="/home/zhangsq/gviz-ppr/louvain" accessType="SFTP" host="sigx1.d2.comp.nus.edu.sg" port="22" sshConfigId="afdd878b-48c3-45c1-9462-311065805ec1" sshConfig="zhangsq@sigx1.d2.comp.nus.edu.sg:22 password">
++        <fileTransfer rootFolder="/home/zhangsq/gviz-ppr/louvain" accessType="SFTP" host="sigx2.d2.comp.nus.edu.sg" port="22" sshConfigId="afdd878b-48c3-45c1-9462-311065805ec1" sshConfig="zhangsq@sigx2.d2.comp.nus.edu.sg:22 password">
+           <advancedOptions>
+             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+           </advancedOptions>
+Index: ../config.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>filelist = {\n            0: \"kangaroo\",\n            1: \"gd01\",\n            2: \"twitters\",\n            3: \"zebra\",\n            4: \"woman\",\n            5: \"karate\",\n            6: \"twitterm\",\n            7: \"fb3980\",\n            8: \"dolphin\",\n            9: \"terrorist\",\n            10: \"les\",\n            11: \"gd06\",\n            12: \"david\",\n            13: \"fb414\",\n            14: \"twitterl\",\n            15: \"jazz\",\n            16: \"fb348\",\n            17: \"airline\",\n            18: \"fb0\",\n            19: \"gd00\",\n            20: \"elegans\", # small graph: 0-20\n            21: \"youtube\",\n            22: \"dblp\",\n            23: \"orkut\",\n            24: \"tw\",\n            25: \"fr\", # real world big graph: 21-26\n            26: \"wiki\", # 26 is used by openord\n            27: \"crack\",\n            28: \"fe_ocean\",\n            29: \"finan512\", # big shape graph: 26-28\n            30: \"small\"\n            }\n\n\ndef load_community(path):\n    comm = dict()\n    f = open(path, \"r\")\n    for line in f.readlines():\n        l = line.rstrip(\"\\r\\n\").split(\" \")\n        u = int(l[0])\n        c = int(l[1])\n        if c not in comm:\n            comm[c] = [u]\n        else:\n            comm[c].append(u)\n    return comm\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../config.py b/../config.py
+--- a/../config.py	
++++ b/../config.py	
+@@ -29,7 +29,14 @@
+             27: "crack",
+             28: "fe_ocean",
+             29: "finan512", # big shape graph: 26-28
+-            30: "small"
++            30: "small",
++            31: "communication", # skip this
++            32: "trust",
++            33: "scinet",
++            34: "stelzl",
++            35: "bible",
++            36: "hamster",
++            37: "yeast"
+             }
+ 
+ 
+Index: ../openords/examples/recursive/multilevel-openOrd.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import os\nimport argparse\nimport sys\nsys.path.insert(1, '../../../')\nimport config\nimport random\nimport shlex\nimport subprocess\n# This is a python version of the shell script of S. Martin to run the recursive version of DrL.\n#\n\n# the following files must be copied into the dataset directory\n# and altered if necessary\n\n# coarsen.parms\t-- parameters for coarsening (usually default.parms)\n# coarsest.parms -- parameters for the coarsest drawing (usually default.parms)\n# refine.parms -- parameters for refining (usually refine.parms)\n# final.parms -- parameters for final drawing (usually final.parms)\n\n# the following variables must be changed to match the problem at hand\n\n# parallel version information\nMPI=0\t\t\t\t\t\t\t\t# use mpiexec\n# MPIBIN=/home/smartin/recursive_layout/bin\t\t\t# mpi bin\n# MPIDATA=/home/smartin/recursive_layout/datasets/yeast_gs\t# mpi data\n\n# serial bin\nBINDIR=\"../../bin\"\t\t\t\t# regular bin directory\n\n# general inputs\nROOTNAME=\"\"\t\t\t\t# root name of project\nMEMORY=1\t\t\t\t# use multiple scans to conserve memory\n\n\n# initial layout & clustering\nTRUNCATE_LINKS=10\t# initial truncation number of edges\nINIT_CUT=1\t\t# initial edge cutting parameter\nINIT_NORM=0\t\t# normalize during initial layout\n\n# coarsening information\nSTARTLEVEL=1\t\t# initial level (to avoid re-coarsening)\nMAXLEVEL = 0\t\t# max level to coarsen\nNORMALIZE=1\t\t# normalize during coarsening\nCOARSE_CUT=1\t\t# cutting level during coarsening\n\n# coarsest layout information\nLAST_CUT=.8\t\t# cutting level for last layout\n\nLEVEL = -1\n\n# refining information\nSCALE=450\t\t# scale coarsest layout up\nREFINE_CUT=.5\t\t# refining edge cut\nFINAL_CUT=.5\t\t# final edge cut\n\n# cluster array of maxlevel\ncluster = []\n\ncluster_time = 0\nzoom_time = []\nK=25\n\ndef read_cluster(level):\n    global cluster\n    if level==1:\n        fname = \"{}.clust\".format(ROOTNAME)\n    else:\n        fname = \"{}_{}.clust\".format(ROOTNAME,level)\n    cluster.append(dict())\n    with open(fname,'r') as f:\n        for line in f.readlines():\n            l = line.rstrip(\"\\r\\n\").split(\"\\t\")\n            node = int(l[0])\n            clus = int(l[1])\n            if clus not in cluster[level-1]:\n                cluster[level-1][clus] = [node]\n            else:\n                cluster[level-1][clus].append(node)\n\ndef load_multilevel():\n    level = 1\n    read_cluster(level)\n    level += 1\n    while level<MAXLEVEL:\n        read_cluster(level)\n        level+=1\n\ndef rand_selet_path():\n    level = MAXLEVEL-1\n    path = []\n    pool = cluster[level-1].keys()\n    item = random.choice(pool)\n    path.append(item)\n    while level>1:\n        pool = cluster[level-1][path[-1]]\n        item = random.choice(pool)\n        path.append(item)\n        level -= 1\n    return path\n\n\n\n# calls start here:\ndef preprocessing():\n    global STARTLEVEL,cluster_time\n    if STARTLEVEL == 1:\n        # print \"Cleaning old files ...\"\n        # os.system(\"rm *coord; rm *edges; rm *int; rm *.full; rm *.real; rm *.ind; rm *.clust\")\n\n        # first we truncate the original dataset and prepare the .int file\n        # print \"----- INITIAL TRUNCATION -----\"\n        if INIT_NORM == 0:\n            cmd = \"{}/truncate -t {} -m {} {}\".format(BINDIR,TRUNCATE_LINKS,MEMORY,ROOTNAME)\n        else:\n            cmd = \"{}/truncate -n -t {} -m {} {}\".format(BINDIR, TRUNCATE_LINKS, MEMORY, ROOTNAME)\n        # print cmd\n        os.system(cmd)\n\n        # copy the .int file to .coarse_int\n        cmd = \"cp {}.int {}.coarse_int\".format(ROOTNAME,ROOTNAME)\n        # print cmd\n        os.system(cmd)\n\n        # next we use layout to ordinate and output cut edges\n        # print \"----- INITIAL LAYOUT -----\"\n\n        # use coarsen parms\n        cmd = \"cp coarsen.parms {}.parms\".format(ROOTNAME)\n        # print cmd\n        os.system(cmd)\n\n        # if MPI == 1:\n        #     cmd = \"mpiexec {}/layout -p -e -c {} {}/{}\".format(MPIBIN,INIT_CUT,MPIDATA,ROOTNAME)\n        cmd = \"{}/layout -p -e -c {} {}\".format(BINDIR,INIT_CUT,ROOTNAME)\n        # print cmd\n        # os.system(cmd)\n        result = subprocess.Popen(shlex.split(cmd), stdout=subprocess.PIPE)\n        out, err = result.communicate()\n        print out\n        cluster_time += float(out.rstrip(\"\\r\\n\").split(\":\")[1])\n\n    else: # end initial file creation\n        print \"----- RESTARTING AT LEVEL {}-----\".format(STARTLEVEL)\n        STARTLEVEL-=1\n\n        # recover starting position\n        if STARTLEVEL == 1:\n            cmd1 = \"mv {}.coarse_icoord {}.icoord\".format(ROOTNAME,ROOTNAME)\n            cmd2 = \"mv {}.coarse_iedges {}.iedges\".format(ROOTNAME,ROOTNAME)\n        else:\n            cmd1 = \"mv {}_{}.coarse_icoord {}_{}.icoord\".format(ROOTNAME,STARTLEVEL, ROOTNAME,STARTLEVEL)\n            cmd2 = \"mv {}_{}.coarse_iedges {}_{}.iedges\".format(ROOTNAME,STARTLEVEL, ROOTNAME,STARTLEVEL)\n        # print cmd1\n        # print cmd2\n        os.system(cmd1)\n        os.system(cmd2)\n\ndef coarsen():\n    global LEVEL,MAXLEVEL, cluster_time\n    # now we coarsen until MAXLEVEL is reached\n    LEVEL=STARTLEVEL\n    while 1:\n        LEVEL+=1\n        # print \"----- COARSENING AT LEVEL {}-----\".format(LEVEL)\n        LEVEL-=1\n\n        # now we use the average link clustering algorithm\n        if LEVEL == 1:\n            cmd1 = \"{}/average_link {}\".format(BINDIR,ROOTNAME)\n            cmd2 = \"mv {}.icoord {}.coarse_icoord\".format(ROOTNAME,ROOTNAME)\n            cmd3 = \"mv {}.iedges {}.coarse_iedges\".format(ROOTNAME,ROOTNAME)\n        else:\n            cmd1 = \"{}/average_link {}_{}\".format(BINDIR, ROOTNAME,LEVEL)\n            cmd2 = \"mv {}_{}.icoord {}_{}.coarse_icoord\".format(ROOTNAME,LEVEL, ROOTNAME,LEVEL)\n            cmd3 = \"mv {}_{}.iedges {}_{}.coarse_iedges\".format(ROOTNAME,LEVEL, ROOTNAME,LEVEL)\n\n        print cmd1\n        result = subprocess.Popen(shlex.split(cmd1), stdout=subprocess.PIPE)\n        out, err = result.communicate()\n        print out\n        outs = out.split(\"\\n\")\n        cluster_time += float(outs[0].split(\":\")[1])\n        ncluster = int(outs[1].split(\":\")[1])\n        # print out\n        if ncluster < K:\n            break\n        # print cmd2\n        os.system(cmd2)\n        # print cmd3\n        os.system(cmd3)\n\n        LEVEL+=1\n\n        # now we coarsen\n        if NORMALIZE == 0:\n            cmd = \"{}/coarsen -l {} -m {} {}\".format(BINDIR,LEVEL,MEMORY,ROOTNAME)\n        else:\n            cmd = \"{}/coarsen -l {} -n -m {} {}\".format(BINDIR,LEVEL,MEMORY,ROOTNAME)\n        print cmd\n        # os.system(cmd)\n        result = subprocess.Popen(shlex.split(cmd), stdout=subprocess.PIPE)\n        out, err = result.communicate()\n        # print out\n        # out = out.split(\"\\n\")[1]+\"\\n\"\n        # print out\n        # cluster_time += float(out.rstrip(\"\\r\\n\").split(\":\")[1])\n        print out\n        cluster_time += float(out.rstrip(\"\\r\\n\").split(\":\")[1])\n\n        # save .int files to .coarse_int for later\n        cmd = \"cp {}_{}.int {}_{}.coarse_int\".format(ROOTNAME,LEVEL,ROOTNAME,LEVEL)\n        # print cmd\n        os.system(cmd)\n\n        # and finally re-ordinate -- different for final layout\n        # set parameters for coarsening\n        cmd = \"cp coarsen.parms {}_{}.parms\".format(ROOTNAME,LEVEL)\n        # print cmd\n        os.system(cmd)\n\n        # if MPI == 1:\n        #     print \"mpiexec\" $MPIBIN\"/layout -p -e -c\" $COARSE_CUT $MPIDATA\"/\"$ROOTNAME\"_\"$LEVEL\n        #     mpiexec $MPIBIN/layout -p -e -c $COARSE_CUT $MPIDATA/$ROOTNAME\"_\"$LEVEL\n        cmd = \"{}/layout -p -e -c {} {}_{}\".format(BINDIR,COARSE_CUT,ROOTNAME,LEVEL)\n        # print cmd\n        # os.system(cmd)\n        result = subprocess.Popen(shlex.split(cmd), stdout=subprocess.PIPE)\n        out, err = result.communicate()\n        print out\n        cluster_time += float(out.rstrip(\"\\r\\n\").split(\":\")[1])\n    MAXLEVEL = LEVEL\n\ndef refine(path):\n    global LEVEL,zoom_time\n    # copy .icoord to .coarse_icoord for last ordination\n    if LEVEL > 1:\n        cmd1 = \"cp {}_{}.icoord {}_{}.coarse_iccord\".format(ROOTNAME,LEVEL,ROOTNAME,LEVEL)\n        cmd2 = \"cp {}_{}.iedges {}_{}.coarse_iedges\".format(ROOTNAME,LEVEL,ROOTNAME,LEVEL)\n    else:\n        cmd1 = \"cp {}.icoord {}.coarse_iccord\".format(ROOTNAME,ROOTNAME)\n        cmd2 = \"cp {}.iedges {}.coarse_iedges\".format(ROOTNAME,ROOTNAME)\n    # print cmd1\n    # print cmd2\n    os.system(cmd1)\n    os.system(cmd2)\n\n    # now we refine until original level is reached\n    idx = 0\n    refine_time = 0\n    while LEVEL > 1:\n        # print \"----- REFINING AT LEVEL {}-----\".format(LEVEL)\n\n        # refine\n        cmd = \"{}/refine -r -s {} -l {} -t {} {}\".format(BINDIR,SCALE,LEVEL,path[idx],ROOTNAME)\n        # print cmd\n        # os.system(cmd)\n        result = subprocess.Popen(shlex.split(cmd), stdout=subprocess.PIPE)\n        out, err = result.communicate()\n        print out\n        refine_time += float(out.rstrip(\"\\r\\n\").split(\":\")[1])\n        LEVEL-=1\n        idx += 1\n        # and re-ordinate\n        if LEVEL == 1:\n        # final layout\n            cmd = \"cp final.parms {}.parms\".format(ROOTNAME)\n            # print cmd\n            os.system(cmd)\n\n            cmd = \"cp {}.refine_int {}.int\".format(ROOTNAME,ROOTNAME)\n            # print cmd\n            os.system(cmd)\n\n            # if [ $MPI -eq 1 ]\n            # then\n            #   print \"mpiexec\" $MPIBIN\"/layout -r 0 -p -e -c\" $FINAL_CUT $MPIDATA\"/\"$ROOTNAME\n            #   mpiexec $MPIBIN/layout -r 0 -p -e -c $FINAL_CUT $MPIDATA/$ROOTNAME\n\n            cmd = \"{}/layout -r 0 -p -e -c {} {}\".format(BINDIR,FINAL_CUT,ROOTNAME)\n            # print cmd\n            # os.system(cmd)\n            result = subprocess.Popen(shlex.split(cmd), stdout=subprocess.PIPE)\n            out, err = result.communicate()\n            print out\n            refine_time += float(out.rstrip(\"\\r\\n\").split(\":\")[1])\n\n            # now copy final coords and edges files\n            cmd1 = \"cp {}.icoord {}.refine_icoord\".format(ROOTNAME,ROOTNAME)\n            cmd2 = \"cp {}.iedges {}.refine_iedges\".format(ROOTNAME,ROOTNAME)\n            # print cmd1\n            # print cmd2\n            os.system(cmd1)\n            os.system(cmd2)\n\n        else:\n            cmd = \"cp refine.parms {}_{}.parms\".format(ROOTNAME,LEVEL)\n            # print cmd\n            os.system(cmd)\n\n            cmd = \"cp {}_{}.refine_int {}_{}.int\".format(ROOTNAME,LEVEL,ROOTNAME,LEVEL)\n            # print cmd\n            os.system(cmd)\n\n            # if [ $MPI -eq 1 ]\n            # then\n            #   print \"mpiexec\" $MPIBIN\"/layout -r 0 -p -e -c\" $REFINE_CUT $MPIDATA\"/\"$ROOTNAME\"_\"$LEVEL\n            #   mpiexec $MPIBIN/layout -r 0 -p -e -c $REFINE_CUT $MPIDATA/$ROOTNAME\"_\"$LEVEL\n            cmd = \"{}/layout -r 0 -p -e -c {} {}_{}\".format(BINDIR,REFINE_CUT,ROOTNAME,LEVEL)\n            # print cmd\n            # os.system(cmd)\n            result = subprocess.Popen(shlex.split(cmd), stdout=subprocess.PIPE)\n            out, err = result.communicate()\n            print out\n            refine_time += float(out.rstrip(\"\\r\\n\").split(\":\")[1])\n\n            cmd1 = \"cp {}_{}.icoord {}_{}.refine_icoord\".format(ROOTNAME,LEVEL, ROOTNAME,LEVEL)\n            cmd2 = \"cp {}_{}.iedges {}_{}.refine_iedges\".format(ROOTNAME,LEVEL, ROOTNAME,LEVEL)\n            # print cmd1\n            # print cmd2\n            os.system(cmd1)\n            os.system(cmd2)\n\n    # finally we have to convert back to original coord file\n    cmd = \"cp {}.refine_icoord {}.icoord\".format(ROOTNAME,ROOTNAME)\n    # print cmd\n    os.system(cmd)\n\n    cmd = \"cp {}.refine_iedges {}.iedges\".format(ROOTNAME,ROOTNAME)\n    # print cmd\n    os.system(cmd)\n\n    cmd = \"{}/recoord -e {}\".format(BINDIR,ROOTNAME)\n    # print cmd\n    os.system(cmd)\n    zoom_time.append(refine_time)\n    # erase miscellaneous .ints, .icoords, .iedges, and .parms\n    # os.system(\"rm *.int; rm *.icoord; rm *.iedges; rm {}*.parms;\".format(ROOTNAME))\n    # print \"----- RECURSIVE LAYOUT SHELL COMPLETE -----\"\n\ndef store_maxlevel():\n    with open(\"{}.maxlevel\".format(ROOTNAME),\"w\") as f:\n        f.write(\"{}\\n\".format(MAXLEVEL))\n\ndef load_maxlevel():\n    global MAXLEVEL\n    with open(\"{}.maxlevel\".format(ROOTNAME),\"r\") as f:\n        MAXLEVEL = int(f.readline().rstrip(\"\\n\"))\n\nif __name__ == '__main__':\n    parser = argparse.ArgumentParser(description='Process...')\n    parser.add_argument('--dataset', type=int, default=20, help='dataset id')\n    parser.add_argument('--k', type=int, default=25, help='max number of clusters on the coarsest level')\n    parser.add_argument('--type', type=int, default=0, help='0: offline coarsen; 1: online refine and layout')\n    parser.add_argument('--sample', type=int, default=100, help='number of sampled zoom paths')\n    args = parser.parse_args()\n    K = args.k\n    ROOTNAME = config.filelist[args.dataset]\n\n    if args.type==0:\n        preprocessing()\n        coarsen()\n        print \"cluster time: \", cluster_time\n        store_maxlevel()\n    elif args.type==1:\n        load_maxlevel()\n        LEVEL = MAXLEVEL\n        load_multilevel()\n        for i in range(args.sample):\n            path = rand_selet_path()\n            # path = [10,17]\n            refine(path)\n            LEVEL = MAXLEVEL\n        print \"average zoom time: \", sum(zoom_time)/len(zoom_time)\n    else:\n        print \"wrong type: should be 0 or 1\"\n        exit(1)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../openords/examples/recursive/multilevel-openOrd.py b/../openords/examples/recursive/multilevel-openOrd.py
+--- a/../openords/examples/recursive/multilevel-openOrd.py	
++++ b/../openords/examples/recursive/multilevel-openOrd.py	
+@@ -89,13 +89,16 @@
+     level = MAXLEVEL-1
+     path = []
+     pool = cluster[level-1].keys()
++    print pool
+     item = random.choice(pool)
+-    path.append(item)
++    path.append(item-1)
+     while level>1:
+-        pool = cluster[level-1][path[-1]]
++        pool = cluster[level-1][path[-1]+1]
++        print pool
+         item = random.choice(pool)
+         path.append(item)
+         level -= 1
++    print "path: ",path
+     return path
+ 
+ 
+@@ -249,10 +252,10 @@
+     refine_time = 0
+     while LEVEL > 1:
+         # print "----- REFINING AT LEVEL {}-----".format(LEVEL)
+-
++        print cluster[LEVEL-2][path[idx]+1]
+         # refine
+         cmd = "{}/refine -r -s {} -l {} -t {} {}".format(BINDIR,SCALE,LEVEL,path[idx],ROOTNAME)
+-        # print cmd
++        print cmd
+         # os.system(cmd)
+         result = subprocess.Popen(shlex.split(cmd), stdout=subprocess.PIPE)
+         out, err = result.communicate()
+@@ -268,7 +271,7 @@
+             os.system(cmd)
+ 
+             cmd = "cp {}.refine_int {}.int".format(ROOTNAME,ROOTNAME)
+-            # print cmd
++            print cmd
+             os.system(cmd)
+ 
+             # if [ $MPI -eq 1 ]
+@@ -277,7 +280,7 @@
+             #   mpiexec $MPIBIN/layout -r 0 -p -e -c $FINAL_CUT $MPIDATA/$ROOTNAME
+ 
+             cmd = "{}/layout -r 0 -p -e -c {} {}".format(BINDIR,FINAL_CUT,ROOTNAME)
+-            # print cmd
++            print cmd
+             # os.system(cmd)
+             result = subprocess.Popen(shlex.split(cmd), stdout=subprocess.PIPE)
+             out, err = result.communicate()
+@@ -298,7 +301,7 @@
+             os.system(cmd)
+ 
+             cmd = "cp {}_{}.refine_int {}_{}.int".format(ROOTNAME,LEVEL,ROOTNAME,LEVEL)
+-            # print cmd
++            print cmd
+             os.system(cmd)
+ 
+             # if [ $MPI -eq 1 ]
+@@ -306,7 +309,7 @@
+             #   print "mpiexec" $MPIBIN"/layout -r 0 -p -e -c" $REFINE_CUT $MPIDATA"/"$ROOTNAME"_"$LEVEL
+             #   mpiexec $MPIBIN/layout -r 0 -p -e -c $REFINE_CUT $MPIDATA/$ROOTNAME"_"$LEVEL
+             cmd = "{}/layout -r 0 -p -e -c {} {}_{}".format(BINDIR,REFINE_CUT,ROOTNAME,LEVEL)
+-            # print cmd
++            print cmd
+             # os.system(cmd)
+             result = subprocess.Popen(shlex.split(cmd), stdout=subprocess.PIPE)
+             out, err = result.communicate()
+@@ -355,7 +358,8 @@
+     args = parser.parse_args()
+     K = args.k
+     ROOTNAME = config.filelist[args.dataset]
+-
++    print ROOTNAME
++    # random.seed(1)
+     if args.type==0:
+         preprocessing()
+         coarsen()
+@@ -368,6 +372,7 @@
+         for i in range(args.sample):
+             path = rand_selet_path()
+             # path = [10,17]
++            # path = [1, 95, 1012, 3164, 19036, 75393]
+             refine(path)
+             LEVEL = MAXLEVEL
+         print "average zoom time: ", sum(zoom_time)/len(zoom_time)
+Index: ../evaluate.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import numpy as np\nimport networkx as nx\nimport math\nfrom numpy import arccos, array, dot, pi, cross\nfrom numpy.linalg import det, norm\nfrom MinimumBoundingBox import MinimumBoundingBox\nfrom pprviz import rotate\n\n\n# Given three colinear points p, q, r, the function checks if\n# point q lies on line segment 'pr'\ndef onSegment(p, q, r):\n    if ((q[0] <= max(p[0], r[0])) and (q[0] >= min(p[0], r[0])) and\n            (q[1] <= max(p[1], r[1])) and (q[1] >= min(p[1], r[1]))):\n        return True\n    return False\n\n\ndef orientation(p, q, r):\n    # to find the orientation of an ordered triplet (p,q,r)\n    # function returns the following values:\n    # 0 : Colinear points\n    # 1 : Clockwise points\n    # 2 : Counterclockwise\n\n    # See https://www.geeksforgeeks.org/orientation-3-ordered-points/amp/\n    # for details of below formula.\n\n    val = (float(q[1] - p[1]) * (r[0] - q[0])) - (float(q[0] - p[0]) * (r[1] - q[1]))\n    if (val > 0):\n\n        # Clockwise orientation\n        return 1\n    elif (val < 0):\n\n        # Counterclockwise orientation\n        return 2\n    else:\n\n        # Colinear orientation\n        return 0\n\n\n# The main function that returns true if\n# the line segment 'p1q1' and 'p2q2' intersect.\ndef isIntersect(p1, q1, p2, q2):\n    # Find the 4 orientations required for\n    # the general and special cases\n    o1 = orientation(p1, q1, p2)\n    o2 = orientation(p1, q1, q2)\n    o3 = orientation(p2, q2, p1)\n    o4 = orientation(p2, q2, q1)\n\n    # General case\n    if ((o1 != o2) and (o3 != o4)):\n        return True\n\n    # Special Cases\n\n    # p1 , q1 and p2 are colinear and p2 lies on segment p1q1\n    if ((o1 == 0) and onSegment(p1, p2, q1)):\n        return True\n\n    # p1 , q1 and q2 are colinear and q2 lies on segment p1q1\n    if ((o2 == 0) and onSegment(p1, q2, q1)):\n        return True\n\n    # p2 , q2 and p1 are colinear and p1 lies on segment p2q2\n    if ((o3 == 0) and onSegment(p2, p1, q2)):\n        return True\n\n    # p2 , q2 and q1 are colinear and q1 lies on segment p2q2\n    if ((o4 == 0) and onSegment(p2, q1, q2)):\n        return True\n\n    # If none of the cases\n    return False\n\n\n\"\"\"\nThe number of edge crossings in the drawing.\nThe ratio of edge crossing over all non-adjacent edges\nThe lower the better\nSee Crosslessness in Section 4.1.4 in https://arxiv.org/pdf/1710.04328.pdf\nOr Section 3 in https://pdfs.semanticscholar.org/be7e/4c447ea27e0891397ae36d8957d3cbcea613.pdf\n\"\"\"\n\n\ndef get_crossing(G, X):\n    res = 0\n    edges = G.edges()\n    n = len(X)\n    m = len(edges)\n    tot = m * (m - 1) / 2.0\n    for i in range(m):\n        e1 = edges[i]\n        for j in range(m):\n            if j <= i:\n                continue\n            e2 = edges[j]\n            if e1[0] == e2[0] or e1[1] == e2[1] or e1[0] == e2[1] or e1[1] == e2[0]:\n                continue\n            if isIntersect(X[e1[0]], X[e1[1]], X[e2[0]], X[e2[1]]):\n                res += 1\n    impossible = 0\n    for i in range(n):\n        d = len(G[i])\n        impossible += d * (d - 1)\n\n    impossible /= 2.0\n    return res / (tot - impossible)\n\n\ndef d(u, v):\n    return np.sqrt(np.sum((u - v) ** 2, axis=0))\n\n\ndef normalize(edges, X):\n    length = np.zeros(len(edges))\n    i = 0\n    for e in edges:\n        length[i] = d(X[e[0]], X[e[1]])\n        i += 1\n    normX = X / np.mean(length)\n    return normX\n\n\n\"\"\"\nThe variance of the edge lengths in the normalized drawing, \nwhere all of coordinates are divided by the mean edge length\nThe lower the better\n\"\"\"\n\n\ndef get_edge_length_variance(edges, normX):\n    length = np.zeros(len(edges))\n    i = 0\n    for e in edges:\n        length[i] = d(normX[e[0]], normX[e[1]])\n        i += 1\n    var = np.var(length)\n    return var\n\n\n\"\"\"\nThe sum of node replusion closys in the normalized drawing over all pairs of nodes.\nThe node replusion from ant pair of nodes is the reciprocal of the square of the distance between them.\nThe lower the better\n\"\"\"\n\n\n# See Section 2.2.1 in https://crpit.scem.westernsydney.edu.au/confpapers/CRPITV60Lee.pdf\n# Or Section 3 in https://dl.acm.org/doi/pdf/10.1145/234535.234538\ndef get_node_distribution(normX):\n    n = len(normX)\n    cost = 0\n    for u in range(n):\n        for v in range(n):\n            if u <= v:\n                continue\n            dist = d(normX[u], normX[v])\n            if dist==0:\n                cost = float('Inf')\n                break\n            else:\n                cost += 1 / (dist ** 2)\n    return cost\n\n\ndef node_edge_distance(A, B, P):\n    \"\"\" segment line AB, point P, where each one is an array([x, y]) \"\"\"\n    if all(A == P) or all(B == P):\n        return 0\n    if norm(B - A) == 0:\n        return d(A, P)\n    if arccos(dot((P - A) / norm(P - A), (B - A) / norm(B - A))) > pi / 2:\n        return norm(P - A)\n    if arccos(dot((P - B) / norm(P - B), (A - B) / norm(A - B))) > pi / 2:\n        return norm(P - B)\n    return norm(cross(A - B, A - P)) / norm(B - A)\n\n\ndef get_node_edge_distance(edges, normX):\n    res = 0\n    tot = 0\n    n = len(normX)\n    for u in range(n):\n        for e in edges:\n            if u == e[0] or u == e[1]:\n                continue\n            res += node_edge_distance(normX[e[0]], normX[e[1]], normX[u])\n            tot += 1\n    return res / tot\n\n\ndef cluster_extraction(X, comm):\n    totald = 0\n    n = len(X)\n    s = n * (n - 1) / 2.0\n    for u in range(n):\n        for v in range(n):\n            if u <= v:\n                continue\n            totald += d(X[u], X[v])\n    totald /= s\n\n    commd = 0\n    for i in comm:\n        c = comm[i]\n        if len(c) == 1:\n            continue\n        s = len(c) * (len(c) - 1) / 2.0\n        cd = 0\n        for u in c:\n            for v in c:\n                if u <= v:\n                    continue\n                cd += d(X[u], X[v])\n        cd /= s\n        commd += cd\n    commd /= len(comm)\n    ratio = commd / totald\n    return ratio\n\n\ndef get_atedge_length(edges, X):\n    edist = 0\n    vdist = 0\n    n = len(X)\n    for e in edges:\n        edist += d(X[e[0]], X[e[1]])\n    edist /= len(edges)\n\n    for u in range(n):\n        for v in range(n):\n            if u <= v:\n                continue\n            vdist += d(X[u], X[v])\n    vdist /= (n * n)\n    return edist / vdist\n\n\n# Goog layout should minimize the total edge length, see https://kar.kent.ac.uk/14297/1/graphicalDesignTechniques.pdf\ndef get_total_edge_length(edges, X):\n    length = 0\n    for e in edges:\n        length += d(X[e[0]], X[e[1]])\n\n    return length\n\n\n# Good layout should minimize the maximum edge length, see https://kar.kent.ac.uk/14297/1/graphicalDesignTechniques.pdf\ndef get_max_edge_length(edges, X):\n    length = 0\n    for e in edges:\n        dist = d(X[e[0]], X[e[1]])\n        if dist > length:\n            length = dist\n\n    return length\n\n\ndef cal_angle(vector1, vector2):\n    # x1, y1 = vector1\n    # x2, y2 = vector2\n    # inner_product = x1*x2 + y1*y2\n    # len1 = math.hypot(x1, y1)\n    # len2 = math.hypot(x2, y2)\n    # d = inner_product/(len1*len2)\n    # angle = math.degrees(math.acos(d))\n    # a1 = math.atan2(y1,x1)\n    # a2 = math.atan2(y2,x2)\n    # angle = math.fabs(a1)-math.fabs(a2)\n    # angle = math.fabs(math.degrees(angle))\n    n1 = np.linalg.norm(vector1)\n    n2 = np.linalg.norm(vector2)\n    if n1 == 0 or n2 == 0:\n        return 0\n    unit_vector_1 = vector1 / n1\n    unit_vector_2 = vector2 / n2\n    dot_product = np.dot(unit_vector_1, unit_vector_2)\n    if dot_product>=1.0:\n        return 0\n    angle = np.arccos(dot_product)\n    angle = math.fabs(math.degrees(angle))\n    return angle\n\n\n# See Minimum angle metric in Section 4.1.4 in https://arxiv.org/pdf/1710.04328.pdf\n# Or Section 6 in https://pdfs.semanticscholar.org/be7e/4c447ea27e0891397ae36d8957d3cbcea613.pdf\ndef get_min_angle():\n    return 0\n\n\n# see Angular Resolution in Section 3.2 in https://kar.kent.ac.uk/14297/1/graphicalDesignTechniques.pdf\ndef get_angular_resolution(G, X):\n    n = X.shape[0]\n    metric_angular = 0\n    for u in range(n):\n        nbrs = G.neighbors(u)\n        for vi in nbrs:\n            for vj in nbrs:\n                if vi >= vj:\n                    continue\n                pi = X[vi] - X[u]\n                pj = X[vj] - X[u]\n                angle = cal_angle(pi, pj)\n                metric_ij = 1.0 - min(15.0, angle) ** 2 / 15.0 / 15.0\n                metric_angular = metric_angular + metric_ij\n    return metric_angular\n\n\n# see Edge length variation Section 4.1.4 in https://arxiv.org/pdf/1710.04328.pdf\ndef uniform_edge_length_coefficient_variance(edges, X):\n    length = []\n    for e in edges:\n        length.append(d(X[e[0]], X[e[1]]))\n\n    lsigma = np.std(length)\n    lmu = np.mean(length)\n    lcv = lsigma / lmu\n    return lcv\n\n\ndef normalize_layout(X):\n    # points = []\n    # n = X.shape[0]\n    # for u in range(n):\n    #    points.append((X[u,0],X[u,1]))\n\n    # bounding_box = MinimumBoundingBox(points)  # returns namedtuple\n    # width = max(bounding_box.length_parallel, bounding_box.length_orthogonal)\n    # height = min(bounding_box.length_parallel, bounding_box.length_orthogonal)\n    # area = bounding_box.area/((width/10)**2) # suppose the width of the canvas is 10\n    # normX = X/(width/10)\n\n    rotatedX = rotate(\n        X)  # rotate to fix minimal bounding box, i.e., the rectangular covering all points with minimal area\n    width = rotatedX[:, 0].max() - rotatedX[:, 0].min()\n    height = rotatedX[:, 1].max() - rotatedX[:, 1].min()\n\n    wscale = width / 4  # fix the width of the canvas to be 4\n    hscale = width / 4  # scale height as width does\n\n    normX = rotatedX\n    normX[:, 0] = normX[:, 0] / wscale\n    normX[:, 1] = normX[:, 1] / hscale\n    return normX\n\n\n# See Section 3.1 in http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.9.3879&rep=rep1&type=pdf\n# See Section 3.2 in https://kar.kent.ac.uk/14297/1/graphicalDesignTechniques.pdf\n# See https://en.wikipedia.org/wiki/Graph_drawing#cite_note-11\ndef get_aspect_ratio(X):\n    width = X[:, 0].max() - X[:, 0].min()\n    height = X[:, 1].max() - X[:, 1].min()\n    aspect_graph = width / height\n    aspect_view = 4.0 / 3.0\n    metric_aspec = max(aspect_graph, aspect_view) / min(aspect_graph, aspect_view) - 1\n    return metric_aspec\n\n\ndef eva(G, X):\n    edges = G.edges()\n    # normX = normalize(edges, X)\n    normX = normalize_layout(X)\n    a = 0\n    b = 0\n    c = 0\n    d = 0\n    e = 0\n    f = 0\n    a = uniform_edge_length_coefficient_variance(edges, normX)\n    b = get_node_distribution(normX)\n    c = get_angular_resolution(G, normX)\n    d = get_crossing(G, normX)\n    e = get_aspect_ratio(normX)\n    return a, b, c, d, e, f\n\n\nif __name__ == '__main__':\n    G = nx.karate_club_graph()\n    n, m = G.number_of_nodes(), G.number_of_edges()\n    print(n, m)\n    edges = G.edges()\n    X = np.random.uniform(low=0, high=np.sqrt(2 * n - 2), size=(n, 2))\n    eva(G, X)\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../evaluate.py b/../evaluate.py
+--- a/../evaluate.py	
++++ b/../evaluate.py	
+@@ -5,6 +5,7 @@
+ from numpy.linalg import det, norm
+ from MinimumBoundingBox import MinimumBoundingBox
+ from pprviz import rotate
++from random import randrange
+ 
+ 
+ # Given three colinear points p, q, r, the function checks if
+@@ -165,6 +166,26 @@
+             else:
+                 cost += 1 / (dist ** 2)
+     return cost
++
++# See Section 2.2.1 in https://crpit.scem.westernsydney.edu.au/confpapers/CRPITV60Lee.pdf
++# Or Section 3 in https://dl.acm.org/doi/pdf/10.1145/234535.234538
++def sample_node_distribution(normX, N=1000000):
++    n = len(normX)
++    cost = 0
++    i = 0
++    while i < N:
++        u = randrange(n)
++        v = randrange(n)
++        if u==v:
++            continue
++        dist = d(normX[u], normX[v])
++        if dist==0:
++            cost = float('Inf')
++            break
++        else:
++            cost += 1 / (dist ** 2)
++        i += 1
++    return cost
+ 
+ 
+ def node_edge_distance(A, B, P):
+@@ -362,20 +383,19 @@
+ 
+ def eva(G, X):
+     edges = G.edges()
++    n = G.number_of_nodes()
+     # normX = normalize(edges, X)
+     normX = normalize_layout(X)
+-    a = 0
+-    b = 0
+-    c = 0
+-    d = 0
+-    e = 0
+-    f = 0
+     a = uniform_edge_length_coefficient_variance(edges, normX)
+-    b = get_node_distribution(normX)
++    N = 1000000
++    if n*n<N:
++        b = get_node_distribution(normX)
++    else:
++        b = sample_node_distribution(normX,N)
+     c = get_angular_resolution(G, normX)
+-    d = get_crossing(G, normX)
++    # d = get_crossing(G, normX)
+     e = get_aspect_ratio(normX)
+-    return a, b, c, d, e, f
++    return a, b, c, e
+ 
+ 
+ if __name__ == '__main__':
+Index: ../openords/src/average_link_clust.cpp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// This file contains the member definitions of the average_link class\n\n// The average_link class contains the ported awk code from Kevin Boyack.\n// The code is unmodified except for variable declarations and\n// various features that have been commented out.\n\n// Original explanation of algorithm:\n//\n// The \"importance\" rules are as follows:\n// \n// When forming a new cluster before the thresold, both elements get\n// assigned importance=1.  New clusters that are formed after the\n// threshold get assigned an importance of -1.\n// \n// When adding an element to a cluster, the element that \"pulled in\" the\n// added element has its importance incremented and the element added is\n// assigned importance=0, if before threshold.  If after the threshold, the\n// element added is assigned -1 (and the other element is unchanged).\n// \n// When joining, no importances are effected in any case.\n//\n// Joinability rules:\n// After the threshold, the following takes effect:\n// - All clusters formed before the cluster are \"unjoinable\"\n// - All new clusters of 2 elements are \"joinable\"\n// - Every time a joinable cluster grows by one it stays joinable\n// - When a pair of elements is considered, and they both already\n// belong to clusters:\n//      - If one or both clusters are joinable, join them,\n//        EVEN IF Z IS NOT LESS THAN 0\n//      - If they are both joinable, the new cluster is joinable,\n//        otherwise, the new cluster is not joinable\n\n// The function average_link contains the awk average link code.\n// pid1, pid2 are \"paper ids\" which must be integers but do\n// not necessarily have to be continuous, while dist, x1, y1, x2, y2\n// are floats where dist = sqrt( (x1-x2)^2 + (y1-y2)^2 ).\n// The code was originally called with each line of a file with\n// these quantities sorted in ascending order by dist.\n\n#include <iostream>\n#include <fstream>\n#include <math.h>\n#include <cstdlib>\n\n#include <average_link_clust.h>\n\n// The constructor allocates the space necessary to run the\n// average_link code and sets all variables to 0 (the default\n// in awk).  max_paper_id is the maximum integer id for all the papers\n// set_threshold is the value for THRESHOLD\n\naverage_link::average_link ( int set_max_paper_id, float set_threshold )\n{\n    nPairs = 0;\n    nClusters = 0;\n    papercount = 0;\n    nJoins = 0;\n    \n    // save max_paper_id\n    max_paper_id = set_max_paper_id;\n    \n    cluster.assign ( max_paper_id+1, 0 );\n    newcluster.assign ( max_paper_id+1, 0 );\n    sumdist.assign ( max_paper_id+1, (float)0.0 );\n    sumX.assign ( max_paper_id+1, (float)0.0 );\n    sumY.assign ( max_paper_id+1, (float)0.0 );\n    nPapers.assign ( max_paper_id+1, 0 );\n    nCords.assign ( max_paper_id+1, 0 );\n    joinable.assign ( max_paper_id+1, 0 );\n    importance.assign ( max_paper_id+1, 0 );\n    \n    THRESHOLD = set_threshold;\n}\n\nvoid average_link::next_line ( int pid1, int pid2, float dist,\n                              float x1, float y1, float x2, float y2 )\n{\n\n  // for debugging (test file input):\n  /*\n  cout << pid1 << \"\\t\" << pid2 << \"\\t\" << dist << \"\\t\"\n       << x1 << \"\\t\" << y1 << \"\\t\" << x2 << \"\\t\" << y2 << endl;\n  */\n  \n  // local awk variables\n  int cluster1, cluster2;//, temp; \n  int nPapers1, nPapers2, nCords1, nCords2;\n  float dx1, dx2, dy1, dy2, distclusters;\n  float avedist1, avedist2, distedge1, distedge2, dadd, expecteddist, Z;\n   \n  // nPairs keeps track of the number of lines we have done\n  nPairs++;\n\n  //  find cluster of pid1\n  cluster1 = cluster[pid1];\n  //temp = cluster1;\n  while (newcluster[cluster1] != 0) cluster1 = newcluster[cluster1];\n  cluster[pid1] = cluster1;  // cache/update, for future reference\n  //if (temp != 0 && cluster1 == 0) cout << \"somethingwronghere1\" << endl;\n\n  //  find cluster of pid2\n  cluster2 = cluster[pid2];\n  //temp = cluster2;\n  while (newcluster[cluster2] != 0) cluster2 = newcluster[cluster2];\n  cluster[pid2] = cluster2;  // cache/update, for future reference\n  //if (temp != 0 && cluster2 == 0) cout << \"somethingwronghere2\" << endl;\n\n  if (cluster1 == 0 && cluster2 == 0) {  // make a new cluster\n    nClusters++;\n    cluster[pid1] = nClusters;\n    cluster[pid2] = nClusters;\n    papercount += 2;\n    sumdist[nClusters] = 2 * dist;\n    sumX[nClusters] = x1 + x2;\n    sumY[nClusters] = y1 + y2;\n    nPapers[nClusters] = 2;\n    nCords[nClusters] = 2;\n    //cout << \"1 , \" << dist << endl; \n    //action[nActions] = 1;\n    //actionid1[nActions] = pid1;\n    //actionid2[nActions] = pid2;\n    //nActions++;\n    if (dist <= THRESHOLD) {\n       importance[pid1] = 1;\n       importance[pid2] = 1;\n    }\n    else {            // reminder: \"used to\" make new only if dist<=thresh\n       joinable[nClusters] = 1;\n       importance[pid1] = -1;\n       importance[pid2] = -1;\n    }\n  }\n  else if (cluster1 == 0) {  // add pid1 to pid2s cluster\n    cluster[pid1] = cluster2;\n    papercount++;\n    //  update position/width:\n    sumdist[cluster2] += dist;\n    sumX[cluster2] += x1;\n    sumY[cluster2] += y1;\n    nPapers[cluster2]++;\n    nCords[cluster2]++;\n    if (dist <= THRESHOLD) {\n\timportance[pid2]++;\n        //action[nActions] = 2;\n    }\n    else {\n\timportance[pid1]--;\n        //action[nActions] = 3;\n    }\n    //cout << \"0 , \" << dist << endl;\n    //actionid1[nActions] = pid1;\n    //actionid2[nActions] = pid2;\n    //nActions++;\n  }\n  else if (cluster2 == 0) {  // add pid2 to pid1s cluster\n    cluster[pid2] = cluster1;\n    papercount++;\n    //  update position/width:\n    sumdist[cluster1] += dist;\n    sumX[cluster1] += x2;\n    sumY[cluster1] += y2;\n    nPapers[cluster1]++;\n    nCords[cluster1]++;\n    if (dist <= THRESHOLD) {\n        importance[pid1]++;\n        //action[nActions] = 2;\n    }\n    else {\n\timportance[pid2]--;\n        //action[nActions] = 3;\n    }\n    //cout << \"0 , \" << dist << endl;\n    //actionid1[nActions] = pid2;\n    //actionid2[nActions] = pid1;\n    //nActions++;\n  }\n  else if (cluster1 != cluster2)  {  // maybe combine clusters\n\n   // this new conditional for logical fix\n   if (dist <= THRESHOLD || joinable[cluster1] == 1 || joinable[cluster2] == 1) {\n\n    nPapers1 = nPapers[cluster1];\n    nPapers2 = nPapers[cluster2];\n    nCords1 = nCords[cluster1];\n    nCords2 = nCords[cluster2];\n    dx1 = sumX[cluster1] / nPapers1;\n    dx2 = sumX[cluster2] / nPapers2;\n    dy1 = sumY[cluster1] / nPapers1;\n    dy2 = sumY[cluster2] / nPapers2;\n\n    distclusters = sqrt(((dx1 - dx2)*(dx1 - dx2)) + ((dy1 - dy2)*(dy1 - dy2)));\n    avedist1 = sumdist[cluster1] / nCords1;\n    avedist2 = sumdist[cluster2] / nCords2;\n    distedge1 = .564 * avedist1 * sqrt( (float)nPapers1 );\n    distedge2 = .564 * avedist2 * sqrt( (float)nPapers2 );\n    dadd = ((dist - avedist1) / 2) + ((dist - avedist2) / 2);\n    expecteddist = distedge1 + distedge2 + dadd;\n    Z = (distclusters - expecteddist) / dist;\n\n      if (Z < 0 || dist > THRESHOLD) {        // do the join\n\t    nJoins++;\n        nClusters++;\n        newcluster[cluster1] = nClusters;\n        newcluster[cluster2] = nClusters;\n        //  compute position/width of new cluster\n        sumdist[nClusters] = sumdist[cluster1] + sumdist[cluster2] + dist;\n        sumX[nClusters] = sumX[cluster1] + sumX[cluster2];\n        sumY[nClusters] = sumY[cluster1] + sumY[cluster2];\n        nPapers[nClusters] = nPapers[cluster1] + nPapers[cluster2];\n        nCords[nClusters] = nCords[cluster1] + nCords[cluster2] + 1;\n        //cout << \"-1 , \" << dist << endl;\n        //action[nActions] = 4;\n        //actionid1[nActions] = pid1;\n        //actionid2[nActions] = pid2;\n        //nActions++;\n\t    if (joinable[cluster1] == 1 && joinable[cluster2] == 1)\n\t      joinable[nClusters] == 1;\n      }\n    }\n  }\n\n  // else they are already in the same cluster\n\n}\n\n// This routine outputs the results of the average link clustering\n// algorithm.\n\nvoid average_link::output_clusters ( string filename, map < int, node> &node_info )\n{\n\n    // local awk variables\n    int i, curcluster, nJoinable, nJoinableElements;\n    curcluster = 0;\n    nJoinable = 0;\n    nJoinableElements = 0;\n    \n    int cluster1;\n    \n    vector<int> clusternumber;\n    clusternumber.assign ( max_paper_id+1, 0 );\n    \n    // show the cluster ID for each paper\n\n    //  renumbering scheme\n    for (i=1; i <= nClusters; i++) {\n        if (newcluster[i] == 0) {\n            curcluster++;\n\t    clusternumber[i] = curcluster;\n\t    if (joinable[i] == 1) nJoinable++;\n        }\n    }\n\n    //   for (i=0; i < papercount; i++) {\n    //   for (i=0; i <= 7226; i++) {\n    //   for (i=0; i <= 7300; i++) {\n    //   for (i=0; i <= 4000000; i++) {\n\n    ofstream clust_out ( filename.c_str() );\n    if ( !clust_out )\n    {\n        cout << \"Error: could not open \" << filename << \".  Program stopped.\" << endl;\n        exit(1);\n    }\n\n    for (i=0; i <= max_paper_id; i++) {\n        cluster1 = cluster[i];\n\tif (cluster1 != 0) {\n            while (newcluster[cluster1] != 0) cluster1 = newcluster[cluster1];\n\t    if (joinable[cluster1] == 1) nJoinableElements++;\n\t    cluster1 = clusternumber[cluster1];  // goes with renumbering scheme\n\t    clust_out << node_info[i].id << \"\\t\" << cluster1-1 << \"\\t\" << importance[i] << endl;\n//\t    cout<< i<<\" \"<<cluster1-1<<\" \"<<importance[i]<<endl;\n        }\n    }\n    clust_out.close();\n\n    //  PUT NO COMMAS IN THIS OUTPUT SO EACH LINE IS \"ONE\" FIELD OF STATS:\n    //cout << \"nClusters \" << nClusters << \"   nJoins \" << nJoins << \"  nJoinable \" << nJoinable << endl;\n    //cout << \"papercount \" << papercount << \"     nClusters \" << nClusters << endl;\n    //cout << \"nPairs \" << nPairs << \"   THRESHOLD: \" << THRESHOLD << endl;\n    //cout <<  \"nJoinableElements \" << nJoinableElements << endl;\n\n    // print out the actions (file 4):\n    //for (i=0; i < nActions; i++ ) {\n\t//print \"Action,\" action[i] \",\" actionid1[i] \",\" actionid2[i];\n    //}\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../openords/src/average_link_clust.cpp b/../openords/src/average_link_clust.cpp
+--- a/../openords/src/average_link_clust.cpp	
++++ b/../openords/src/average_link_clust.cpp	
+@@ -270,8 +270,9 @@
+             while (newcluster[cluster1] != 0) cluster1 = newcluster[cluster1];
+ 	    if (joinable[cluster1] == 1) nJoinableElements++;
+ 	    cluster1 = clusternumber[cluster1];  // goes with renumbering scheme
+-	    clust_out << node_info[i].id << "\t" << cluster1-1 << "\t" << importance[i] << endl;
+-//	    cout<< i<<" "<<cluster1-1<<" "<<importance[i]<<endl;
++	    clust_out << node_info[i].id << "\t" << cluster1 << "\t" << importance[i] << endl;
++//	    cerr << node_info[i].id << "\t" << cluster1 << "\t" << importance[i] << endl;
++	    //printf("%d , %d , %d\n", i, cluster1, importance[i]);
+         }
+     }
+     clust_out.close();
+Index: ../renumber.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import networkx as nx\nfrom config import filelist\nimport subprocess\nimport shlex\n\nif __name__ == '__main__':\n    for i in filelist:\n        dataname = filelist[i]\n        path = \"dataset/\" + dataname + \".txt\"\n        Gfull = nx.convert_node_labels_to_integers(nx.read_edgelist(path, nodetype=int))\n        nx.write_edgelist(Gfull,path,data=False)\n        cmd = \"./louvain/convert -i dataset/\"+ dataname + \".txt -o dataset/\"+dataname+\".bin\"\n        print cmd\n        result = subprocess.Popen(shlex.split(cmd), stdout=subprocess.PIPE)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../renumber.py b/../renumber.py
+--- a/../renumber.py	
++++ b/../renumber.py	
+@@ -4,11 +4,11 @@
+ import shlex
+ 
+ if __name__ == '__main__':
+-    for i in filelist:
++    for i in [31,32,33,34,35,36,37]:
+         dataname = filelist[i]
+         path = "dataset/" + dataname + ".txt"
+         Gfull = nx.convert_node_labels_to_integers(nx.read_edgelist(path, nodetype=int))
+         nx.write_edgelist(Gfull,path,data=False)
+-        cmd = "./louvain/convert -i dataset/"+ dataname + ".txt -o dataset/"+dataname+".bin"
+-        print cmd
+-        result = subprocess.Popen(shlex.split(cmd), stdout=subprocess.PIPE)
+\ No newline at end of file
++        # cmd = "./louvain/convert -i dataset/"+ dataname + ".txt -o dataset/"+dataname+".bin"
++        # print cmd
++        # result = subprocess.Popen(shlex.split(cmd), stdout=subprocess.PIPE)
+\ No newline at end of file
+Index: ../openords/src/coarsen.cpp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// \"Smart\" Coarsening for similarity graph based on results of average\n// link clustering and layout.\n//\n// This program performs coarsining on a similarity graph based on\n// the results of a average link clustering using layout.\n// The algorithm computes derived similarities for groups of nodes\n// by adding and possibly normalizing the the number of nodes in each group.\n//\n// The structure of the inputs and outputs of this code will be displayed\n// if the program is called without parameters, or if an erroneous\n// parameter is passed to the program.\n//\n// S. Martin\n// 1/27/2005\n\n// C++ library routines\n#include <iostream>\n#include <fstream>\n#include <map>\n#include <string>\n#include <deque>\n#include <vector>\n#include <math.h>\n#include \"time.h\"\n#include <cstdlib>\n\nusing namespace std;\n\n// layout routines and constants\n#include <coarsen_parse.h>\n\n// The following routine reads in the .clust file and records the\n// cluster membership and size information for future use.\n\nvoid read_clust ( string clust_file, map <int, int> &cluster_membership,\n                  map <int, int> &cluster_sizes, int &min_clust, int &max_clust,\n                  int &num_nodes, int &num_clusts )\n{\n  cerr << \"Reading .clust file ...\" << endl;\n\n  ifstream clust_in ( clust_file.c_str() );\n  if ( !clust_in )\n  {\n    cout << \"Error: could not open \" << clust_file << \".  Program terminated.\" << endl;\n    exit(1);\n  }\n\n  num_clusts = num_nodes = -1;\n  int int_id, clust_id, importance;\n  int lines_read = 0;\n  while ( !clust_in.eof() )\n  {\n    int_id = -1;\n    clust_in >> int_id >> clust_id >> importance;\n    if ( int_id != -1 )    // check that line is not empty\n    {\n      lines_read++;\n      cluster_membership[int_id] = clust_id;\n      if ( cluster_sizes.find (clust_id) == cluster_sizes.end() )\n        cluster_sizes[clust_id] = 0;\n      cluster_sizes[clust_id] = cluster_sizes[clust_id] + 1;\n      if ( clust_id > num_clusts ) num_clusts = clust_id+1;\n      if ( int_id > num_nodes ) num_nodes = int_id;\n    }\n  }\n\n  clust_in.close ();\n  num_nodes++;\n\n  // check that cluster ids go from 0 to #clusters-1 with no gaps (for layout)\n  for ( int i = 0; i < num_clusts; i ++ )\n    if ( cluster_sizes.find ( i ) == cluster_sizes.end() )\n    {\n        cout << \"Error: cluster ids are not sequential at \" << i <<\".\" << endl;\n        exit(1);\n    }\n\n  cerr << \"Read \" << lines_read << \" lines, with \" << num_nodes << \" nodes and \" << num_clusts\n       << \" clusters.\" << endl;\n\n  // compute max and min cluster sizes\n  min_clust = max_clust = cluster_sizes[0];\n  for ( int i = 0; i < num_clusts; i++ )\n  {\n    if ( min_clust > cluster_sizes[i] ) min_clust = cluster_sizes[i];\n    if ( max_clust < cluster_sizes[i] ) max_clust = cluster_sizes[i];\n  }\n\n  cerr << \"Maximum cluster size \" << max_clust << \", minimum cluster size \"\n       << min_clust << \".\" << endl;\n}\n\n// This routine scans the .full file to get the normalization denominators\nvoid get_denoms(string full_file, int memory_use, int num_nodes, int num_clusts,\n                map <int, int> &cluster_membership, vector <float> &denom_sims )\n{\n  cerr << \"Computing normalization denominators ...\" << endl;\n\n  // initialize denominators to zero\n  int i;\n  for ( i = 0; i < num_clusts; i++ )\n    denom_sims[i] = 0.0;\n\n  // run multiple scans of .full file and record denominators\n  ifstream in;\n  int mem_step = num_nodes/memory_use;\n  map <int, map<int, float> > sim_block;\n  map<int, float>::iterator sim_iter;\n  double sim_val;\n  int j, id1, id2;\n  for ( i = 0; i < memory_use; i++ )\n  {\n      int mem_start = mem_step*i;\n      int mem_stop = mem_step*(i+1);\n      if ( i+1 == memory_use )\n        mem_stop = num_nodes;\n\n      // scan in the similarities for a block of nodes\n      cerr << \"Scan \" << i+1 << \" of .full file ...\" << endl;\n      in.open (full_file.c_str());\n      if ( !in )\n      {\n        cout << \"Error: could not open .full file.\" << endl;\n        exit(1);\n      }\n\t  //int dummy_num_nodes, dummy_num_edges;\n\t  //in >> dummy_num_nodes >> dummy_num_edges;\n\n      while ( !in.eof() )\n      {\n        id1 = -1;\n        in >> id1 >> id2 >> sim_val;\n        if ( id1 >= 0 )\n        {\n          // is id1 or id2 within our block of interest?\n          if ( (mem_start <= id1) & (id1 < mem_stop) )\n            sim_block[id1][id2] = sim_val;\n          if ( (mem_start <= id2) & (id2 < mem_stop) )\n            sim_block[id2][id1] = sim_val;\n        }\n      }\n      in.close();\n      in.clear();\n\n      // compute denominator sums\n      for ( j = mem_start; j < mem_stop; j++ )\n        for ( sim_iter = sim_block[j].begin();\n              sim_iter != sim_block[j].end();\n              sim_iter++ )\n          denom_sims[cluster_membership[j]] = denom_sims[cluster_membership[j]] + sim_iter->second;\n\n      // erase block of similarities\n      sim_block.clear();\n  }\n}\n\n// Now we do the actual coarsening\nvoid coarsen_full ( string full_file, string full_out_file, string int_out_file,\n                    int memory_use, int num_clusts, map <int, int> &cluster_sizes,\n                    int min_clust, int max_clust, int *topn_links,\n                    map <int, int> &cluster_membership, vector <float> &denom_sims )\n{\n  cerr << \"Coarsening graph ...\" << endl;\n\n  ofstream out_full ( full_out_file.c_str() );\n  if ( !out_full )\n  {\n    cout << \"Error: could not open \" << full_out_file << \".\" << endl;\n    exit(1);\n  }\n  //out_full << num_clusts << \"\\t\" << 0 << endl;\n\n  ofstream out_int ( int_out_file.c_str() );\n  if ( !out_int )\n  {\n    cout << \"Error: could not open \" << int_out_file << \".\" << endl;\n    exit(1);\n  }\n  //out_int << num_clusts << \"\\t\" << 0 << endl;\n\n  // run multiple scans of .full file\n  FILE *in;\n  int mem_step = num_clusts/memory_use;\n  map <int, map<int, float> > sim_block;\n  map <int, map<int, float> > coarse_sim;\n  map<int, map<int,float> >::iterator row_iter;\n  map<int,float>::iterator col_iter;\n  multimap<float, int> sim_row;\n  multimap<float, int>::iterator sim_row_iter;\n  double sim_val;\n  int i, j, k, id1, id2;\n  int topn;\n  for ( i = 0; i < memory_use; i++ )\n  {\n      int mem_start = mem_step*i;\n      int mem_stop = mem_step*(i+1);\n      if ( i+1 == memory_use )\n        mem_stop = num_clusts;\n\n      // scan in the similarities for a block of nodes\n//      cout << \"Scan \" << i+1 << \" of .full file ...\" << endl;\n      in = fopen (full_file.c_str(),\"r\");\n      if ( !in )\n      {\n        cout << \"Error: could not open .full file.\" << endl;\n        exit(1);\n      }\n//\t  int dummy_num_nodes, dummy_num_edges;\n//\t  in >> dummy_num_nodes >> dummy_num_edges;\n//      cout<<dummy_num_nodes<<dummy_num_edges<<endl;\n      while (fscanf(in,\"%d%d%lf\",&id1,&id2,&sim_val)==3)\n      {\n//        in >> id1 >> id2 >> sim_val;\n//        printf(\"%d %d\\n\",id1,id2);\n        if ( id1 >= 0 )\n        {\n          // is id1 or id2 within our block of interest?\n          if ( (mem_start <= cluster_membership[id1]) &\n               (cluster_membership[id1] < mem_stop) )\n            sim_block[id1][id2] = sim_val;\n          if ( (mem_start <= cluster_membership[id2]) &\n               (cluster_membership[id2] < mem_stop) )\n            sim_block[id2][id1] = sim_val;\n        }\n      }\n//      in.close();\n//      in.clear();\n//      cout<<full_file<<\": read finish\"<<endl;\n\n      cerr << \"Computing similarities ...\" << endl;\n      // compute cluster similarities\n      for ( row_iter = sim_block.begin();\n            row_iter != sim_block.end(); row_iter++ )\n        for ( col_iter = row_iter->second.begin();\n              col_iter != row_iter->second.end(); col_iter++ )\n        {\n           j = cluster_membership[row_iter->first];\n           k = cluster_membership[col_iter->first];\n           if ( coarse_sim.find (j) == coarse_sim.end() )\n             coarse_sim[j][k] = 0.0;\n           if ( coarse_sim[j].find(k) == coarse_sim[j].end() )\n             coarse_sim[j][k] = 0.0;\n           coarse_sim[j][k] = coarse_sim[j][k] + col_iter->second;\n        }\n      \n      cerr << \"Writing out to .full file ...\" << endl;\n      \n      // write out to .full file & normalize similarities\n      for ( row_iter = coarse_sim.begin();\n            row_iter != coarse_sim.end(); row_iter++ )\n        for ( col_iter = row_iter->second.begin();\n              col_iter != row_iter->second.end(); col_iter++ )\n        {\n           j = row_iter->first;\n           k = col_iter->first;\n\t\t   // output self links only if there are no other links\n           if ( (j != k) ) // || (row_iter->second.size() == 1) )\n             out_full << j << \"\\t\" << k << \"\\t\" << coarse_sim[j][k] << endl;\n\t\t   // normalize for .int output\n           coarse_sim[j][k] = coarse_sim[j][k]/sqrt(denom_sims[j]*denom_sims[k]);\n        }\n\n      cerr << \"Writing out to .int file ...\" << endl;\n            \n      // write out top n links\n      for ( row_iter = coarse_sim.begin();\n            row_iter != coarse_sim.end(); row_iter++ )\n      {\n        // sort row\n        j = row_iter->first;\n        sim_row.clear();\n        for ( col_iter = coarse_sim[j].begin();\n              col_iter != coarse_sim[j].end();\n              col_iter++ )\n            if ( (j != col_iter->first) ) // || (coarse_sim[j].size() == 1) )\n               sim_row.insert (pair<float,int>(col_iter->second,col_iter->first));\n\n        // output top n for this cluster\n        if ( min_clust == max_clust )        // if all clusters are the same use min links\n          topn = topn_links[0];\n        else                                 // variable number of clusters\n          topn = (int)((float)topn_links[0] + (float)(topn_links[1]-topn_links[0]) *\n                ((log((float)cluster_sizes[j]) - log((float)min_clust))/\n\t\t\t\t(log((float)max_clust)-log((float)min_clust))));\n\n\n\t\tfor ( k = 0, sim_row_iter = sim_row.end();\n              (k < topn) && (sim_row_iter != sim_row.begin());\n              k++ )\n        {\n          sim_row_iter--;\n          out_int << j << \"\\t\" << sim_row_iter->second << \"\\t\" << sim_row_iter->first << endl;\n        }\n      }\n\n\n      // erase blocks of similarities\n      sim_block.clear();\n      coarse_sim.clear();\n\n  }\n  out_full.close();\n  out_int.close();\n\n}\n\ndouble time_by(double start){\n    return (clock()-start)/CLOCKS_PER_SEC;\n}\n\nint main(int argc, char **argv)\n{\n    // get user input\n    parse command_line ( argc, argv );\n\n    // read .clust file\n    map <int, int> cluster_membership;\n    map <int, int> cluster_sizes;\n    int min_clust, max_clust;\n    int num_nodes, num_clusts;\n    read_clust ( command_line.clust_file, cluster_membership, cluster_sizes,\n                 min_clust, max_clust, num_nodes, num_clusts );\n    \n    /*\n    // output cluster membership (for debugging)\n    map <int, int>::iterator cm_iter;\n    for ( cm_iter = cluster_membership.begin();\n          cm_iter != cluster_membership.end();\n          cm_iter++ )\n          cout << cm_iter->first << \" \" << cm_iter->second << endl;\n    */\n    double start = clock();\n    // next we compute denominators for normalization\n    vector <float> denom_sims ( num_clusts );\n    if ( command_line.normalized_output )\n      get_denoms ( command_line.full_file, command_line.memory_use, num_nodes, num_clusts,\n                   cluster_membership, denom_sims );\n    else\n      for ( int i = 0; i < num_clusts; i++ )\n        denom_sims[i] = 1.0;\n      \n    // create new .full file\n    coarsen_full ( command_line.full_file, command_line.full_out_file,\n                   command_line.int_out_file, command_line.memory_use,\n                   num_clusts, cluster_sizes, min_clust, max_clust,\n                   command_line.top_n_links, cluster_membership, denom_sims );\n\n    cout<<\"CoarsenTime:\"<<time_by(start)<<endl;\n    cerr << \"Program finished successfully.\" << endl;\n}\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../openords/src/coarsen.cpp b/../openords/src/coarsen.cpp
+--- a/../openords/src/coarsen.cpp	
++++ b/../openords/src/coarsen.cpp	
+@@ -55,11 +55,11 @@
+     if ( int_id != -1 )    // check that line is not empty
+     {
+       lines_read++;
+-      cluster_membership[int_id] = clust_id;
+-      if ( cluster_sizes.find (clust_id) == cluster_sizes.end() )
+-        cluster_sizes[clust_id] = 0;
+-      cluster_sizes[clust_id] = cluster_sizes[clust_id] + 1;
+-      if ( clust_id > num_clusts ) num_clusts = clust_id+1;
++      cluster_membership[int_id] = clust_id-1;
++      if ( cluster_sizes.find (clust_id-1) == cluster_sizes.end() )
++        cluster_sizes[clust_id-1] = 0;
++      cluster_sizes[clust_id-1] = cluster_sizes[clust_id-1] + 1;
++      if ( clust_id > num_clusts ) num_clusts = clust_id;
+       if ( int_id > num_nodes ) num_nodes = int_id;
+     }
+   }
+Index: ../openords/src/refine.cpp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// \"Smart\" Refining for similarity graph based on results of average\n// link clustering and layout layout.\n//\n// This program performs the refine step for the recursive layout,\n// opposite the coarsen.cpp program\n//\n// The structure of the inputs and outputs of this code will be displayed\n// if the program is called without parameters, or if an erroneous\n// parameter is passed to the program.\n//\n// S. Martin\n// 5/3/2006\n\n// C++ library routines\n#include <iostream>\n#include <fstream>\n#include <map>\n#include <set>\n#include <string>\n#include \"time.h\"\n#include <deque>\n#include <vector>\n#include <cstdlib>\n\nusing namespace std;\n\n// layout routines and constants\n#include <refine_parse.h>\n\n// The following routine reads in the .clust file and records the\n// cluster membership and size information for future use.\n\nvoid read_clust ( string clust_file, map <int, set<int> > &cluster_membership,\n                  map <int, int> &cluster_sizes, int &min_clust, int &max_clust,\n                  int &num_nodes, int &num_clusts )\n{\n  cerr << \"Reading .clust file ...\" << endl;\n  \n  ifstream clust_in ( clust_file.c_str() );\n  if ( !clust_in )\n  {\n    cout << \"Error: could not open \" << clust_file << \".  Program terminated.\" << endl;\n    exit(1);\n  }\n\n  num_clusts = num_nodes = -1;\n  int int_id, clust_id, importance;\n  int lines_read = 0;\n  while ( !clust_in.eof() )\n  {\n    int_id = -1;\n    clust_in >> int_id >> clust_id >> importance;\n    if ( int_id != -1 )    // check that line is not empty\n    {\n      lines_read++;\n      cluster_membership[clust_id].insert(int_id);\n      if ( cluster_sizes.find (clust_id) == cluster_sizes.end() )\n        cluster_sizes[clust_id] = 0;\n      cluster_sizes[clust_id] = cluster_sizes[clust_id] + 1;\n      if ( clust_id > num_clusts ) num_clusts = clust_id;\n      if ( int_id > num_nodes ) num_nodes = int_id;\n    }  \n  }\n    \n  clust_in.close ();\n  num_nodes; \n  \n  // check that cluster ids go from 0 to #clusters-1 with no gaps (for layout)\n  for ( int i = 0; i < num_clusts; i ++ )\n    if ( cluster_sizes.find ( i ) == cluster_sizes.end() )\n    {\n        cout << \"Error: cluster ids are not sequential at \" << i <<\".\" << endl;\n        exit(1);\n    }\n  \n  cerr << \"Read \" << lines_read << \" lines, with \" << num_nodes << \" nodes and \" << num_clusts\n       << \" clusters.\" << endl;\n       \n  // compute max and min cluster sizes\n  min_clust = max_clust = cluster_sizes[0];\n  for ( int i = 0; i < num_clusts; i++ )\n  {\n    if ( min_clust > cluster_sizes[i] ) min_clust = cluster_sizes[i];\n    if ( max_clust < cluster_sizes[i] ) max_clust = cluster_sizes[i];\n  }\n  \n  cerr << \"Maximum cluster size \" << max_clust << \", minimum cluster size \"\n       << min_clust << \".\" << endl;\n}\n\n// The next function transforms the blob file to a real file\nvoid create_real ( string blob_file, string real_file,\n\t\t\t\t   map < int, set<int> > clusters,\n\t\t\t\t   set < int > &id_catalog, int target,\n\t\t\t\t   float scale, float x_scale, float y_scale )\n{\n  cerr << \"Reading .icoord file ...\" << endl;\n  \n  ifstream blob_in ( blob_file.c_str() );\n  if ( !blob_in )\n  {\n    cout << \"Error: could not open \" << blob_file << \".  Program terminated.\" << endl;\n    exit(1);\n  }\n  \n  ofstream real_out ( real_file.c_str() );\n  if ( !real_out )\n  {\n\tcout << \"Error: could not open \" << real_file << \".  Program terminated.\" << endl;\n\texit(1);\n  }\n\n  cerr << \"Writing .real file ...\" << endl;\n  int int_id;\n  float x_coord, y_coord;\n  set<int>::iterator clust_iter;\n  while ( !blob_in.eof() )\n  {\n    int_id = -1;\n    blob_in >> int_id >> x_coord >> y_coord;\n    if ( int_id != -1 )    // check that line is not empty\n        if (int_id!=target)\n            continue;\n\t    for ( clust_iter = clusters[int_id].begin();\n\t\t\t  clust_iter != clusters[int_id].end();\n\t\t\t  clust_iter++ )\n\t\t{\n\t\t\tid_catalog.insert ( *clust_iter );\n\t\t\tif ( scale > 0.0 )\n\t\t\t\treal_out << *clust_iter << \"\\t\" << x_coord*scale/x_scale\n\t\t\t\t         << \"\\t\" << y_coord*scale/y_scale << endl;\n\t\t\telse\n\t\t\t\treal_out << *clust_iter << \"\\t\" << x_coord\n\t\t\t\t         << \"\\t\" << y_coord << endl;\n        }\n\t    break;\n  }\n\n  blob_in.close();\n  real_out.close();\n  \n}\n\n// This function scans through the .icoord file to find the largest magnitude\n// (in absolute value) x and y values, so that the output file may be scaled\n// up or down according to the scale parameter\n\nvoid get_scales ( string coord_file, int target, float &x_scale, float &y_scale )\n{\n  cerr << \"Finding max and min x and y values for scaling ...\" << endl;\n  \n  ifstream blob_in ( coord_file.c_str() );\n  if ( !blob_in )\n  {\n    cout << \"Error: could not open \" << coord_file << \".  Program terminated.\" << endl;\n    exit(1);\n  }\n\n  float max_x, max_y, min_x, min_y;\n  max_x = max_y = -1.0;\n  min_x = min_y = 1.0;\n  float x_coord, y_coord;\n  int int_id;\n  \n  while ( !blob_in.eof() )\n  {\n    int_id = -1;\n    blob_in >> int_id >> x_coord >> y_coord;\n    if(int_id!=target)\n        continue;\n    if ( int_id != -1 )    // check that line is not empty\n    {\n\t\tif ( x_coord > max_x ) max_x = x_coord;\n\t\tif ( x_coord < min_x ) min_x = x_coord;\n\t\tif ( y_coord > max_y ) max_y = y_coord;\n\t\tif ( y_coord < min_y ) min_y = y_coord;\n    }\n    break;\n  }\n  \n  blob_in.close();\n\n  if ( max_x > -min_x ) x_scale = max_x; else x_scale = -min_x;\n  if ( max_y > -min_y ) y_scale = max_y; else y_scale = -min_y;\n  \n  //cout << \"Found \" << x_scale << \" for x-coordinate scale, and \" << y_scale\n  //     << \" for y-coordinate scale.\" << endl;  \n\t   \n  // preserve x/y aspect ratio\n  if ( x_scale > y_scale ) y_scale = x_scale; else x_scale = y_scale;\n\n  cerr << \"Using \" << x_scale << \" as scale factor.\" << endl;\n}\n\nvoid create_int ( string coarse_file, string refine_file,\n\t\t\t\t  set < int > &id_catalog )\n{\n  cerr << \"Converting .coarse_int to .refine_int ...\" << endl;\n\n  ifstream coarse_in ( coarse_file.c_str() );\n  if ( !coarse_in )\n  {\n    cout << \"Error: could not open \" << coarse_file << \".  Program terminated.\" << endl;\n    exit(1);\n  }\n  \n  ofstream refine_out ( refine_file.c_str() );\n  if ( !refine_out )\n  {\n\tcout << \"Error: could not open \" << refine_file << \".  Program stopped.\" << endl;\n\texit(1);\n  }\n  \n  int id1, id2;\n  float edge_weight;\n  while ( !coarse_in.eof () )\n  {\n\t id1 = -1;\n\t coarse_in >> id1 >> id2 >> edge_weight;\n\t if ( id1 >= 0 )\n\t {\n\t\tif ( (id_catalog.find(id1) != id_catalog.end()) &&\n\t\t\t (id_catalog.find(id2) != id_catalog.end()) )\n\t\t\t refine_out << id1 << \"\\t\" << id2 << \"\\t\" << edge_weight << endl;\n\t }\n  }\n  \n  coarse_in.close();\n  refine_out.close();\n  \n}\n\ndouble time_by(double start){\n    return (clock()-start)/CLOCKS_PER_SEC;\n}\n\nint main(int argc, char **argv)\n{\t\n    // get user input\n    parse command_line ( argc, argv );\n\t\n    // read .clust file\n    map <int, set<int> > cluster_membership;\n    map <int, int> cluster_sizes;\n    int min_clust, max_clust;\n    int num_nodes, num_clusts; \n    read_clust ( command_line.clust_file, cluster_membership, cluster_sizes,\n                 min_clust, max_clust, num_nodes, num_clusts );\n\n\t/*\n    // output clusters (for debugging)\n    map <int, set<int> >::iterator cm_iter;\n\tset<int>::iterator clust_iter;\n    for ( cm_iter = cluster_membership.begin();\n          cm_iter != cluster_membership.end();\n          cm_iter++ )\n\t\t  {\n\t\t    cout << cm_iter->first << \": \";\n\t\t\tfor ( clust_iter = (cm_iter->second).begin();\n\t\t\t\t  clust_iter != (cm_iter->second).end();\n\t\t\t\t  clust_iter++ )\n\t\t\t\tcout << *clust_iter << \" \";\n\t\t\tcout << endl;\n\t\t  }\n\t*/\t  \n\n    double start = clock();\n\t// check if user wants us to scale the data\n\tfloat x_scale, y_scale;\n\tif ( command_line.scale > 0 )\n\t  get_scales ( command_line.blob_file, command_line.target, x_scale, y_scale );\n\t   \n\t// next we read the .blob file and output the .real file\n\tset < int > id_catalog;\n//\tcout<<command_line.blob_file<<endl;\n\tint target = command_line.target;\n//    set<int> &member = cluster_membership[target];\n//    for(int i:member)\n//        cout<<i<<\" \";\n//    cout<<endl;\n\tcreate_real ( command_line.blob_file, command_line.real_file,\n\t\t\t\t  cluster_membership, id_catalog,target ,\n\t\t\t\t  command_line.scale, x_scale, y_scale );\n\t\n\t/*\n\t// print out id_catalog (for debugging)\n\tset <int>::iterator cat_iter;\n\tfor ( cat_iter = id_catalog.begin(); cat_iter != id_catalog.end(); cat_iter++ )\n\t  cout << *cat_iter << endl;\n\t*/\n\t\n\t// do we need to convert a .coarse_int file?\n\tif ( command_line.refine_int )\n\t  create_int ( command_line.coarse_file, command_line.refine_file,\n\t\t\t\t   id_catalog );\n\n\tcout<<\"RefineTime:\"<<time_by(start)<<endl;\n    cerr << \"Program finished successfully.\" << endl;\n\t\n}\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../openords/src/refine.cpp b/../openords/src/refine.cpp
+--- a/../openords/src/refine.cpp	
++++ b/../openords/src/refine.cpp	
+@@ -53,10 +53,10 @@
+     if ( int_id != -1 )    // check that line is not empty
+     {
+       lines_read++;
+-      cluster_membership[clust_id].insert(int_id);
+-      if ( cluster_sizes.find (clust_id) == cluster_sizes.end() )
+-        cluster_sizes[clust_id] = 0;
+-      cluster_sizes[clust_id] = cluster_sizes[clust_id] + 1;
++      cluster_membership[clust_id-1].insert(int_id);
++      if ( cluster_sizes.find (clust_id-1) == cluster_sizes.end() )
++        cluster_sizes[clust_id-1] = 0;
++      cluster_sizes[clust_id-1] = cluster_sizes[clust_id-1] + 1;
+       if ( clust_id > num_clusts ) num_clusts = clust_id;
+       if ( int_id > num_nodes ) num_nodes = int_id;
+     }  
+@@ -118,7 +118,9 @@
+   {
+     int_id = -1;
+     blob_in >> int_id >> x_coord >> y_coord;
+-    if ( int_id != -1 )    // check that line is not empty
++    if ( int_id == -1 )
++       continue; // check that line is not empty
++//        cerr<<int_id<< " ";
+         if (int_id!=target)
+             continue;
+ 	    for ( clust_iter = clusters[int_id].begin();
+@@ -219,7 +221,7 @@
+ 	 coarse_in >> id1 >> id2 >> edge_weight;
+ 	 if ( id1 >= 0 )
+ 	 {
+-		if ( (id_catalog.find(id1) != id_catalog.end()) &&
++		if ( (id_catalog.find(id1) != id_catalog.end()) ||
+ 			 (id_catalog.find(id2) != id_catalog.end()) )
+ 			 refine_out << id1 << "\t" << id2 << "\t" << edge_weight << endl;
+ 	 }
+@@ -255,12 +257,12 @@
+           cm_iter != cluster_membership.end();
+           cm_iter++ )
+ 		  {
+-		    cout << cm_iter->first << ": ";
++		    cerr << cm_iter->first << ": ";
+ 			for ( clust_iter = (cm_iter->second).begin();
+ 				  clust_iter != (cm_iter->second).end();
+ 				  clust_iter++ )
+-				cout << *clust_iter << " ";
+-			cout << endl;
++				cerr << *clust_iter << " ";
++			cerr << endl;
+ 		  }
+ 	*/	  
+ 
+Index: ../cluster-ppr-relative.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import numpy as np\nimport networkx as nx\nimport sys\nimport time\nimport matplotlib\nmatplotlib.use('Agg')\nfrom evaluate import eva,cluster_extraction,normalize\nfrom pprviz import *\nfrom config import filelist\nfrom load_multilevel import *\nfrom gen_ppr_embedding import load_emb\n\n# global supernode_list, mapping_data, A, n\nA=None\nGfull = None\nsupernode_list=None\nmapping_data=None\nX=None\nY=None\ndim=None\n\ndef zoom_in_old(target=\"root\"):\n    cluster = supernode_list[target]\n    print(\"supernodes at this level:\", cluster)\n    start = time.time()\n    if target==\"root\":\n        Xmds, r = get_component_position(cluster=cluster, mapping_data=mapping_data)\n        t = time.time() - start\n        plot(pos = Xmds, radius= r, name =\"./output/{}-{}-degreerelativemds\".format(filelist[dataid], target))\n        print (\"zoom-in time:{}s\".format(t))\n        return\n\n    G, nodeweight = merge_edges(cluster=cluster, mapping_data=mapping_data, adjacent_matrix=A, n=n)\n    edges = G.edges()\n    if len(cluster)<3:\n        t = time.time() - start\n        simpe_plot(G=G, nodeweight=nodeweight, label=cluster, name=\"./output/{}-{}-degreerelativemds\".format(filelist[dataid], target))\n        print (\"zoom-in time:{}s\".format(t))\n        return\n    pprT = 15\n    Xmds, r = pprdegree_relativemds(G, nodeweight= nodeweight, t=pprT)\n    t = time.time() - start\n    print (\"zoom-in time:{}s\".format(t))\n    labels = []\n    for each in G:\n        if G.degree(each) > 1:\n            labels.append(each)\n    plot(pos=Xmds, edges=edges, radius = r, label=labels,\n         name=\"./output/{}-{}-degreerelativemds-old\".format(filelist[dataid], target))\n\ndef zoom_in_leaf(target=\"root\"):\n    cluster = supernode_list[target]\n    cluster = [int(each) for each in cluster]\n    size =len(cluster)\n    print(\"supernodes at this level:\", cluster)\n    print (\"cluster size:\",size)\n    start = time.time()\n    if target==\"root\":\n        Xmds, r = get_component_position(cluster=cluster, mapping_data=mapping_data)\n        t = time.time() - start\n        plot(pos = Xmds, radius= r, name =\"./output/{}-{}-degreerelativemds\".format(filelist[dataid], target))\n        print (\"zoom-in time:{}s\".format(t))\n        return\n\n    # P = preprocessing.normalize(A, norm='l1', axis=1)\n    pprT = 15\n    # PPR = get_ppr(P=P, t=pprT)\n    PPR=None\n    subG, nodeweight = get_subgraph(cluster=cluster, A=A, n=n, PPR=PPR)\n    # print (PPR)\n    # print (\"--------------------\")\n    if len(cluster)<3:\n        t = time.time() - start\n        simpe_plot(G=G, nodeweight=nodeweight, label=cluster, name=\"./output/{}-{}-degreerelativemds\".format(filelist[dataid], target))\n        print (\"zoom-in time:{}s\".format(t))\n        return\n\n    ep = 0.0005\n    PPR,R = backward_search(G=Gfull, S=cluster, epsilon=ep)\n\n    print (\"non-zero residual: \",len(R[R>0]))\n\n    Xmds, r = pprdegree_relativemds(PPR=PPR, nodeweight= nodeweight)\n    edges = subG.edges()\n    t = time.time() - start\n    print (\"zoom-in time:{}s\".format(t))\n\n    plot(pos=Xmds, edges=edges, radius = r, label=None,\n         name=\"./output/{}-{}-degreerelativemds-leaf-{}\".format(filelist[dataid], target,ep))\n\ndef zoom_in(target=\"root\"):\n    cluster = supernode_list[target]\n    print(\"supernodes at this level:\", cluster)\n    start = time.time()\n    if target==\"root\":\n        Xmds, r = get_component_position(cluster=cluster, mapping_data=mapping_data)\n        t = time.time() - start\n        plot(pos = Xmds, radius= r, name =\"./output/{}-{}-degreerelativemds-{}\".format(filelist[dataid], target, dim))\n        print (\"zoom-in time:{}s\".format(t))\n        return\n\n    # get X,Y matrix by appending all supernodes under the target\n    G, Xmat, Ymat, nodeweight = merge_edges_XY(cluster=cluster, mapping_data=mapping_data, X = X, Y = Y, adjacent_matrix=A, n=n)\n    edges = G.edges()\n    if len(cluster)<3:\n        t = time.time() - start\n        simpe_plot(G=G, nodeweight=nodeweight, label=cluster, name=\"./output/{}-{}-degreerelativemds\".format(filelist[dataid], target))\n        print (\"zoom-in time:{}s\".format(t))\n        return\n    PPR = np.dot(Xmat,Ymat.T)\n    minval = np.min(PPR)\n    maxval = np.max(PPR)\n    PPR = (PPR-minval)/(maxval-minval)\n\n    Xmds, r = pprdegree_relativemds(G, PPR=PPR, nodeweight= nodeweight)\n    t = time.time() - start\n    print (\"zoom-in time:{}s\".format(t))\n    plot(pos=Xmds, edges=edges, radius = r, label=cluster,\n         name=\"./output/{}-{}-degreerelativemds-{}\".format(filelist[dataid], target, dim))\n\n\nif __name__ == '__main__':\n    # global supernode_list, mapping_data, A, n\n    print (filelist)\n    dataid = raw_input('data id :')\n    dataid = int(dataid.encode(\"utf-8\"))\n    dataname = filelist[dataid]\n    hiefname = 'louvain/hierachy-output/%s.json'%dataname\n    mapfname = 'louvain/mapping-output/%s.txt'%dataname\n    print(\"loading clusters...\")\n    supernode_list, mapping_data = load_multilevel(hiefname, mapfname)\n    print(\"loading edges...\")\n    # path = \"/home/zhangsq/gviz-ppr/dataset/\" + dataname +\".txt\"\n    path = \"dataset/\" + dataname + \".txt\"\n    Gfull = nx.read_edgelist(path, nodetype=int)\n    A = nx.adjacency_matrix(Gfull)\n    n = Gfull.number_of_nodes()\n    # dim = 16\n    # print(\"loading embeddings...\")\n    # X,Y = load_emb(dataid, d=dim)\n    zoom_in(\"root\")\n    while True:\n        target = raw_input('zoom-in target(supernode name,type -1 to exit) :')\n        target = target.encode(\"utf-8\")\n        if target==\"-1\":\n            print (\"exit...\")\n            break\n        if target not in supernode_list:\n            print (\"error: no such supernode...\")\n            continue\n        zoom_in_leaf(target)\n\n    #a1, b1, c1, d1, e1, f1 = eva(G, Xmds)\n    #print(t, a1, b1, c1, d1, e1, f1)\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../cluster-ppr-relative.py b/../cluster-ppr-relative.py
+--- a/../cluster-ppr-relative.py	
++++ b/../cluster-ppr-relative.py	
+@@ -112,10 +112,10 @@
+     maxval = np.max(PPR)
+     PPR = (PPR-minval)/(maxval-minval)
+ 
+-    Xmds, r = pprdegree_relativemds(G, PPR=PPR, nodeweight= nodeweight)
++    Xmds, r = pprdegree_relativemds(G=G, PPR=PPR, nodeweight= nodeweight)
+     t = time.time() - start
+     print ("zoom-in time:{}s".format(t))
+-    plot(pos=Xmds, edges=edges, radius = r, label=cluster,
++    plot(pos=Xmds, edges=edges, radius = r, label=None,
+          name="./output/{}-{}-degreerelativemds-{}".format(filelist[dataid], target, dim))
+ 
+ 
+@@ -135,9 +135,9 @@
+     Gfull = nx.read_edgelist(path, nodetype=int)
+     A = nx.adjacency_matrix(Gfull)
+     n = Gfull.number_of_nodes()
+-    # dim = 16
+-    # print("loading embeddings...")
+-    # X,Y = load_emb(dataid, d=dim)
++    dim = 128
++    print("loading embeddings...")
++    X,Y = load_emb(dataid, d=dim)
+     zoom_in("root")
+     while True:
+         target = raw_input('zoom-in target(supernode name,type -1 to exit) :')
+Index: ../louvain/CMakeLists.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>cmake_minimum_required(VERSION 3.16)\nproject(louvain)\n\nset(CMAKE_CXX_STANDARD 14)\n\nset(CMAKE_CXX_FLAGS_DEBUG \"-g\")\n#set(CMAKE_CXX_FLAGS_DEBUG \"-O0\")\nset(CMAKE_CXX_FLAGS_RELEASE \"-O3\")\n\n\n\nfind_package(Boost)\n\nIF (Boost_FOUND)\n    include_directories(${Boost_INCLUDE_DIR})\n    ADD_DEFINITIONS( \"-DHAS_BOOST\" )\nendif()\n\ninclude_directories(.)\n\nadd_executable(louvain\n        community.cpp\n        community.h\n        graph.cpp\n        graph.h\n        function.cpp\n        function.h\n        graph_binary.cpp\n        graph_binary.h\n        main_community.cpp)\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../louvain/CMakeLists.txt b/../louvain/CMakeLists.txt
+--- a/../louvain/CMakeLists.txt	
++++ b/../louvain/CMakeLists.txt	
+@@ -1,4 +1,4 @@
+-cmake_minimum_required(VERSION 3.16)
++cmake_minimum_required(VERSION 3.13)
+ project(louvain)
+ 
+ set(CMAKE_CXX_STANDARD 14)
+Index: ../online-refine.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import numpy as np\nimport networkx as nx\nimport sys\nimport time\nimport matplotlib\nimport bisect\nimport itertools\nmatplotlib.use('Agg')\nfrom evaluate import eva,cluster_extraction,normalize\nfrom pprviz import *\nimport re\nfrom config import filelist\nfrom load_multilevel import *\nfrom scipy import sparse\nfrom numpy import fromfile\nfrom gen_ppr_embedding import load_emb\n\n# global supernode_list, mapping_data, A, n\nA=None\nGfull = None\nD = None\nsupernode_list=None\nmapping_data=None\nKMAX = -1\nKBEGIN = -1\nHubs = []\nnonHubs = []\nisHub = None # n-dim bool array to check if current node is hub\nPPR = None # the PPR estimation for refinement\nPPRindex = None # the PPR index with epsilon_H and epsilon_L error bound\nResidue = None # the residual left during refinement\nepsilonH = 0.001\nepsilonL = 0.01\n\nclass heapElement(object):\n    def __init__(self, id, value):\n        self.residual = value\n        self.id = id\n\n    def __lt__(self, other):\n        return self.residual > other.residual\n\n    def __str__(self):\n        return \"({},{})\".format(self.id, self.residual)\n\ndef load_hubs(path):\n    global Hubs, isHub\n    with open(path + \".hub\", \"rb\") as fin:\n        row = np.fromfile(fin, dtype=np.int32)\n    Hubs = row.tolist()\n    isHub = np.zeros(n)\n    for h in Hubs:\n        isHub[h]=1\n\ndef load_kmax(cluster):\n    global KMAX\n    ks = []\n    for each in cluster:\n        ks.append(get_level(each))\n    ks.sort(reverse=True)\n    KMAX = ks[0]\n\ndef init_residual():\n    global Residue, nonHubs\n    Residue = sparse.lil_matrix((n,n))\n    for i in range(n):\n        if isHub[i]==1:\n            continue\n        Residue[i,i] = 1\n        nonHubs.append(i)\n\ndef init_ppr():\n    global PPR,KBEGIN\n    PPR = sparse.lil_matrix((n, n))\n    KBEGIN = np.log(epsilonL/epsilonH-1)+1\n    if KBEGIN<= KMAX:\n        PPR = PPRindex\n    else:\n        PPR[Hubs] = PPRindex[Hubs]\n\ndef load_index(path):\n    global PPRindex\n    with open(path+\".src\", \"rb\") as fin:\n        row = np.fromfile(fin, dtype=np.int32)\n    with open(path+\".dst\", \"rb\") as fin:\n        col = np.fromfile(fin, dtype=np.int32)\n    with open(path+\".ppr\", \"rb\") as fin:\n        data = np.fromfile(fin, dtype=np.double)\n    print (\"number of index pairs:{}\".format(len(row)))\n    PPRindex = sparse.csr_matrix((data, (row, col)))\n\ndef get_level(target):\n    match = re.match(r\"^.*l(.*)_.*$\", target)\n    k = match.group(1)\n    return int(k)\n\ndef online_refinement(target, leaves, alpha=0.2):\n    global PPR, Residue\n    k = get_level(target)\n    S = [each for each in leaves if isHub[each]==0] # S is the set of non-hub leaves\n    print (\"S size:{}\".format(len(S)))\n    threshold = min(epsilonL, (1+np.exp(k-1))*epsilonH)\n    # cnt = 0\n    # start = time.time()\n    increment = None\n    if k < KBEGIN:\n        for s in S:\n            # cnt += 1\n            sumS = np.sum(Residue[s,nonHubs], axis=1)[0,0] # init the sum of non-hub residual\n            sumH = np.sum(Residue[s,Hubs], axis=1)[0,0] # init the sum of hub resiudal\n            deltaR = np.zeros((1, n))  # init delta r to zero\n            # put the residual of non-hub leaves into the sorted list\n            hq = []\n            objects = {}\n            rs = Residue[s].tocoo()\n            for j, val in itertools.izip(rs.col, rs.data):\n                assert (val>0)\n                obj = heapElement(j,val)\n                objects[j] = obj\n                hq.append(obj) # store the (residual, dst) tuple\n            hq.sort()\n            while epsilonL*sumS+epsilonH*sumH>threshold:\n                # print (epsilonL*sumS+epsilonH*sumH, threshold)\n                obj = hq.pop(0) # get the largest residual\n                v = obj.id\n                r = obj.residual\n                del objects[v]\n                PPR[s, v] += alpha * r # push the residual to ppr\n                for u in Gfull[v]: # push to each neighbor\n                    incre = (1-alpha)*r/Gfull.degree(v)\n                    deltaR[0,u] += incre\n                    Residue[s, u] += incre\n                    if isHub[u]: # update the residual sum\n                        sumH += incre\n                    else:\n                        sumS += incre\n                    # update the (rv,u) tuple in sorted list\n                    if u not in objects: # if not exist direct insert\n                        obj = heapElement(u,incre)\n                        objects[u] = obj\n                    else: # if u currently is in the sorted list, pop and reinsert\n                        hq.remove(objects[u])\n                        objects[u].residual+= incre\n                    bisect.insort(hq, objects[u])\n                if k!=KMAX:\n                    deltaR[0,v] -= r\n                Residue[s, v] = 0\n                sumS -= r # since the v is non-hub leaf, decrease the sum of non-hub residual\n            # refine the ppr from s to any target\n            deltaR = sparse.csr_matrix(deltaR)\n            if deltaR.nnz >0 :\n                incre = deltaR.dot(PPRindex)\n            if increment is None:\n                increment = incre\n            else:\n                increment = sparse.vstack((increment,incre))\n            # if cnt%20==0:\n            #     print (\"processed {} nodes: {}s\".format(cnt, time.time()-start))\n        increment = increment.tolil()\n        PPR[S,:] += increment\n\n\n\n\ndef get_subgraph(cluster):\n    s = len(cluster)\n    cm1 = np.zeros((s, n))\n    sp1 = np.zeros((s, n))\n    idx = 0\n    nodeweight = [1] * s\n    pprDeg = D.dot(PPR.tocsr())\n    for i in range(s):\n        supernode = cluster[i]\n        if supernode in mapping_data:\n            cidx = mapping_data[supernode]\n            nodeweight[idx] = len(cidx)\n        else:\n            cidx = [supernode]\n            nodeweight[idx] = 1\n        cm1[idx, :] = np.sum(A[cidx, :], axis=0)\n        sp1[idx, :] = np.sum(pprDeg[cidx, :], axis=0)\n        idx += 1\n\n    As = np.zeros((s, s))\n    sp2 = np.zeros((s, s))\n    idx = 0\n    for i in range(s):\n        supernode = cluster[i]\n        if supernode in mapping_data:\n            cidx = mapping_data[supernode]\n        else:\n            cidx = [supernode]\n        As[:, idx] = np.sum(cm1[:, cidx], axis=1)\n        sp2[:, idx] = np.sum(sp1[:, cidx], axis=1)\n        idx += 1\n\n    size = np.zeros((s,s))\n    for i in range(s):\n        s1 = cluster[i]\n        row = len(mapping_data[s1]) if s1 in mapping_data else 1\n        for j in range(s):\n            s2 = cluster[j]\n            col = len(mapping_data[s2]) if s2 in mapping_data else 1\n            size[i,j] = float(row*col)\n    superPPR = sp2/size\n    print superPPR\n    subG = nx.from_scipy_sparse_matrix(sparse.csr_matrix(As))\n    return subG, superPPR, nodeweight\n\ndef zoom_in(target=\"root\"):\n    cluster = supernode_list[target]\n    print(\"supernodes at this level:\", cluster)\n    start = time.time()\n    if target==\"root\":\n        load_kmax(cluster)\n        Xmds, r = get_component_position(cluster=cluster, mapping_data=mapping_data)\n        t = time.time() - start\n        plot(pos = Xmds, radius= r, name =\"./output_refine/{}-{}-degreerelativemds\".format(filelist[dataid], target))\n        print (\"zoom-in time:{}s\".format(t))\n        return\n\n    leafs = mapping_data[target]\n    online_refinement(target, leafs)\n    G, superPPR, nodeweight = get_subgraph(cluster=cluster)\n\n\n    # G, nodeweight = merge_edges(cluster, mapping_data, A, n)\n    edges = G.edges()\n\n    if len(cluster)<3:\n        t = time.time() - start\n        simpe_plot(G=G, nodeweight=nodeweight, label=cluster, name=\"./output_refine/{}-{}-degreerelativemds\".format(filelist[dataid], target))\n        print (\"zoom-in time:{}s\".format(t))\n        return\n    pprT = 15\n    Xmds, r = pprdegree_relativemds(G, PPR=superPPR, nodeweight= nodeweight, t=pprT)\n    t = time.time() - start\n    print (\"zoom-in time:{}s\".format(t))\n\n    plot(pos=Xmds, edges=edges, radius = r,\n         name=\"./output_refine/{}-{}-degreerelativemds-index\".format(filelist[dataid], target))\n\n\n\nif __name__ == '__main__':\n    # global supernode_list, mapping_data, A, n\n    print (filelist)\n    dataid = raw_input('data id :')\n    # dataid = 2\n    dataid = int(dataid.encode(\"utf-8\"))\n    dataname = filelist[dataid]\n    hiefname = 'louvain/hierachy-output/%s.json'%dataname\n    mapfname = 'louvain/mapping-output/%s.txt'%dataname\n    print(\"loading clusters...\")\n    supernode_list, mapping_data = load_multilevel(hiefname, mapfname)\n    print(\"loading edges...\")\n    # path = \"/home/zhangsq/gviz-ppr/dataset/\" + dataname +\".txt\"\n    path = \"dataset/\" + dataname + \".txt\"\n    Gfull = nx.read_edgelist(path, nodetype=int)\n    A = nx.adjacency_matrix(Gfull)\n    n = Gfull.number_of_nodes()\n    D = sparse.lil_matrix((n, n))\n    for i in range(n):\n        D[i,i] = Gfull.degree(i)+1\n    D = D.tocsr()\n    print(\"loading hubs...\")\n    load_hubs(path = \"dataset/\" + dataname)\n    print(\"loading index...\")\n    load_index(path =\"idx/\" + dataname)\n    # index = index.todense()\n    # ppr = sparse.lil_matrix((n,n))\n    # for u in range(n):\n    #     ppr[u] = index[u] * (Gfull.degree(u) + 1)\n    print(\"begin viz...\")\n    zoom_in(\"root\")\n    init_residual()\n    init_ppr()\n\n    while True:\n        target = raw_input('zoom-in target(supernode name,type -1 to exit) :')\n        target = target.encode(\"utf-8\")\n        if target==\"-1\":\n            print (\"exit...\")\n            break\n        if target not in supernode_list:\n            print (\"error: no such supernode...\")\n            continue\n        zoom_in(target)\n\n    #a1, b1, c1, d1, e1, f1 = eva(G, Xmds)\n    #print(t, a1, b1, c1, d1, e1, f1)\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../online-refine.py b/../online-refine.py
+--- a/../online-refine.py	
++++ b/../online-refine.py	
+@@ -100,12 +100,12 @@
+     S = [each for each in leaves if isHub[each]==0] # S is the set of non-hub leaves
+     print ("S size:{}".format(len(S)))
+     threshold = min(epsilonL, (1+np.exp(k-1))*epsilonH)
+-    # cnt = 0
+-    # start = time.time()
++    cnt = 0
++    start = time.time()
+     increment = None
+     if k < KBEGIN:
+         for s in S:
+-            # cnt += 1
++            cnt += 1
+             sumS = np.sum(Residue[s,nonHubs], axis=1)[0,0] # init the sum of non-hub residual
+             sumH = np.sum(Residue[s,Hubs], axis=1)[0,0] # init the sum of hub resiudal
+             deltaR = np.zeros((1, n))  # init delta r to zero
+@@ -154,8 +154,8 @@
+                 increment = incre
+             else:
+                 increment = sparse.vstack((increment,incre))
+-            # if cnt%20==0:
+-            #     print ("processed {} nodes: {}s".format(cnt, time.time()-start))
++            if cnt%20==0:
++                print ("processed {} nodes: {}s".format(cnt, time.time()-start))
+         increment = increment.tolil()
+         PPR[S,:] += increment
+ 
+Index: ../baseline-multilevel.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import numpy as np\nimport networkx as nx\nimport sys\nimport time\nfrom sklearn.decomposition import PCA\nfrom fa2l import force_atlas2_layout\nfrom fa2 import ForceAtlas2\nimport matplotlib\nmatplotlib.use('Agg')\nfrom matplotlib import pyplot as plt\nfrom matplotlib.collections import LineCollection\nfrom sklearn import preprocessing\nfrom scipy.sparse import identity\nfrom random import shuffle\nfrom numpy import linalg as LA\nimport shlex\nimport subprocess\nfrom evaluate import eva,cluster_extraction,normalize\nfrom pprviz import *\nfrom config import filelist\nfrom tulip import tlp\n\ndef openOrd_layout(G):\n    f = open(\"OpenOrd/bin/tmp.int\",\"w\")\n    for e in G.edges():\n        f.write(\"{}\\t{}\\t1\\n\".format(e[0],e[1]))\n    f.close()\n    cmd = \"./OpenOrd/bin/layout ./OpenOrd/bin/tmp\"\n    result = subprocess.Popen(shlex.split(cmd), stdout=subprocess.PIPE)\n    out, err = result.communicate()\n    time = out[0]\n    pos = np.zeros((len(G),2))\n    f = open(\"./OpenOrd/bin/tmp.icoord\",\"r\")\n    lis = f.readlines()\n    size = len(lis)\n    # print (size,len(G))\n    for line in lis:\n        each = line.rstrip(\"\\r\\n\").split(\"\\t\")\n        idx = int(each[0])\n        pos[idx,0] = float(each[1])\n        pos[idx,1] = float(each[2])\n    return time, pos\n\n# pip install tulip-python\n# https://tulip.labri.fr/Documentation/current/tulip-python/html/tulippluginsdocumentation.html#algorithmpluginsdoc\ndef pivotMDS(G):\n    nodesDict=[None]*len(G)\n    graph = tlp.newGraph()\n    for node in G.nodes():\n        tnode = graph.addNode()\n        nodesDict[node]=tnode\n\n    for (u,v) in G.edges():\n        graph.addEdge(nodesDict[u], nodesDict[v])\n   \n    print(\"input graph ready\")\n\n    start = time.time()\n    params = tlp.getDefaultPluginParameters('Pivot MDS (OGDF)', graph)\n\n    # set any input parameter value if needed\n    # params['number of pivots'] = ...\n    # params['use edge costs'] = ...\n    # params['edge costs'] = ...\n\n    # either create or get a layout property from the graph to store the result of the algorithm\n    resultLayout = graph.getLayoutProperty('resultLayout')\n    successFlag = graph.applyLayoutAlgorithm('Pivot MDS (OGDF)', resultLayout, params)\n    # or store the result of the algorithm in the default Tulip layout property named 'viewLayout'\n    #success = graph.applyLayoutAlgorithm('Pivot MDS (OGDF)', params)\n    t = time.time() - start\n\n    pos = np.zeros((len(G),2))\n    for i in range(len(nodesDict)):\n        tnode = nodesDict[i]\n        (x,y,z) = resultLayout.getNodeValue(tnode)\n        pos[i,0]=x\n        pos[i,1]=y\n        \n    return t, pos\n\nif __name__ == '__main__':\n    path = \"/home/zhangsq/gviz-ppr/dataset/\" + filelist[int(sys.argv[1])]+\".txt\"\n    #path = \"dataset/\" + filelist[int(sys.argv[1])] + \".txt\"\n    G = nx.convert_node_labels_to_integers(nx.read_edgelist(path, nodetype=int))\n    n, m = G.number_of_nodes(), G.number_of_edges()\n    print(filelist[int(sys.argv[1])], n, m)\n    edges = G.edges()\n   \n    t, Xpmds = pivotMDS(G)\n    plot(pos=Xpmds, edges=edges, name=\"./output/{}-pmds\".format(filelist[int(sys.argv[1])]))\n    a1, b1, c1, d1, e1, f1 = eva(G, Xpmds)\n    print(t, a1, b1, c1, d1, e1, f1)\n \n\n    t, Xord = openOrd_layout(G)\n    plot(pos=Xord, edges=edges, name=\"./output/{}-ord\".format(filelist[int(sys.argv[1])]))\n    a1, b1, c1, d1, e1, f1 = eva(G, Xord)\n    print(t, a1, b1, c1, d1, e1, f1)\n\n    start = time.time()\n    pos = nx.nx_pydot.graphviz_layout(G, prog='sfdp')\n    t = time.time() - start\n    Xsfdp = np.array([pos[i] for i in range(n)])\n    plot(pos=Xsfdp, edges=edges, name=\"./output/{}-sfdp\".format(filelist[int(sys.argv[1])]))\n    a1, b1, c1, d1, e1, f1 = eva(G, Xsfdp)\n    print(t, a1, b1, c1, d1, e1,f1)\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../baseline-multilevel.py b/../baseline-multilevel.py
+--- a/../baseline-multilevel.py	
++++ b/../baseline-multilevel.py	
+@@ -3,8 +3,6 @@
+ import sys
+ import time
+ from sklearn.decomposition import PCA
+-from fa2l import force_atlas2_layout
+-from fa2 import ForceAtlas2
+ import matplotlib
+ matplotlib.use('Agg')
+ from matplotlib import pyplot as plt
+@@ -53,7 +51,7 @@
+     for (u,v) in G.edges():
+         graph.addEdge(nodesDict[u], nodesDict[v])
+    
+-    print("input graph ready")
++    # print("input graph ready")
+ 
+     start = time.time()
+     params = tlp.getDefaultPluginParameters('Pivot MDS (OGDF)', graph)
+@@ -80,29 +78,29 @@
+     return t, pos
+ 
+ if __name__ == '__main__':
+-    path = "/home/zhangsq/gviz-ppr/dataset/" + filelist[int(sys.argv[1])]+".txt"
+-    #path = "dataset/" + filelist[int(sys.argv[1])] + ".txt"
++    # path = "/home/zhangsq/gviz-ppr/dataset/" + filelist[int(sys.argv[1])]+".txt"
++    path = "dataset/" + filelist[int(sys.argv[1])] + ".txt"
+     G = nx.convert_node_labels_to_integers(nx.read_edgelist(path, nodetype=int))
+     n, m = G.number_of_nodes(), G.number_of_edges()
+     print(filelist[int(sys.argv[1])], n, m)
+     edges = G.edges()
+    
+     t, Xpmds = pivotMDS(G)
+-    plot(pos=Xpmds, edges=edges, name="./output/{}-pmds".format(filelist[int(sys.argv[1])]))
+-    a1, b1, c1, d1, e1, f1 = eva(G, Xpmds)
+-    print(t, a1, b1, c1, d1, e1, f1)
++    # plot(pos=Xpmds, edges=edges, name="./output/{}-pmds".format(filelist[int(sys.argv[1])]))
++    a1, b1, c1, e1 = eva(G, Xpmds)
++    print(t, a1, b1, c1, e1)
+  
+ 
+-    t, Xord = openOrd_layout(G)
+-    plot(pos=Xord, edges=edges, name="./output/{}-ord".format(filelist[int(sys.argv[1])]))
+-    a1, b1, c1, d1, e1, f1 = eva(G, Xord)
+-    print(t, a1, b1, c1, d1, e1, f1)
+-
+-    start = time.time()
+-    pos = nx.nx_pydot.graphviz_layout(G, prog='sfdp')
+-    t = time.time() - start
+-    Xsfdp = np.array([pos[i] for i in range(n)])
+-    plot(pos=Xsfdp, edges=edges, name="./output/{}-sfdp".format(filelist[int(sys.argv[1])]))
+-    a1, b1, c1, d1, e1, f1 = eva(G, Xsfdp)
+-    print(t, a1, b1, c1, d1, e1,f1)
++    # t, Xord = openOrd_layout(G)
++    # plot(pos=Xord, edges=edges, name="./output/{}-ord".format(filelist[int(sys.argv[1])]))
++    # a1, b1, c1, d1, e1, f1 = eva(G, Xord)
++    # print(t, a1, b1, c1, d1, e1, f1)
++    #
++    # start = time.time()
++    # pos = nx.nx_pydot.graphviz_layout(G, prog='sfdp')
++    # t = time.time() - start
++    # Xsfdp = np.array([pos[i] for i in range(n)])
++    # plot(pos=Xsfdp, edges=edges, name="./output/{}-sfdp".format(filelist[int(sys.argv[1])]))
++    # a1, b1, c1, d1, e1, f1 = eva(G, Xsfdp)
++    # print(t, a1, b1, c1, d1, e1,f1)
+ 

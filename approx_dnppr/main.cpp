@@ -1,0 +1,123 @@
+#include "lib.h"
+
+void parameter(int argc, char** argv, unordered_map<string, string> &map){
+    for(int i=1;i<argc;i+=2){
+        map.insert({argv[i], argv[i+1]});
+    }
+}
+
+void param_config(string &alg){
+    if(alg=="powiter"){ isPowerIter =1;}
+    else if(alg=="fora"){ isRWIdx = 1;}
+    else if(alg=="foratp"){ isRWIdx=1; isFORASN = 1;}
+    else if(alg == "fpsn"){ isFPSN=1;isBPSN=0;}
+    else if(alg == "taupush"){ isFPSN=1;isBPSN=1;}
+    else{exit(-1);}
+}
+int main(int argc,char *argv[]) {
+    unordered_map<string, string> param;
+    parameter(argc, argv, param);
+    int fileno;
+    int buildflag;
+    int sample;
+    double alpha;
+    int random_query;
+
+    fileno = stoi(param.count("-f")?param["-f"]:"2");
+    buildflag = stoi(param.count("-build")?param["-build"]:"0");
+    verbose = stoi(param.count("-verbose")?param["-verbose"]:"0");
+    alpha = stof(param.count("-a")?param["-a"]:"0.2");
+    sample = stoi(param.count("-sample")?param["-sample"]:"1");
+    thread_num = stoi(param.count("-nthread")?param["-nthread"]:"1");
+    thread_num = thread_num<omp_get_max_threads()? thread_num:omp_get_max_threads();
+    alg = param.count("-alg")?param["-alg"]:"taupush";
+    random_query = stoi(param.count("-random")?param["-random"]:"1");
+    embed_on = stoi(param.count("-embed")?param["-embed"]:"0");
+    param_config(alg);
+    int seed = stoi(param.count("-seed")?param["-seed"]:"2");
+    srand(seed);
+    string datapath = "../dataset/"+filelist[fileno];
+    if (verbose)
+        cout << "dataset: "<<filelist[fileno]<<endl;
+    hiename = "../louvain/hierachy-output/"+filelist[fileno] +".dat";
+    mapname = "../louvain/mapping-output/"+filelist[fileno] +".dat";
+    rootname = "../louvain/hierachy-output/"+filelist[fileno] +".root";
+    storepath = "../"+filelist[fileno]+"_idx/"+filelist[fileno]+"ds250";
+
+    graph = Graph(datapath,alpha);
+    int max_level = load_multilevel();
+    graph.max_level = max_level;
+
+
+    prpath = "../pr_idx/"+filelist[fileno]+".dnpr";
+    if ((!buildflag && isFPSN) or (isBPSN)){
+        prpath = "../pr_idx/"+filelist[fileno]+".dnpr";
+        deserialize_pr();
+    }
+
+    if (buildflag){
+        if (isBPSN)
+            rwpath = "../bwd_idx/"+filelist[fileno];
+        if (isRWIdx)
+            rwpath = "../rwidx/"+filelist[fileno]+"randwalks";
+
+//        int threads[] = {64,32,16,8,4,2,1};
+        int threads[] = {1};
+        for(int each:threads) {
+            thread_num = each < omp_get_max_threads() ? each : omp_get_max_threads();
+
+            if (isBPSN)
+                build_bwdpush();
+            if (isFPSN and !isBPSN)
+                build_dnpr();
+            if (isRWIdx)
+                build_rwidx_parallel();
+//                build_rwidx();
+        }
+    } else{
+        // load rwidx
+        if (isRWIdx){
+            rwpath = "../rwidx/"+filelist[fileno]+"randwalks"+"_"+alg;
+            deserialize_idx();
+        }
+        if (isBPSN){
+            rwpath = "../bwd_idx/"+filelist[fileno];
+            deserialize_bwd();
+        }
+        if (!random_query){
+            if (!isFPSN){
+                prpath = "../pr_idx/"+filelist[fileno]+".dnpr";
+                deserialize_pr();
+            }
+            top_k_hub_cluster(sample);
+        }
+
+        int threads[] = {1};
+        for(int each:threads){
+            thread_num = each<omp_get_max_threads()? each:omp_get_max_threads();
+            double totaltime = 0;
+            for (int i = 0; i < sample; ++i) {
+                timeElasped = 0;
+                vector<string> path;
+                init_container();
+                if (random_query)
+                    generate_random_path(path,max_level);
+                else{
+                    path.emplace_back(hubcluster[i]);
+                }
+                interactive_visualize(path);
+                cerr <<timeElasped<<endl;
+                totaltime += timeElasped;
+                if (!random_query){
+                    int size = super2leaf[hubcluster[i]].size();
+                    cout<<timeElasped/size<<endl;
+                }
+            }
+            if (random_query)
+                cout<<totaltime/sample<<endl;
+        }
+
+    }
+
+    return 0;
+}
