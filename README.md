@@ -20,15 +20,15 @@ python2.7 benchmark.py --data 0 --repeat 10 --mode metrics --algo pprvizs;
 ### Input arguments
 #### Datasets
 Location: `PPRviz-reproducibility/dataset`
-``````
+```
 --data={0,1,2,3,4,5}
 where
 {0: "twego", 1: "fbego", 2: "wikiedit", 3: "physic", 4: "trust", 5: "scinet"}
-``````
+```
 #### Support algorithm
-``````
+```
 --algo={"pprvizs","ll","fa2","fr","mds","pivot_comp","simrank_comp","maxent","gf","le","lle","node2vec","sdne"}
-``````
+```
 ##### Run in python2.7:
 * `pprvizs`: our proposal PPRviz.
 * `ll` and `fa2`: LinLog and ForceAtlas are supported by library `fa2l`
@@ -40,18 +40,18 @@ where
 * `maxent`: Kadraw's single level is supported by `networkit`
 * `gf,le,lle,node2vec,sdne`: node embedding methods are supported by [GEM](https://github.com/palash1992/GEM). We store the embeddings in `PPRviz-reproducibility/gem_pos/`.
 #### Support mode
-``````
+```
 --mode={"plot","metrics"}
-``````
+```
 ### benchmarking demo scripts
 Visualization of all methods
-``````
+```
 bash run_plot.sh 
-``````
+```
 Metrics of all methods
-``````
+```
 bash run_metrics.sh 
-``````
+```
 ## Multi-level graph visualization
 
 ### Requirement
@@ -118,13 +118,13 @@ where
 ```
 #### Benchmarking demo scripts
 Index construction of all methods
-``````
+```
 bash build_run.sh 
-``````
+```
 Random query of all methods
-``````
+```
 bash query_run.sh 
-``````
+```
 ### Multi-level visualization demo
 #### Location
 * source code: `PPRviz-reproducibility/PPRVizl/`
