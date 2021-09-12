@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="540b1e5a-a592-41ac-b013-6ee4c8c512cb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/AnryYang/gviz_ppr_emb.git" />
+        <option value="https://github.com/SciTechStrategies/OpenOrd.git" />
+      </set>
+    </option>
+  </component>
+  <component name="JupyterTrust" id="030c5747-5df4-43d5-9d00-760d8f49e8b9" />
+  <component name="ProjectId" id="1ddHS5aU6LfFubSvUR0dNK6vH7B" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PPRVizS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/PPRVizS" />
+      <recent name="$PROJECT_DIR$/dataset" />
+      <recent name="$PROJECT_DIR$/pprvizs_output" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/miscs" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/PPRVizS" />
+      <recent name="$PROJECT_DIR$/openords/examples/recursive" />
+      <recent name="$PROJECT_DIR$/interact_fora" />
+      <recent name="$PROJECT_DIR$/KaDraw" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.load-superppr-viz">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="gviz_ppr_emb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="benchmark" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="gviz_ppr_emb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PPRVizS" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PPRVizS/benchmark.py" />
+      <option name="PARAMETERS" value="--data -1 --repeat 1 --algo simrank_comp --mode metrics" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cluster" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="gviz_ppr_emb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/miscs/cluster.py" />
+      <option name="PARAMETERS" value="10000" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gviz_ppr_emb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/preprocess_util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PPRVizS/config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="format-converter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gviz_ppr_emb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/preprocess_util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/preprocess_util/format-converter.py" />
+      <option name="PARAMETERS" value="-2 1" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_GEM_pos" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gviz_ppr_emb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PPRVizS" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PPRVizS/get_GEM_pos.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="load-superppr-viz" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gviz_ppr_emb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PPRVizL/load-superppr-viz.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pagerank_idx" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="gviz_ppr_emb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PPRVizS" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PPRVizS/pagerank_idx.py" />
+      <option name="PARAMETERS" value="6 1" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ppr-example" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gviz_ppr_emb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/preprocess_util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/preprocess_util/ppr-example.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ppr-relative" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="gviz_ppr_emb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PPRVizS/ppr-relative.py" />
+      <option name="PARAMETERS" value="2" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.cluster" />
+      <item itemvalue="Python.ppr-relative" />
+      <item itemvalue="Python.pagerank_idx" />
+      <item itemvalue="Python.benchmark" />
+      <item itemvalue="Python.load-superppr-viz" />
+      <item itemvalue="Python.get_GEM_pos" />
+      <item itemvalue="Python.ppr-example" />
+      <item itemvalue="Python.format-converter" />
+      <item itemvalue="Python.config" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.config" />
+        <item itemvalue="Python.ppr-example" />
+        <item itemvalue="Python.format-converter" />
+        <item itemvalue="Python.load-superppr-viz" />
+        <item itemvalue="Python.get_GEM_pos" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="540b1e5a-a592-41ac-b013-6ee4c8c512cb" name="Default Changelist" comment="" />
+      <created>1592748047014</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592748047014</updated>
+      <workItem from="1592748049564" duration="2488000" />
+      <workItem from="1592752419721" duration="62000" />
+      <workItem from="1592796563146" duration="1236000" />
+      <workItem from="1592798004193" duration="20207000" />
+      <workItem from="1592983389625" duration="1413000" />
+      <workItem from="1593169518644" duration="41529000" />
+      <workItem from="1593397965258" duration="172000" />
+      <workItem from="1593398174922" duration="36670000" />
+      <workItem from="1593737802377" duration="14533000" />
+      <workItem from="1593829350894" duration="14465000" />
+      <workItem from="1594001578203" duration="13358000" />
+      <workItem from="1594086829839" duration="34337000" />
+      <workItem from="1594349946058" duration="14694000" />
+      <workItem from="1594457762407" duration="1504000" />
+      <workItem from="1594522656691" duration="1872000" />
+      <workItem from="1594949816215" duration="11996000" />
+      <workItem from="1594997351695" duration="1097000" />
+      <workItem from="1595042246420" duration="1441000" />
+      <workItem from="1595128170549" duration="10590000" />
+      <workItem from="1595211152198" duration="5457000" />
+      <workItem from="1595647239166" duration="5674000" />
+      <workItem from="1595773555748" duration="1137000" />
+      <workItem from="1595817311898" duration="721000" />
+      <workItem from="1595820147518" duration="2108000" />
+      <workItem from="1595901029086" duration="9308000" />
+      <workItem from="1595989192546" duration="16192000" />
+      <workItem from="1596163016622" duration="21137000" />
+      <workItem from="1596332269422" duration="4356000" />
+      <workItem from="1596423043138" duration="8657000" />
+      <workItem from="1596508470626" duration="10495000" />
+      <workItem from="1597647851679" duration="23351000" />
+      <workItem from="1598324220825" duration="110000" />
+      <workItem from="1598358940512" duration="3034000" />
+      <workItem from="1598495223294" duration="208000" />
+      <workItem from="1598677075564" duration="5811000" />
+      <workItem from="1598776173181" duration="1759000" />
+      <workItem from="1598856051521" duration="14000" />
+      <workItem from="1598864940039" duration="6358000" />
+      <workItem from="1598924921974" duration="48000" />
+      <workItem from="1598925429633" duration="38744000" />
+      <workItem from="1599048752815" duration="37999000" />
+      <workItem from="1600259760675" duration="1080000" />
+      <workItem from="1600667222722" duration="219000" />
+      <workItem from="1600668039474" duration="12000" />
+      <workItem from="1600668433793" duration="310000" />
+      <workItem from="1600841565086" duration="1354000" />
+      <workItem from="1601015936309" duration="4169000" />
+      <workItem from="1601176324640" duration="10834000" />
+      <workItem from="1601631240654" duration="1234000" />
+      <workItem from="1601884906779" duration="8367000" />
+      <workItem from="1602057025042" duration="587000" />
+      <workItem from="1602503314727" duration="42000" />
+      <workItem from="1603859421555" duration="4136000" />
+      <workItem from="1604056895528" duration="1254000" />
+      <workItem from="1605581362171" duration="967000" />
+      <workItem from="1605606042023" duration="597000" />
+      <workItem from="1606374915038" duration="17602000" />
+      <workItem from="1606615944385" duration="5902000" />
+      <workItem from="1606705513207" duration="17998000" />
+      <workItem from="1606974334992" duration="2763000" />
+      <workItem from="1607331908299" duration="33000" />
+      <workItem from="1607361554465" duration="3902000" />
+      <workItem from="1607395771198" duration="34206000" />
+      <workItem from="1607503764033" duration="2539000" />
+      <workItem from="1607568424071" duration="7477000" />
+      <workItem from="1607674406852" duration="1864000" />
+      <workItem from="1607760654611" duration="90840000" />
+      <workItem from="1608296227574" duration="1411000" />
+      <workItem from="1608352463061" duration="393000" />
+      <workItem from="1608380051197" duration="4067000" />
+      <workItem from="1609146368256" duration="351000" />
+      <workItem from="1609212925119" duration="633000" />
+      <workItem from="1609301623557" duration="484000" />
+      <workItem from="1609381027843" duration="1501000" />
+      <workItem from="1609465958204" duration="19000" />
+      <workItem from="1609554320644" duration="254000" />
+      <workItem from="1609569705239" duration="1109000" />
+      <workItem from="1609773974325" duration="137000" />
+      <workItem from="1609930359106" duration="4301000" />
+      <workItem from="1610095257300" duration="61000" />
+      <workItem from="1611293898604" duration="3193000" />
+      <workItem from="1611366738264" duration="19588000" />
+      <workItem from="1611412041687" duration="6930000" />
+      <workItem from="1611465777494" duration="17853000" />
+      <workItem from="1611591015107" duration="464000" />
+      <workItem from="1611661071015" duration="3319000" />
+      <workItem from="1611677832240" duration="3540000" />
+      <workItem from="1611886553269" duration="3047000" />
+      <workItem from="1612181830488" duration="1888000" />
+      <workItem from="1612256277284" duration="18080000" />
+      <workItem from="1612779537626" duration="290000" />
+      <workItem from="1612799188778" duration="2118000" />
+      <workItem from="1612857412735" duration="2343000" />
+      <workItem from="1613103553550" duration="79000" />
+      <workItem from="1616988766786" duration="358000" />
+      <workItem from="1621490444571" duration="794000" />
+      <workItem from="1621510910275" duration="42000" />
+      <workItem from="1621517022738" duration="3795000" />
+      <workItem from="1621941267069" duration="180000" />
+      <workItem from="1622787347975" duration="202000" />
+      <workItem from="1623808631013" duration="520000" />
+      <workItem from="1623824520506" duration="1073000" />
+      <workItem from="1624507400739" duration="566000" />
+      <workItem from="1624621624612" duration="1647000" />
+      <workItem from="1624630352979" duration="11455000" />
+      <workItem from="1624969285515" duration="5263000" />
+      <workItem from="1624975034280" duration="773000" />
+      <workItem from="1624976403951" duration="1497000" />
+      <workItem from="1624978029706" duration="28702000" />
+      <workItem from="1625494176582" duration="8827000" />
+      <workItem from="1625797812764" duration="3432000" />
+      <workItem from="1625991142931" duration="2927000" />
+      <workItem from="1626254341246" duration="1276000" />
+      <workItem from="1626260165356" duration="58000" />
+      <workItem from="1626274886997" duration="2111000" />
+      <workItem from="1626945332616" duration="45663000" />
+      <workItem from="1627627187597" duration="5919000" />
+      <workItem from="1628321933232" duration="1169000" />
+      <workItem from="1628428005783" duration="530000" />
+      <workItem from="1628444669871" duration="14297000" />
+      <workItem from="1628562456328" duration="3236000" />
+      <workItem from="1628910294839" duration="43000" />
+      <workItem from="1630114486083" duration="8349000" />
+      <workItem from="1630132298809" duration="11022000" />
+      <workItem from="1631438216465" duration="757000" />
+      <workItem from="1631439160051" duration="430000" />
+    </task>
+    <task id="LOCAL-00001" summary="compare">
+      <created>1593259895889</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593259895889</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="compare" />
+    <option name="LAST_COMMIT_MESSAGE" value="compare" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-2583" y="-369" width="1680" height="1050" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1630144220512">
+      <screen x="-3840" y="-1005" width="3840" height="2160" />
+    </state>
+    <state x="-2583" y="-369" width="2201" height="1482" key="#com.intellij.execution.impl.EditConfigurationsDialog/-3840.-1005.3840.2160/0.0.1680.1050@-3840.-1005.3840.2160" timestamp="1630144220512" />
+    <state x="-2975" y="-327" width="1969" height="1482" key="#com.intellij.execution.impl.EditConfigurationsDialog/-3840.-1005.3840.2160/0.23.1680.1027@-3840.-1005.3840.2160" timestamp="1625032600921" />
+    <state x="-2935" y="-475" width="2201" height="1482" key="#com.intellij.execution.impl.EditConfigurationsDialog/-3840.-982.3840.2137/0.23.1680.1027@-3840.-982.3840.2137" timestamp="1626956137799" />
+    <state x="0" y="0" width="1680" height="1050" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1627064266821" />
+    <state x="-2782" y="-251" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1628321983657">
+      <screen x="-3840" y="-1005" width="3840" height="2160" />
+    </state>
+    <state x="-2782" y="-251" key="#com.intellij.fileTypes.FileTypeChooser/-3840.-1005.3840.2160/0.0.1680.1050@-3840.-1005.3840.2160" timestamp="1628321983657" />
+    <state width="3840" height="1325" key="DebuggerActiveHint" timestamp="1624985327886">
+      <screen x="-3840" y="-1005" width="3840" height="2160" />
+    </state>
+    <state width="3840" height="1325" key="DebuggerActiveHint/-3840.-1005.3840.2160/0.0.1680.1050@-3840.-1005.3840.2160" timestamp="1624985327886" />
+    <state width="3840" height="1310" key="DebuggerActiveHint/-3840.-982.3840.2137/0.23.1680.1027@-3840.-982.3840.2137" timestamp="1624685919066" />
+    <state x="-3740" y="-905" width="3640" height="1960" key="DiffContextDialog" timestamp="1627630911982">
+      <screen x="-3840" y="-1005" width="3840" height="2160" />
+    </state>
+    <state x="-3740" y="-905" width="3640" height="1960" key="DiffContextDialog/-3840.-1005.3840.2160/0.0.1680.1050@-3840.-1005.3840.2160" timestamp="1627630049784" />
+    <state x="-3740" y="-905" width="3640" height="1960" key="DiffContextDialog/-3840.-1005.3840.2160/0.23.1680.1027@-3840.-1005.3840.2160" timestamp="1627630911982" />
+    <state x="-3740" y="-905" width="3640" height="1960" key="DiffContextDialog/-3840.-982.3840.2137/0.23.1680.1027@-3840.-982.3840.2137" timestamp="1627218730884" />
+    <state width="3720" height="762" key="GridCell.Tab.0.bottom" timestamp="1627631009904">
+      <screen x="-3840" y="-1005" width="3840" height="2160" />
+    </state>
+    <state width="3720" height="762" key="GridCell.Tab.0.bottom/-3840.-1005.3840.2160/0.0.1680.1050@-3840.-1005.3840.2160" timestamp="1627631009904" />
+    <state width="3720" height="648" key="GridCell.Tab.0.bottom/-3840.-1005.3840.2160/0.23.1680.1027@-3840.-1005.3840.2160" timestamp="1625495485347" />
+    <state width="3720" height="910" key="GridCell.Tab.0.bottom/-3840.-982.3840.2137/0.23.1680.1027@-3840.-982.3840.2137" timestamp="1624851876785" />
+    <state width="3720" height="590" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1625754836724" />
+    <state width="3720" height="762" key="GridCell.Tab.0.center" timestamp="1627631009903">
+      <screen x="-3840" y="-1005" width="3840" height="2160" />
+    </state>
+    <state width="3720" height="762" key="GridCell.Tab.0.center/-3840.-1005.3840.2160/0.0.1680.1050@-3840.-1005.3840.2160" timestamp="1627631009903" />
+    <state width="3720" height="648" key="GridCell.Tab.0.center/-3840.-1005.3840.2160/0.23.1680.1027@-3840.-1005.3840.2160" timestamp="1625495485346" />
+    <state width="3720" height="910" key="GridCell.Tab.0.center/-3840.-982.3840.2137/0.23.1680.1027@-3840.-982.3840.2137" timestamp="1624851876783" />
+    <state width="3720" height="590" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1625754836724" />
+    <state width="3720" height="762" key="GridCell.Tab.0.left" timestamp="1627631009902">
+      <screen x="-3840" y="-1005" width="3840" height="2160" />
+    </state>
+    <state width="3720" height="762" key="GridCell.Tab.0.left/-3840.-1005.3840.2160/0.0.1680.1050@-3840.-1005.3840.2160" timestamp="1627631009902" />
+    <state width="3720" height="648" key="GridCell.Tab.0.left/-3840.-1005.3840.2160/0.23.1680.1027@-3840.-1005.3840.2160" timestamp="1625495485345" />
+    <state width="3720" height="910" key="GridCell.Tab.0.left/-3840.-982.3840.2137/0.23.1680.1027@-3840.-982.3840.2137" timestamp="1624851876783" />
+    <state width="3720" height="590" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1625754836720" />
+    <state width="3720" height="762" key="GridCell.Tab.0.right" timestamp="1627631009903">
+      <screen x="-3840" y="-1005" width="3840" height="2160" />
+    </state>
+    <state width="3720" height="762" key="GridCell.Tab.0.right/-3840.-1005.3840.2160/0.0.1680.1050@-3840.-1005.3840.2160" timestamp="1627631009903" />
+    <state width="3720" height="648" key="GridCell.Tab.0.right/-3840.-1005.3840.2160/0.23.1680.1027@-3840.-1005.3840.2160" timestamp="1625495485347" />
+    <state width="3720" height="910" key="GridCell.Tab.0.right/-3840.-982.3840.2137/0.23.1680.1027@-3840.-982.3840.2137" timestamp="1624851876784" />
+    <state width="3720" height="590" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1625754836724" />
+    <state width="3720" height="762" key="GridCell.Tab.1.bottom" timestamp="1627631009906">
+      <screen x="-3840" y="-1005" width="3840" height="2160" />
+    </state>
+    <state width="3720" height="762" key="GridCell.Tab.1.bottom/-3840.-1005.3840.2160/0.0.1680.1050@-3840.-1005.3840.2160" timestamp="1627631009906" />
+    <state width="3720" height="590" key="GridCell.Tab.1.bottom/-3840.-1005.3840.2160/0.23.1680.1027@-3840.-1005.3840.2160" timestamp="1625923954715" />
+    <state width="3720" height="590" key="GridCell.Tab.1.bottom/-3840.-982.3840.2137/0.23.1680.1027@-3840.-982.3840.2137" timestamp="1627225260355" />
+    <state width="3720" height="590" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1625754836726" />
+    <state width="3720" height="762" key="GridCell.Tab.1.center" timestamp="1627631009905">
+      <screen x="-3840" y="-1005" width="3840" height="2160" />
+    </state>
+    <state width="3720" height="762" key="GridCell.Tab.1.center/-3840.-1005.3840.2160/0.0.1680.1050@-3840.-1005.3840.2160" timestamp="1627631009905" />
+    <state width="3720" height="590" key="GridCell.Tab.1.center/-3840.-1005.3840.2160/0.23.1680.1027@-3840.-1005.3840.2160" timestamp="1625923954714" />
+    <state width="3720" height="590" key="GridCell.Tab.1.center/-3840.-982.3840.2137/0.23.1680.1027@-3840.-982.3840.2137" timestamp="1627225260354" />
+    <state width="3720" height="590" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1625754836725" />
+    <state width="3720" height="762" key="GridCell.Tab.1.left" timestamp="1627631009905">
+      <screen x="-3840" y="-1005" width="3840" height="2160" />
+    </state>
+    <state width="3720" height="762" key="GridCell.Tab.1.left/-3840.-1005.3840.2160/0.0.1680.1050@-3840.-1005.3840.2160" timestamp="1627631009905" />
+    <state width="3720" height="590" key="GridCell.Tab.1.left/-3840.-1005.3840.2160/0.23.1680.1027@-3840.-1005.3840.2160" timestamp="1625923954713" />
+    <state width="3720" height="590" key="GridCell.Tab.1.left/-3840.-982.3840.2137/0.23.1680.1027@-3840.-982.3840.2137" timestamp="1627225260354" />
+    <state width="3720" height="590" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1625754836725" />
+    <state width="3720" height="762" key="GridCell.Tab.1.right" timestamp="1627631009906">
+      <screen x="-3840" y="-1005" width="3840" height="2160" />
+    </state>
+    <state width="3720" height="762" key="GridCell.Tab.1.right/-3840.-1005.3840.2160/0.0.1680.1050@-3840.-1005.3840.2160" timestamp="1627631009906" />
+    <state width="3720" height="590" key="GridCell.Tab.1.right/-3840.-1005.3840.2160/0.23.1680.1027@-3840.-1005.3840.2160" timestamp="1625923954715" />
+    <state width="3720" height="590" key="GridCell.Tab.1.right/-3840.-982.3840.2137/0.23.1680.1027@-3840.-982.3840.2137" timestamp="1627225260355" />
+    <state width="3720" height="590" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1625754836725" />
+    <state x="-1920" y="0" key="SettingsEditor" timestamp="1631438244616">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1920" y="0" key="SettingsEditor/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1631438244616" />
+    <state x="-3385" y="-982" key="SettingsEditor/-3840.-1005.3840.2160/0.0.1680.1050@-3840.-1005.3840.2160" timestamp="1630213914058" />
+    <state x="-3385" y="-998" key="SettingsEditor/-3840.-1005.3840.2160/0.23.1680.1027@-3840.-1005.3840.2160" timestamp="1625026036917" />
+    <state x="-3385" y="-975" key="SettingsEditor/-3840.-982.3840.2137/0.23.1680.1027@-3840.-982.3840.2137" timestamp="1624685530485" />
+    <state x="0" y="0" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1628428051753" />
+    <state width="1920" height="1080" key="XDebugger.FullValuePopup" timestamp="1627630609587">
+      <screen x="-3840" y="-1005" width="3840" height="2160" />
+    </state>
+    <state width="1920" height="1080" key="XDebugger.FullValuePopup/-3840.-1005.3840.2160/0.0.1680.1050@-3840.-1005.3840.2160" timestamp="1627630609587" />
+    <state width="1920" height="1068" key="XDebugger.FullValuePopup/-3840.-982.3840.2137/0.23.1680.1027@-3840.-982.3840.2137" timestamp="1624683673137" />
+    <state x="-3740" y="-905" width="3640" height="1960" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1627392917402">
+      <screen x="-3840" y="-982" width="3840" height="2137" />
+    </state>
+    <state x="-3740" y="-905" width="3640" height="1960" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-3840.-982.3840.2137/0.23.1680.1027@-3840.-982.3840.2137" timestamp="1627392917402" />
+    <state x="-3740" y="-927" width="3640" height="1982" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1628480014308">
+      <screen x="-3840" y="-1005" width="3840" height="2160" />
+    </state>
+    <state x="-3740" y="-927" width="3640" height="1982" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/-3840.-1005.3840.2160/0.0.1680.1050@-3840.-1005.3840.2160" timestamp="1628480014308" />
+    <state x="-3740" y="-927" width="3640" height="1982" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/-3840.-1005.3840.2160/0.23.1680.1027@-3840.-1005.3840.2160" timestamp="1625022590479" />
+    <state x="-3740" y="-905" width="3640" height="1960" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/-3840.-982.3840.2137/0.23.1680.1027@-3840.-982.3840.2137" timestamp="1626971390244" />
+    <state x="-2787" y="-642" width="1733" height="1511" key="find.popup" timestamp="1630144299984">
+      <screen x="-3840" y="-1005" width="3840" height="2160" />
+    </state>
+    <state x="-2787" y="-642" width="1733" height="1511" key="find.popup/-3840.-1005.3840.2160/0.0.1680.1050@-3840.-1005.3840.2160" timestamp="1630144299984" />
+    <state x="-2787" y="-623" width="1733" height="1494" key="find.popup/-3840.-982.3840.2137/0.23.1680.1027@-3840.-982.3840.2137" timestamp="1624690915990" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/openords/examples/recursive/multilevel-openOrd.py</url>
+          <line>251</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PPRVizL/load-superppr-viz.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file:///usr/local/lib/python3.8/site-packages/gem/embedding/node2vec.py</url>
+          <line>76</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/gviz_ppr_emb$multilevel_openOrd.coverage" NAME="multilevel-openOrd Coverage Results" MODIFIED="1607945427944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/openords/examples/recursive" />
+    <SUITE FILE_PATH="coverage/gviz_ppr_emb$ppr_relative.coverage" NAME="ppr-relative Coverage Results" MODIFIED="1608194422577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/gviz_ppr_emb$eva_pr_deg.coverage" NAME="eva_pr_deg Coverage Results" MODIFIED="1625541116300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PPRVizS" />
+    <SUITE FILE_PATH="coverage/gviz_ppr_emb$ppr_example.coverage" NAME="ppr-example Coverage Results" MODIFIED="1627231232947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preprocess_util" />
+    <SUITE FILE_PATH="coverage/gviz_ppr_emb$get_GEM_pos.coverage" NAME="get_GEM_pos Coverage Results" MODIFIED="1624988250934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PPRVizS" />
+    <SUITE FILE_PATH="coverage/gviz_ppr_emb$benchmark.coverage" NAME="benchmark Coverage Results" MODIFIED="1627630993585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PPRVizS" />
+    <SUITE FILE_PATH="coverage/gviz_ppr_emb$maxent_stress.coverage" NAME="maxent-stress Coverage Results" MODIFIED="1607777840733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/gviz_ppr_emb$edgelist2dot.coverage" NAME="format-converter Coverage Results" MODIFIED="1607786826163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/gviz_ppr_emb$load_superppr_viz.coverage" NAME="load-superppr-viz Coverage Results" MODIFIED="1624675610879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/gviz_ppr_emb$pagerank_idx.coverage" NAME="pagerank_idx Coverage Results" MODIFIED="1625970925135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PPRVizS" />
+    <SUITE FILE_PATH="coverage/gviz_ppr_emb$pprviz.coverage" NAME="pprviz Coverage Results" MODIFIED="1616989060133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PPRVizS" />
+  </component>
+</project>
