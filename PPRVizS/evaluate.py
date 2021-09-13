@@ -59,11 +59,25 @@ def best_fit_layout(X):
     normX[:, 1] = normX[:, 1] / hscale
     return normX
 
+def rescale_layout(pos, scale=1.):
+    # rescale to [0, scale) in each axis
+
+    # Find max length over all dimensions
+    maxlim=0
+    for i in range(pos.shape[1]):
+        pos[:,i] -= pos[:,i].min() # shift min to zero
+        maxlim = max(maxlim, pos[:,i].max())
+    if maxlim > 0:
+        for i in range(pos.shape[1]):
+            pos[:,i] *= scale / maxlim
+    return pos
 
 
 def eva(G, X):
     edges = G.edges()
-    try: normX = best_fit_layout(X)
+    try:
+        X = rescale_layout(X)
+        normX = best_fit_layout(X)
     except: normX = X
     try: a = get_node_distribution(normX)
     except: a = np.infty
