@@ -176,6 +176,3 @@ bash query_run.sh
 ```
 python2.7 load-superppr-viz.py;
 ```
-
-#### Result
-​             ![Level-1](pprvizl_output/amazon-c0_l2_57.pdf) ![Level-0](pprvizl_output/amazon-c0_l1_3715.pdf)

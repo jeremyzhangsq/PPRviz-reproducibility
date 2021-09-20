@@ -79,7 +79,7 @@ def plot(pos, edges=None, radius=None, label=None, scale=True, name="ppr"):
                 s = maxs
             plt.scatter(pos[i, 0], pos[i, 1], color='black', s=s, lw=0)
         else:
-            plt.scatter(pos[i, 0], pos[i, 1], color='black', s=50, lw=0)
+            plt.scatter(pos[i, 0], pos[i, 1], color='black', s=5, lw=0)
 
     if label is not None:
         for each in label:
