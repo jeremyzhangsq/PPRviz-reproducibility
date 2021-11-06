@@ -171,8 +171,24 @@ bash query_run.sh
 * source code: `PPRviz-reproducibility/PPRVizl/`
 * visualization output: `PPRviz-reproducibility/pprvizl_output/`
 
-#### Visualize a multi-level path of amazon
+#### Evaluate the multi-level result
 
+* compute the metric scores for PPRviz variants
 ```
-python2.7 load-superppr-viz.py;
+python2.7 load-superppr-viz.py --data 5 --mode metrics;
 ```
+
+* visualize the high-level results for PPRviz variants and the outputs are stored as [here](./pprvizl_output).
+```
+python2.7 load-superppr-viz.py --data 5 --mode plot;
+```
+
+* the top-level results in SciNet for PPRviz with Exact, FORA, FORA-TP and Tau-Push are shown as follows:
+
+![Exact](./pprvizl_output/scinet-c0_l2_0-powiter.pdf)
+
+![FORA](./pprvizl_output/scinet-c0_l2_0-fora.pdf)
+
+![FORA-TP](./pprvizl_output/scinet-c0_l2_0-foratp.pdf)
+
+![Tau-Push](./pprvizl_output/scinet-c0_l2_0-taupush.pdf)
