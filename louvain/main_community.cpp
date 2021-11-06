@@ -26,7 +26,7 @@ char *filename_part = NULL;
 int type = UNWEIGHTED;
 int algorithm = -1;
 int fid = -1;
-map<int, string> filelist = {{6, "amazon"},{7, "youtube"},
+map<int, string> filelist = {{4,"trust"},{5,"scinet"},{6, "amazon"},{7, "youtube"},
                              {8, "dblp"},{9, "orkut"},{10, "it"},{11, "tw"}};
 
 double precision = 0.000001;
@@ -100,6 +100,9 @@ parse_args(int argc, char **argv) {
                 case 'k':
                     k = atoi(argv[i + 1]);
                     i++;
+                    break;
+                case 'o':
+                    output = true;
                     break;
                 case 'n':
                     thread_num = atoi(argv[i + 1]);

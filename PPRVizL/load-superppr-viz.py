@@ -1,9 +1,11 @@
 import matplotlib
+import argparse
 import sys
 sys.path.insert(0, '../')
 matplotlib.use('Agg')
 from PPRVizS.pprviz import *
 from PPRVizS.config import filelist
+from PPRVizS.evaluate import eva
 from scipy import sparse
 
 # global supernode_list, mapping_data, A, n
@@ -122,7 +124,7 @@ def get_subgraph(cluster):
     return subG, nodeweight
 
 
-def viz(target):
+def viz(target,alg):
     start = time.time()
     if level==1:
         cluster = id2super
@@ -140,43 +142,44 @@ def viz(target):
     print ("zoom-in time:{}s".format(t))
 
     plot(pos=Xmds, edges=edges, radius = r,
-         name="../pprvizl_output/{}-{}".format(filelist[dataid], target))
+         name="../pprvizl_output/{}-{}-{}".format(filelist[dataid], target,alg))
 
 
 
 if __name__ == '__main__':
-    # global supernode_list, mapping_data, A, n
-    print (filelist)
-    # dataid = raw_input('data id :')
-    dataid = 6
-    # dataid = int(dataid.encode("utf-8"))
+    parser = argparse.ArgumentParser(description='Process...')
+    parser.add_argument('--data', type=int, default=4, help='graph dataset id')
+    parser.add_argument('--mode', type=str, default="metrics", help='plot or metrics')
+    args = parser.parse_args()
+    dataid = args.data
     dataname = filelist[dataid]
     hiefname = '../louvain/hierachy-output/%s.dat'%dataname
     mapfname = '../louvain/mapping-output/%s.dat'%dataname
 
-    print("loading clusters...")
+    # print("loading clusters...")
     load_community(hiefname, mapfname)
-    print("loading edges...")
+    # print("loading edges...")
     # path = "/home/zhangsq/gviz-ppr/dataset/" + dataname +".txt"
     fpath = "../dataset/" + dataname + ".txt"
     Gfull = nx.read_edgelist(fpath, nodetype=int)
     A = nx.adjacency_matrix(Gfull)
     n = Gfull.number_of_nodes()
-
-
     storename = "../{}_idx/{}ds250".format(dataname, dataname)
-    zoompath = [["c0_l2_57", "c0_l1_3715"]]
+    algos = ["powiter", "fora", "foratp", "taupush"]
+    zoompath = "c0_l2_0"
+    childsize = get_children(zoompath)
+    cluster = ["c0_l1_" + str(i) for i in id2super]
 
-    for path in zoompath:
-        print (path)
-        for i in range(len(path)):
-            each = path[i]
-            childsize = get_children(each)
-            pprpath = storename+each
-            load_position(pprpath)
-            if i+1<len(path):
-                child = path[i+1]
-            else:
-                child = None
-            viz(each)
+    G, nodeweight = get_subgraph(cluster=cluster)
+    for algo in algos:
+        pospath = storename + "{}_{}".format(zoompath,algo)
+        load_position(pospath)
+        if args.mode == "plot":
+            viz(zoompath,algo)
+        elif args.mode == "metrics":
+            nd,ulcv,cr,ar,angr = eva(G, Xmds)
+            print ("{:.2E}/{:.2f}/{:.2E}/{:.2f}/{:.2f}".format(nd,ulcv,cr,ar,angr))
+        else:
+            exit(-1)
+
 

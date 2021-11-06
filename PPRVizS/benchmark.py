@@ -141,18 +141,19 @@ if __name__ == '__main__':
     edges = G.edges()
     if args.mode == "metrics":
         num_repeat = args.repeat
-        nd = np.zeros(num_repeat)
-        ulcv = np.zeros(num_repeat)
+        cr = np.zeros(num_repeat)
+        ar = np.zeros(num_repeat)
+        angr = np.zeros(num_repeat)
         try:
             for i in range(num_repeat):
                 start = time.time()
                 X = run(args.algo)
-                nd[i],ulcv[i] = eva(G, X)
+                cr[i],ar[i],angr[i] = eva(G, X)
         except Exception as e:
             print(e)
             print("NaN NaN NaN")
         else:
-            print ("{:.2E}/{:.2f}".format(nd.mean(),ulcv.mean()))
+            print ("{:.2E}/{:.2f}/{:.2f}".format(cr.mean(),ar.mean(),angr.mean()))
             # output visualization layout
     if args.mode == "plot":
         print("plotting {} on {}".format(args.algo, filelist[args.data]))
