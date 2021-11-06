@@ -419,7 +419,7 @@ typedef pair<iMap<double>, iMap<double>> Bwdidx;
 
 
 
-map<int, string> filelist = {{6, "amazon"},{7, "youtube"},
+map<int, string> filelist = {{4,"trust"},{5,"scinet"},{6, "amazon"},{7, "youtube"},
                              {8, "dblp"},{9, "orkut"},{10, "it"},{11, "tw"}};
 
 
