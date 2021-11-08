@@ -183,12 +183,9 @@ python2.7 load-superppr-viz.py --data 5 --mode metrics;
 python2.7 load-superppr-viz.py --data 5 --mode plot;
 ```
 
-* the top-level results in SciNet for PPRviz with Exact, FORA, FORA-TP and Tau-Push are shown as follows:
+* the top-level results in SciNet for PPRviz with Exact, and Tau-Push are shown as follows:
 
 ![Exact](./pprvizl_output/scinet-c0_l2_0-powiter.pdf)
 
-![FORA](./pprvizl_output/scinet-c0_l2_0-fora.pdf)
-
-![FORA-TP](./pprvizl_output/scinet-c0_l2_0-foratp.pdf)
 
 ![Tau-Push](./pprvizl_output/scinet-c0_l2_0-taupush.pdf)
