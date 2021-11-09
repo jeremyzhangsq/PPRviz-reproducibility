@@ -22,7 +22,7 @@ int main(int argc,char *argv[]) {
     int sample;
     double alpha;
     int random_query;
-
+    int full_mode;
     fileno = stoi(param.count("-f")?param["-f"]:"2");
     buildflag = stoi(param.count("-build")?param["-build"]:"0");
     verbose = stoi(param.count("-verbose")?param["-verbose"]:"0");
@@ -33,10 +33,22 @@ int main(int argc,char *argv[]) {
     alg = param.count("-alg")?param["-alg"]:"taupush";
     random_query = stoi(param.count("-random")?param["-random"]:"1");
     embed_on = stoi(param.count("-embed")?param["-embed"]:"0");
+    full_mode = stoi(param.count("-full")?param["-full"]:"0");
     param_config(alg);
     int seed = stoi(param.count("-seed")?param["-seed"]:"2");
     srand(seed);
     string datapath = "../dataset/"+filelist[fileno];
+
+    if (full_mode){
+        vector<int> ks = {25,50,100,500,1000};
+        for (int k:ks){
+            datapath = "../dataset/rand_"+to_string(k);
+            graph = Graph(datapath,alpha);
+            full_visualize();
+        }
+        return 0;
+    }
+
     if (verbose)
         cout << "dataset: "<<filelist[fileno]<<endl;
     hiename = "../louvain/hierachy-output/"+filelist[fileno] +".dat";

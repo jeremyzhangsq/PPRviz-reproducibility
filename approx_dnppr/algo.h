@@ -2171,6 +2171,45 @@ void zoom_in(const string &supernode, int level, vector<string> &children){
     PPRDeg.clear();
 }
 
+void full_visualize(){
+    vector<int> &leaf = graph.nodes;
+    int nrow = leaf.size();
+    vector<int> node2id(graph.n);
+    std::iota(std::begin(node2id), std::end(node2id), 0);
+    vector<int> nodeweight;
+    PPRDeg.resize(nrow*nrow,0);
+    nodeweight.resize(nrow,1);
+    for (int i = 0; i < nrow; ++i) {
+        node2id[leaf[i]] = i;
+    }
+
+#pragma omp parallel num_threads(thread_num)
+#pragma omp for schedule(static) nowait
+    for (int id=0;id<leaf.size();id++) {
+        double s1 = omp_get_wtime();
+        assert(omp_get_num_threads()==thread_num);
+        vector<int> spprs, spprt;
+        vector<double> spprv;
+        int i = leaf[id];
+        unsigned int seed = (id+1)*(omp_get_thread_num()+1);
+        powiter_pprdeg(i, 1, omp_get_thread_num(),leaf,spprs,spprt,spprv,seed);
+        long leng = spprs.size();
+        int idx;
+        for (int i = 0; i < leng; ++i) {
+            idx = get_indice(node2id[spprs[i]], node2id[spprt[i]], nrow);
+            PPRDeg[idx] = spprv[i];
+        }
+    }
+
+    double start2 = omp_get_wtime();
+    double tol=1e-3;
+    unsigned maxloops=300;
+    Coordinate2d projections = Coordinate2d::Random(nrow,2);
+    vector<double> r(nrow);
+    relativeMDS(tol,maxloops,projections,r,nodeweight);
+    cout<<omp_get_wtime()-start2<<endl;
+}
+
 void interactive_visualize(vector<string> &path){
     vector<string> childrens;
     int level;
@@ -2178,6 +2217,7 @@ void interactive_visualize(vector<string> &path){
 //    path = {"c0_l2_11","c0_l1_637"};
 //    path = {"c0_l3_0","c0_l2_11","c0_l1_637"};
 //    path = {"c0_l5_0","c0_l4_42","c0_l3_1734","c0_l2_11196","c0_l1_889018"};
+    path = {"c0_l2_0"};
 
     for(const string& supernode:path){
 //        string supernode;
