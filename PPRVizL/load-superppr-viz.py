@@ -165,13 +165,14 @@ if __name__ == '__main__':
     A = nx.adjacency_matrix(Gfull)
     n = Gfull.number_of_nodes()
     storename = "../{}_idx/{}ds250".format(dataname, dataname)
-    algos = ["powiter", "taupush"]
+    algos = ["powiter","foratp","taupush"]
     zoompath = "c0_l2_0"
     childsize = get_children(zoompath)
     cluster = ["c0_l1_" + str(i) for i in id2super]
 
     G, nodeweight = get_subgraph(cluster=cluster)
     for algo in algos:
+        print(algo)
         pospath = storename + "{}_{}".format(zoompath,algo)
         load_position(pospath)
         if args.mode == "plot":

@@ -201,6 +201,16 @@ bash query_run.sh
 python2.7 load-superppr-viz.py --data 5 --mode metrics;
 ```
 
+The ND/ULCv/CR/AR scores on the top level of SciNet is listed as follows.
+```
+Exact
+8.77E+01/0.87/1.20E+01/67.65
+FORA-TP
+8.96E+01/0.88/9.00E+00/67.57
+Tau-Push
+4.57E+01/0.86/1.00E+01/66.27
+```
+
 * visualize the high-level results for PPRviz variants and the outputs are stored as [here](./pprvizl_output).
 ```
 python2.7 load-superppr-viz.py --data 5 --mode plot;
