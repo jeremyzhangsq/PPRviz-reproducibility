@@ -5,7 +5,7 @@ sys.path.insert(0, '../')
 matplotlib.use('Agg')
 from PPRVizS.pprviz import *
 from PPRVizS.config import filelist
-from PPRVizS.evaluate import eva
+from PPRVizS.evaluate import eva, rescale_layout, best_fit_layout
 from scipy import sparse
 
 # global supernode_list, mapping_data, A, n
@@ -165,7 +165,7 @@ if __name__ == '__main__':
     A = nx.adjacency_matrix(Gfull)
     n = Gfull.number_of_nodes()
     storename = "../{}_idx/{}ds250".format(dataname, dataname)
-    algos = ["powiter", "fora", "foratp", "taupush"]
+    algos = ["powiter", "taupush"]
     zoompath = "c0_l2_0"
     childsize = get_children(zoompath)
     cluster = ["c0_l1_" + str(i) for i in id2super]
@@ -177,8 +177,8 @@ if __name__ == '__main__':
         if args.mode == "plot":
             viz(zoompath,algo)
         elif args.mode == "metrics":
-            nd,ulcv,cr,ar,angr = eva(G, Xmds)
-            print ("{:.2E}/{:.2f}/{:.2E}/{:.2f}/{:.2f}".format(nd,ulcv,cr,ar,angr))
+            nd,ulcv,cr,ar = eva(G, Xmds)
+            print ("{:.2E}/{:.2f}/{:.2E}/{:.2f}".format(nd,ulcv,cr,ar))
         else:
             exit(-1)
 
