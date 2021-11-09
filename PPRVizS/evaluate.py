@@ -129,16 +129,6 @@ def get_crossing(G, X):
                 res += 1
     return res
 
-# See Section 3.1 in http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.9.3879&rep=rep1&type=pdf
-# See Section 3.2 in https://kar.kent.ac.uk/14297/1/graphicalDesignTechniques.pdf
-# See https://en.wikipedia.org/wiki/Graph_drawing#cite_note-11
-def get_aspect_ratio(X):
-    width = X[:, 0].max() - X[:, 0].min()
-    height = X[:, 1].max() - X[:, 1].min()
-    aspect_graph = width / height
-    aspect_view = 4.0 / 3.0
-    metric_aspec = max(aspect_graph, aspect_view) / min(aspect_graph, aspect_view) - 1
-    return metric_aspec
 
 def cal_angle(vector1, vector2):
     n1 = np.linalg.norm(vector1)
@@ -212,8 +202,7 @@ def eva(G, X):
     # return a, b
     # add more metrics more revision
     cr = get_crossing(G, normX)
-    ar = get_aspect_ratio(normX)
-    angr = get_angular_resolution(G, normX)
-    return a,b, cr, ar, angr
+    ar = get_angular_resolution(G, normX)
+    return a, b, cr, ar
 
 
