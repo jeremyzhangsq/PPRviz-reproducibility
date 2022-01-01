@@ -116,7 +116,9 @@ def isIntersect(p1, q1, p2, q2):
 def get_crossing(G, X):
     res = 0
     edges = G.edges()
+    n = len(X)
     m = len(edges)
+    tot = m * (m - 1) / 2.0
     for i in range(m):
         e1 = edges[i]
         for j in range(m):
@@ -127,7 +129,13 @@ def get_crossing(G, X):
                 continue
             if isIntersect(X[e1[0]], X[e1[1]], X[e2[0]], X[e2[1]]):
                 res += 1
-    return res
+    impossible = 0
+    for i in range(n):
+        d = len(G[i])
+        impossible += d * (d - 1)
+
+    impossible /= 2.0
+    return res / (tot - impossible)
 
 
 def cal_angle(vector1, vector2):
@@ -199,10 +207,7 @@ def eva(G, X):
     try: a = get_node_distribution(normX)
     except: a = np.infty
     b = uniform_edge_length_coefficient_variance(edges, normX)
-    # return a, b
-    # add more metrics more revision
-    cr = get_crossing(G, normX)
     ar = get_angular_resolution(G, normX)
-    return a, b, cr, ar
+    return a,b,ar
 
 

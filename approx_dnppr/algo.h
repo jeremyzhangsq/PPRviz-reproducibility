@@ -22,6 +22,7 @@ string hiename,mapname,rootname,storepath,rwpath,prpath;
 vector<unsigned long long> rw_idx_info_offset;
 vector<unsigned long> rw_idx_info_size;
 vector<int> bwd_idx_info_offset;
+vector<int> bwd_idx_target;
 unordered_map<int,pair<int,int>> bwd_idx_info;
 vector<float> bwd_idx_in_cluster;
 vector<string> root;
@@ -48,6 +49,7 @@ vector<vector<int>> queues;
 //string visual_mode; // decide which mode to use: interactive or full?
 int thread_num;
 double timeElasped;
+double embedTimeElapsed;
 //vector<double> levelTime;
 //vector<double> fwdTime;
 //vector<double> rwTime;
@@ -521,13 +523,12 @@ void build_bwdpush(){
     double tau = graph.tau;
 //    double tau = pow(2*graph.k*log(graph.n)*2*graph.m,-1/3.0);
     // collect the node with dnpr>tau
-    vector<int> targets;
     unsigned long long size=0;
-    targets.reserve(graph.n);
+    bwd_idx_target.reserve(graph.n);
     bwd_idx_info_offset.reserve(graph.n);
     for (int i = 0; i < graph.n; ++i) {
         if (pr[i]>tau){
-            targets.push_back(i);
+            bwd_idx_target.push_back(i);
             size+=level1cluster[leaf2cluster[i]].size();
 //            cout<<size<<endl;
             bwd_idx_info_offset.push_back(level1cluster[leaf2cluster[i]].size());
@@ -535,7 +536,7 @@ void build_bwdpush(){
 
     }
 //    cout<<"stored target: "<<targets.size()<<endl;
-    if (targets.empty()){
+    if (bwd_idx_target.empty()){
         cout<<"no target"<<endl;
         return;
     }
@@ -553,7 +554,7 @@ void build_bwdpush(){
     bwd_idx.first.initialize(graph.n);
     bwd_idx.second.initialize(graph.n);
     double total_time = 0;
-    for (int t : targets) {
+    for (int t : bwd_idx_target) {
         int cluster =leaf2cluster[t];
         int dmax = get_dmax(t,cluster);
         double rmax = err/dmax;
@@ -567,6 +568,11 @@ void build_bwdpush(){
         }
     }
     cout<<omp_get_wtime()-start<<endl;
+    string target_name = rwpath+".target";
+    std::ofstream target_ofs(target_name);
+    boost::archive::binary_oarchive target_oa(target_ofs);
+    target_oa << bwd_idx_target;
+
     string file_name = rwpath+".bwdidx";
     std::ofstream ofs(file_name);
     boost::archive::binary_oarchive oa(ofs);
@@ -629,22 +635,17 @@ inline void deserialize_pr(){
 }
 
 inline void deserialize_bwd(){
-    double tau = graph.tau;
-    // collect the node with dnpr>tau
-    vector<int> targets;
-    targets.reserve(graph.n);
-    for (int i = 0; i < graph.n; ++i) {
-        if (pr[i]>tau)
-            targets.push_back(i);
-    }
-    if (targets.empty()){
-        return;
-    }
-    string file_name = rwpath+".bwdidx";
+    string file_name = rwpath+".target";
     assert_file_exist("index file", file_name);
     std::ifstream ifs(file_name);
     boost::archive::binary_iarchive ia(ifs);
-    ia >> bwd_idx_in_cluster;
+    ia >> bwd_idx_target;
+
+    string target_name = rwpath+".bwdidx";
+    assert_file_exist("index file", file_name);
+    std::ifstream target_ifs(target_name);
+    boost::archive::binary_iarchive target_ia(target_ifs);
+    target_ia >> bwd_idx_in_cluster;
 
     string info_name = rwpath+".bwdidx.offset";
     assert_file_exist("index file", file_name);
@@ -652,8 +653,8 @@ inline void deserialize_bwd(){
     boost::archive::binary_iarchive info_ia(info_ifs);
     info_ia >> bwd_idx_info_offset;
     int offset=0;
-    for (int i = 0; i < targets.size(); ++i) {
-        int t = targets[i];
+    for (int i = 0; i < bwd_idx_target.size(); ++i) {
+        int t = bwd_idx_target[i];
         int size = bwd_idx_info_offset[i];
         bwd_idx_info.insert({t,make_pair(offset,size)});
         offset += size;
@@ -2154,11 +2155,12 @@ void zoom_in(const string &supernode, int level, vector<string> &children){
 //    cerr << "ppr time: "<<timeBy(start)<<endl;
     if (embed_on){
         double start2 = omp_get_wtime();
-        double tol=1e-9;
-        unsigned maxloops=3000;
+        double tol=1e-3;
+        unsigned maxloops=300;
         Coordinate2d projections = Coordinate2d::Random(nrow,2);
         vector<double> r(nrow);
         relativeMDS(tol,maxloops,projections,r,nodeweight);
+        embedTimeElapsed += omp_get_wtime()-start2;
         timeElasped += omp_get_wtime()-start2;
         //    cerr << "mds time: "<<omp_get_wtime()-start2<<endl;
         //    cerr << "num of rw: "<<num_rw_level<<endl;
@@ -2217,8 +2219,8 @@ void interactive_visualize(vector<string> &path){
 //    path = {"c0_l2_11","c0_l1_637"};
 //    path = {"c0_l3_0","c0_l2_11","c0_l1_637"};
 //    path = {"c0_l5_0","c0_l4_42","c0_l3_1734","c0_l2_11196","c0_l1_889018"};
-    path = {"c0_l2_0"};
-
+//    path = {"c0_l2_0"};
+//    path = {"c0_l3_0", "c0_l2_49","c0_l1_5146"};
     for(const string& supernode:path){
 //        string supernode;
 //        zoom_in("c0_l3_0");

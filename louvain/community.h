@@ -452,7 +452,7 @@ public:
 
     // compute communities of the graph for one level
     // return true if some nodes have been moved
-    void one_level_new(const int &k);
+    void one_level_new(const int &k,int seed);
 };
 
 inline void

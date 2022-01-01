@@ -30,7 +30,7 @@ public:
     int k;
     // sum square of degree
     Graph() = default;
-    Graph(string &datapath, double a) {
+    Graph(string &datapath, double a,int cluster_sze) {
         this->data_folder = datapath;
         init_graph();
         dbar = double(2*m) / double(n);
@@ -38,7 +38,7 @@ public:
         pfail = 1/(double)n;
         double delta_scale =250.0;
         delta = 1.0/delta_scale/log(n);
-        k=25;
+        k=cluster_sze;
         tau = 1.0/pow(k*n,0.5);
         isOnline = false;
         max_level=-1;

@@ -26,6 +26,7 @@ char *filename_part = NULL;
 int type = UNWEIGHTED;
 int algorithm = -1;
 int fid = -1;
+int seed = -1;
 map<int, string> filelist = {{4,"trust"},{5,"scinet"},{6, "amazon"},{7, "youtube"},
                              {8, "dblp"},{9, "orkut"},{10, "it"},{11, "tw"}};
 
@@ -77,6 +78,7 @@ usage(char *prog_name, const char *more) {
     cerr << "-a: 0 is louvain or 1 is louvainPlus." << endl;
     cerr << "-k: threshold of partition size." << endl;
     cerr << "-v: verbose mode." << endl;
+    cerr << "-s: random seed." << endl;
     cerr << "-o: output the partition." << endl;
     exit(0);
 }
@@ -103,6 +105,7 @@ parse_args(int argc, char **argv) {
                     break;
                 case 'o':
                     output = true;
+                    i++;
                     break;
                 case 'n':
                     thread_num = atoi(argv[i + 1]);
@@ -110,6 +113,11 @@ parse_args(int argc, char **argv) {
                     break;
                 case 'v':
                     verbose = true;
+                    i++;
+                    break;
+                case 's':
+                    seed = atoi(argv[i + 1]);
+                    i++;
                     break;
                 default:
                     usage(argv[0], "Unknown option\n");
@@ -194,9 +202,9 @@ main(int argc, char **argv) {
             cout <<total_time<<endl;
             if (thread_num==1){
                 if (output){
-                    string hiename = rootpath+"louvain/hierachy-output/"+filelist[fid] +".dat";
-                    string rootname = rootpath+"louvain/hierachy-output/"+filelist[fid] +".root";
-                    string mapname = rootpath+"louvain/mapping-output/"+filelist[fid] +".dat";
+                    string hiename = rootpath+"louvain/hierachy-output/"+filelist[fid] +"_"+to_string(k)+".dat";
+                    string rootname = rootpath+"louvain/hierachy-output/"+filelist[fid] +"_"+to_string(k)+".root";
+                    string mapname = rootpath+"louvain/mapping-output/"+filelist[fid] +"_"+to_string(k)+".dat";
                     write_partition(hiename, mapname, rootname);
                 }
             }
@@ -282,7 +290,7 @@ vector<vector<vector<int>>>& louvainPlus(Community &c,vector<vector<vector<int>>
                  << c.g.total_weight << " weight."<< endl;
         }
         start = omp_get_wtime();
-        c.one_level_new(k);
+        c.one_level_new(k,seed);
         new_mod = c.modularity();
         mergetime+=time_by(start);
 
@@ -298,6 +306,16 @@ vector<vector<vector<int>>>& louvainPlus(Community &c,vector<vector<vector<int>>
         start = omp_get_wtime();
         g = c.partition2graph_binary(comm_nodes);
         graphtime+=time_by(start);
+        int maxsize=0;
+        int minsize=100000000;
+        int avgsize=0;
+        for (auto comm:comm_nodes){
+            int s = comm.size();
+            if (s<minsize) minsize = s;
+            if (s>maxsize) maxsize = s;
+            avgsize += s;
+        }
+        cout<<"community size: min: "<<minsize<<" max: "<<maxsize<<" avg: "<<avgsize/comm_nodes.size()<<endl;
         partit.push_back(comm_nodes);
         start = omp_get_wtime();
         c = Community(g, -1, precision,thread_num,chunk_size);

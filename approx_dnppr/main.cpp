@@ -23,13 +23,14 @@ int main(int argc,char *argv[]) {
     double alpha;
     int random_query;
     int full_mode;
+    int k;
     fileno = stoi(param.count("-f")?param["-f"]:"2");
     buildflag = stoi(param.count("-build")?param["-build"]:"0");
     verbose = stoi(param.count("-verbose")?param["-verbose"]:"0");
     alpha = stof(param.count("-a")?param["-a"]:"0.2");
+    k = stoi(param.count("-k")?param["-k"]:"25");
     sample = stoi(param.count("-sample")?param["-sample"]:"1");
-    thread_num = stoi(param.count("-nthread")?param["-nthread"]:"1");
-    thread_num = thread_num<omp_get_max_threads()? thread_num:omp_get_max_threads();
+    thread_num = 1; // multi-threading is not support currently
     alg = param.count("-alg")?param["-alg"]:"taupush";
     random_query = stoi(param.count("-random")?param["-random"]:"1");
     embed_on = stoi(param.count("-embed")?param["-embed"]:"0");
@@ -39,24 +40,24 @@ int main(int argc,char *argv[]) {
     srand(seed);
     string datapath = "../dataset/"+filelist[fileno];
 
-    if (full_mode){
-        vector<int> ks = {25,50,100,500,1000};
-        for (int k:ks){
-            datapath = "../dataset/rand_"+to_string(k);
-            graph = Graph(datapath,alpha);
-            full_visualize();
-        }
-        return 0;
-    }
+//    if (full_mode){
+//        vector<int> ks = {25,50,100,500,1000};
+//        for (int k:ks){
+//            datapath = "../dataset/rand_"+to_string(k);
+//            graph = Graph(datapath,alpha);
+//            full_visualize();
+//        }
+//        return 0;
+//    }
 
     if (verbose)
         cout << "dataset: "<<filelist[fileno]<<endl;
-    hiename = "../louvain/hierachy-output/"+filelist[fileno] +".dat";
-    mapname = "../louvain/mapping-output/"+filelist[fileno] +".dat";
-    rootname = "../louvain/hierachy-output/"+filelist[fileno] +".root";
-    storepath = "../"+filelist[fileno]+"_idx/"+filelist[fileno]+"ds250";
+    hiename = "../louvain/hierachy-output/"+filelist[fileno] +"_"+to_string(k)+".dat";
+    mapname = "../louvain/mapping-output/"+filelist[fileno] +"_"+to_string(k)+".dat";
+    rootname = "../louvain/hierachy-output/"+filelist[fileno] +"_"+to_string(k)+".root";
+    storepath = "../"+filelist[fileno]+"_idx/"+filelist[fileno]+"ds250" +"_"+to_string(k);
 
-    graph = Graph(datapath,alpha);
+    graph = Graph(datapath,alpha,k);
     int max_level = load_multilevel();
     graph.max_level = max_level;
 
@@ -71,7 +72,7 @@ int main(int argc,char *argv[]) {
         if (isBPSN)
             rwpath = "../bwd_idx/"+filelist[fileno];
         if (isRWIdx)
-            rwpath = "../rwidx/"+filelist[fileno]+"randwalks";
+            rwpath = "../rwidx/"+filelist[fileno]+"randwalks"+"_"+to_string(k);
 
 //        int threads[] = {64,32,16,8,4,2,1};
         int threads[] = {1};
@@ -89,7 +90,7 @@ int main(int argc,char *argv[]) {
     } else{
         // load rwidx
         if (isRWIdx){
-            rwpath = "../rwidx/"+filelist[fileno]+"randwalks"+"_"+alg;
+            rwpath = "../rwidx/"+filelist[fileno]+"randwalks"+"_"+alg+"_"+to_string(k);
             deserialize_idx();
         }
         if (isBPSN){
@@ -107,9 +108,11 @@ int main(int argc,char *argv[]) {
         int threads[] = {1};
         for(int each:threads){
             thread_num = each<omp_get_max_threads()? each:omp_get_max_threads();
-            double totaltime = 0;
+            double totaldnpprtime = 0;
+            double totalembedtime = 0;
             for (int i = 0; i < sample; ++i) {
                 timeElasped = 0;
+                embedTimeElapsed = 0;
                 vector<string> path;
                 init_container();
                 if (random_query)
@@ -119,14 +122,16 @@ int main(int argc,char *argv[]) {
                 }
                 interactive_visualize(path);
                 cerr <<timeElasped<<endl;
-                totaltime += timeElasped;
+                cout<<(timeElasped-embedTimeElapsed)<<endl;
+                totaldnpprtime += (timeElasped-embedTimeElapsed);
+                totalembedtime += embedTimeElapsed;
                 if (!random_query){
                     int size = super2leaf[hubcluster[i]].size();
                     cout<<timeElasped/size<<endl;
                 }
             }
             if (random_query)
-                cout<<totaltime/sample<<endl;
+                cout<<totaldnpprtime/sample<<" "<<totalembedtime/sample<<endl;
         }
 
     }

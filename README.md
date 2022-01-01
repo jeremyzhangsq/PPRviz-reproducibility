@@ -70,9 +70,6 @@ Metrics of all methods
 bash run_metrics.sh 
 ```
 
-### more metrics evaluation for author feedback
-
-See [here](cn_ar_metrics.out).
 
 
 ## Multi-level graph visualization
@@ -115,13 +112,14 @@ cmake -DCMAKE_BUILD_TYPE=Release .; make;
 #### Run clustering algorithm
 
 ```
-./louvainplus [-f file_no] [-a algorithm] [-k partition_size] [-v] [-o];
+./louvainplus [-f file_no] [-a algorithm] [-k partition_size] [-s random seed] [-v] [-o];
 ```
 where
 ```
 -f: input file.
 -a: 0 is conventional Louvain; 1 is Louvain+.
 -k: threshold of partition size; default=25.
+-s: random seed.
 -v: verbose mode.
 -o: output the partition.
 ```
@@ -146,12 +144,13 @@ cmake -DCMAKE_BUILD_TYPE=Release .; make;
 #### Run DPPR approximation
 
 ```
-./approx_dnppr [-f file_no] [-alg algorithm] [-build build_mode] [-sample query_times] [-random query_mode] [-embed compute_embedding];
+./approx_dnppr [-f file_no] [-alg algorithm] [-k size_limit] [-build build_mode] [-sample query_times] [-random query_mode] [-embed compute_embedding];
 ```
 where
 ```
 -f: input file.
 -alg: powiter; fora; foratp; fpsn; taupush.
+-k: cluster size limit (default=25)
 -build: 1 is the mode of index construction and 0 otherwise.
 -sample: number of queries.
 -random: 1 is the random query and 0 is the largest-DPPR query.
@@ -183,13 +182,6 @@ bash query_run.sh
 python2.7 load-superppr-viz.py --data 5 --mode metrics;
 ```
 
-The ND/ULCV/CN/AR scores on the top level of SciNet is listed as follows.
-```
-FORA-TP
-8.96E+01/0.88/9.00E+00/67.57
-Tau-Push
-4.57E+01/0.86/1.00E+01/66.27
-```
 
 * visualize the high-level results for PPRviz variants and the outputs are stored as [here](./pprvizl_output).
 ```

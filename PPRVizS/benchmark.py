@@ -143,18 +143,17 @@ if __name__ == '__main__':
         num_repeat = args.repeat
         nd = np.zeros(num_repeat)
         ulcv = np.zeros(num_repeat)
-        cr = np.zeros(num_repeat)
         ar = np.zeros(num_repeat)
         try:
             for i in range(num_repeat):
                 start = time.time()
                 X = run(args.algo)
-                cr[i],ar[i],cr[i],ar[i] = eva(G, X)
+                nd[i],ulcv[i],ar[i] = eva(G, X)
         except Exception as e:
             print(e)
             print("NaN NaN NaN")
         else:
-            print ("{:.2E}/{:.2f}/{:.2E}/{:.2f}".format(nd.mean(),ulcv.mean(),cr.mean(),ar.mean()))
+            print ("{:.2E}/{:.2f}/{:.2f}".format(nd.mean(),ulcv.mean(),ar.mean()))
             # output visualization layout
     if args.mode == "plot":
         print("plotting {} on {}".format(args.algo, filelist[args.data]))

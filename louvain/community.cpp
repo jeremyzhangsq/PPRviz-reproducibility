@@ -2,7 +2,6 @@
 
 
 vector<iMap<float>> maps;
-
 using namespace std;
 
 
@@ -330,13 +329,13 @@ Community::partition2graph_binary(vector<vector<int>> &comm_nodes) {
 
 
 void
-Community::one_level_new(const int &k) {
+Community::one_level_new(const int &k, int seed) {
     vector<int> Si(g.nb_nodes);
     std::iota(std::begin(Si), std::end(Si), 0);
     int left = 0;
 //    random_device rd;
 //    mt19937 rng(rd());
-    mt19937 rng(1);
+    mt19937 rng(seed);
     shuffle ( Si.begin(), Si.end(),rng );
     vector<int> inqueue(g.nb_nodes,true);
     // initial variable for each thread
@@ -394,8 +393,8 @@ Community::one_level_new(const int &k) {
                 int &last = neigh_last[id];
 
                 double node_nblink = nmap[v_comm];
-                assert(tot[v_comm] == w_degree);
-                assert(in[v_comm] == node_nblink);
+//                assert(tot[v_comm] == w_degree);
+//                assert(in[v_comm] == node_nblink);
                 int u_comm = nmap.occur[1];
                 int u_comm_size = c2n[u_comm].size();
                 double best_nblinks = nmap[u_comm];
@@ -451,9 +450,9 @@ Community::one_level_new(const int &k) {
                 invalid_name.push_back(v_comm);
                 double real_degree = g.weighted_degree(c2n[v_comm]);
                 double w_degree = wdegree[i];
-                assert(real_degree==w_degree);
+//                assert(real_degree==w_degree);
                 int best_nblinks = bestnlink[i];
-                assert(v_comm!=u_comm);
+//                assert(v_comm!=u_comm);
                 tot[u_comm] += w_degree;
                 in[u_comm] += in[v_comm] + 2 * best_nblinks;
                 for(int each:c2n[v_comm]){
@@ -490,7 +489,7 @@ Community::one_level_new(const int &k) {
         }
     }
 
-   cout<<"process iteration: "<<cnt<<endl;
+//   cout<<"process iteration: "<<cnt<<endl;
 }
 
 
