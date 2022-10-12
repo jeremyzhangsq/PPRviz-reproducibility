@@ -16,11 +16,11 @@
 ### Run layout algorithm
 
 ```
-python benchmark.py [--data file_name] [--repeat times] [--mode support_mode] [--algo layout];
+python benchmark.py [--data file_name] [--repeat times] [--mode support_mode] [--alg layout];
 ```
 For example,
 ```
-python2.7 benchmark.py --data twego --repeat 10 --mode metrics --algo pprvizs;
+python2.7 benchmark.py --data twego --repeat 10 --mode metrics --alg pprvizs;
 ```
 ### Input arguments
 
@@ -34,7 +34,7 @@ Location: `PPRviz-reproducibility/dataset`
 #### Support algorithm
 
 ```
---algo={"pprvizs","ll","fa2","fr","mds","pivot_comp","simrank_comp","maxent","gf","le","lle","node2vec","sdne"}
+--alg={"pprvizs","ll","fa2","fr","mds","pivot_comp","simrank_comp","maxent","gf","le","lle","node2vec","sdne"}
 ```
 
 ##### Run in python2.7:
