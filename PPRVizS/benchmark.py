@@ -130,9 +130,9 @@ def run(alg):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Process...')
-    parser.add_argument('--data', type=str, default="twego", help='graph dataset id')
+    parser.add_argument('--data', type=str, default="twego", help='graph dataset')
     parser.add_argument('--repeat', type=int, default=1, help='repeating number')
-    parser.add_argument('--algo', type=str, default="pprvizs", help='repeating number')
+    parser.add_argument('--alg', type=str, default="pprvizs", help='repeating number')
     parser.add_argument('--mode',type=str,default="metrics",help='plot or metrics')
     args = parser.parse_args()
     path = "../dataset/" + args.data + ".txt"
@@ -147,7 +147,7 @@ if __name__ == '__main__':
         try:
             for i in range(num_repeat):
                 start = time.time()
-                X = run(args.algo)
+                X = run(args.alg)
                 nd[i],ulcv[i],ar[i] = eva(G, X)
         except Exception as e:
             print(e)
@@ -156,14 +156,14 @@ if __name__ == '__main__':
             print ("{:.2E}/{:.2f}/{:.2f}".format(nd.mean(),ulcv.mean(),ar.mean()))
             # output visualization layout
     if args.mode == "plot":
-        print("plotting {} on {}".format(args.algo, args.data))
+        print("plotting {} on {}".format(args.alg, args.data))
         try:
-            X = run(args.algo)
+            X = run(args.alg)
         except Exception as e:
             print(e)
         else:
             is_scale = True
-            if args.algo == "maxent":
+            if args.alg == "maxent":
                 is_scale = False
             plot(pos=X, edges=edges, scale=is_scale,
-                     name="../pprvizs_output/{}-{}".format(args.data, args.algo))
+                     name="../pprvizs_output/{}-{}".format(args.data, args.alg))

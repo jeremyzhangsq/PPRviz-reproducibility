@@ -177,12 +177,12 @@ bash query_run.sh
 
 * compute the metric scores for PPRviz variants
 ```
-python2.7 load-superppr-viz.py --data 5 --mode metrics;
+python2.7 load-superppr-viz.py --data amazon --k 25 --alg taupush --mode metrics;
 ```
 
 
 * visualize the high-level results for PPRviz variants and the outputs are stored as [here](./pprvizl_output).
 ```
-python2.7 load-superppr-viz.py --data 5 --mode plot;
+python2.7 load-superppr-viz.py --data amazon --k 25 --alg taupush --mode plot;
 ```
 
