@@ -16,11 +16,11 @@
 ### Run layout algorithm
 
 ```
-python benchmark.py [--data file_no] [--repeat times] [--mode support_mode] [--algo layout];
+python benchmark.py [--data file_name] [--repeat times] [--mode support_mode] [--algo layout];
 ```
 For example,
 ```
-python2.7 benchmark.py --data 0 --repeat 10 --mode metrics --algo pprvizs;
+python2.7 benchmark.py --data twego --repeat 10 --mode metrics --algo pprvizs;
 ```
 ### Input arguments
 
@@ -28,9 +28,7 @@ python2.7 benchmark.py --data 0 --repeat 10 --mode metrics --algo pprvizs;
 
 Location: `PPRviz-reproducibility/dataset`
 ```
---data={0,1,2,3,4,5}
-where
-{0: "twego", 1: "fbego", 2: "wikiedit", 3: "physic", 4: "trust", 5: "scinet"}
+--data={"twego","fbego","wikiedit","physic","trust","scinet"}
 ```
 
 #### Support algorithm

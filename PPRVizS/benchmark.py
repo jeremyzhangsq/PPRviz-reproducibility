@@ -6,7 +6,7 @@ import matplotlib
 matplotlib.use('Agg')
 from PPRVizS.evaluate import eva
 from PPRVizS.pprviz import *
-from PPRVizS.config import filelist
+# from PPRVizS.config import filelist
 import argparse
 if sys.version_info >= (3, 0):
     from tulip import tlp
@@ -42,7 +42,7 @@ def save_pivot_mds(G):
         (x, y, z) = resultLayout.getNodeValue(tnode)
         pos[i, 0] = x
         pos[i, 1] = y
-    f = "../gem_pos/{}_{}.txt".format(filelist[args.data], "pivot")
+    f = "../gem_pos/{}_{}.txt".format(args.data, "pivot")
     np.save(f, pos)
     exit(0)
 
@@ -78,7 +78,7 @@ def save_simrankviz_vanilla(G):
     lol = [[sim[u][v] for v in sorted(sim[u])] for u in sorted(sim)]
     simRank = csr_matrix(lol)
     X = pprdegree_relativemds(PPR=simRank, is_vanilla=True, is_vanilla_scale=False)
-    f = "../gem_pos/{}_{}.txt".format(filelist[args.data], "simrank")
+    f = "../gem_pos/{}_{}.txt".format(args.data, "simrank")
     np.save(f, X)
     exit(0)
 
@@ -122,7 +122,7 @@ def run(alg):
     elif alg == "fr":
         X = fruchterman_reingold(G)
     elif alg in ["gf","le","lle","node2vec","sdne","simrank","pivot"]:
-        X = np.load("../gem_pos/{}_{}.txt.npy".format(filelist[args.data],alg))
+        X = np.load("../gem_pos/{}_{}.txt.npy".format(args.data,alg))
     else:
         print("error input algorithm:(")
         exit(-1)
@@ -130,12 +130,12 @@ def run(alg):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Process...')
-    parser.add_argument('--data', type=int, default=1, help='graph dataset id')
+    parser.add_argument('--data', type=str, default="twego", help='graph dataset id')
     parser.add_argument('--repeat', type=int, default=1, help='repeating number')
     parser.add_argument('--algo', type=str, default="pprvizs", help='repeating number')
     parser.add_argument('--mode',type=str,default="metrics",help='plot or metrics')
     args = parser.parse_args()
-    path = "../dataset/" + filelist[args.data] + ".txt"
+    path = "../dataset/" + args.data + ".txt"
     G = nx.read_edgelist(path, nodetype=int)
     n, m = G.number_of_nodes(), G.number_of_edges()
     edges = G.edges()
@@ -156,7 +156,7 @@ if __name__ == '__main__':
             print ("{:.2E}/{:.2f}/{:.2f}".format(nd.mean(),ulcv.mean(),ar.mean()))
             # output visualization layout
     if args.mode == "plot":
-        print("plotting {} on {}".format(args.algo, filelist[args.data]))
+        print("plotting {} on {}".format(args.algo, args.data))
         try:
             X = run(args.algo)
         except Exception as e:
@@ -166,4 +166,4 @@ if __name__ == '__main__':
             if args.algo == "maxent":
                 is_scale = False
             plot(pos=X, edges=edges, scale=is_scale,
-                     name="../pprvizs_output/{}-{}".format(filelist[args.data], args.algo))
+                     name="../pprvizs_output/{}-{}".format(args.data, args.algo))
