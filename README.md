@@ -84,7 +84,7 @@ bash run_metrics.sh
 
 ### Dataset
 
-`{6: "amazon", 7: "youtube", 8: "dblp", 9: "orkut", 10: "it", 11: "tw"}`                      
+`{"amazon", "youtube", "dblp", "orkut", "it", "tw"}`                      
 
 ### Clustering algorithm: Louvain+
 
@@ -110,20 +110,20 @@ cmake -DCMAKE_BUILD_TYPE=Release .; make;
 #### Run clustering algorithm
 
 ```
-./louvainplus [-f file_no] [-a algorithm] [-k partition_size] [-s random seed] [-v] [-o];
+./louvainplus [-f file_name] [-alg algorithm] [-k partition_size] [-s random seed] [-v 0/1] [-o 0/1];
 ```
 where
 ```
 -f: input file.
--a: 0 is conventional Louvain; 1 is Louvain+.
+-a: 0 is conventional Louvain; 1 is the adapted version called Louvain+.
 -k: threshold of partition size; default=25.
 -s: random seed.
--v: verbose mode.
--o: output the partition.
+-v: 1 is verbose mode.
+-o: 1 is for output the partition.
 ```
 For example
 ```
-./louvainplus -f 6 -a 1 -k 25 -v;
+./louvainplus -f amazon -a 1 -k 25;
 ```
 
 ### DPPR approximation algorithm: Tau-Push

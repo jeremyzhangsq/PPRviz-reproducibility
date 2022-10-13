@@ -9,6 +9,10 @@
 #include <vector>
 #include <numeric>
 #include <set>
+#include <unordered_map>
+#include <sys/resource.h>
+#include <chrono>
+#include <string>
 #include <algorithm>
 #include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/json_parser.hpp>
@@ -25,10 +29,10 @@ char *filename_w = NULL;
 char *filename_part = NULL;
 int type = UNWEIGHTED;
 int algorithm = -1;
-int fid = -1;
+string fname;
 int seed = -1;
-map<int, string> filelist = {{4,"trust"},{5,"scinet"},{6, "amazon"},{7, "youtube"},
-                             {8, "dblp"},{9, "orkut"},{10, "it"},{11, "tw"}};
+//map<int, string> filelist = {{4,"trust"},{5,"scinet"},{6, "amazon"},{7, "youtube"},
+//                             {8, "dblp"},{9, "orkut"},{10, "it"},{11, "tw"}};
 
 double precision = 0.000001;
 int display_level = -2;
@@ -36,8 +40,8 @@ int k = 25;
 int thread_num = 1;
 int chunk_size = 32;
 double total_time = 0;
-bool verbose = false;
-bool output = false;
+int verbose = 0;
+int output = 0;
 string rootpath = "../";
 
 // a series of node partitions; key is community value is node
@@ -58,75 +62,21 @@ double time_by(double &start){
     return (omp_get_wtime()-start);
 }
 
-int
-parseLine(char *line) {
-    // This assumes that a digit will be found and the line ends in " Kb".
-    int i = strlen(line);
-    const char *p = line;
-    while (*p < '0' || *p > '9') p++;
-    line[i - 3] = '\0';
-    i = atoi(p);
-    return i;
+double getMemory(){ //Note: this value is in MB!
+    struct rusage r_usage;
+    getrusage(RUSAGE_SELF,&r_usage);
+    return r_usage.ru_maxrss/1024.0;
 }
 
-void
-usage(char *prog_name, const char *more) {
-    cerr << more;
-    cerr << "usage: " << prog_name
-         << "[-f file_no] [-a algorithm] [-k partition_size] [-v] [-o]" << endl << endl;
-    cerr << "-f: file containing the graph to decompose in communities." << endl;
-    cerr << "-a: 0 is louvain or 1 is louvainPlus." << endl;
-    cerr << "-k: threshold of partition size." << endl;
-    cerr << "-v: verbose mode." << endl;
-    cerr << "-s: random seed." << endl;
-    cerr << "-o: output the partition." << endl;
-    exit(0);
-}
-
-void
-parse_args(int argc, char **argv) {
-    if (argc < 2)
-        usage(argv[0], "Bad arguments number\n");
-
-    for (int i = 1; i < argc; i++) {
-        if (argv[i][0] == '-') {
-            switch (argv[i][1]) {
-                case 'a': // input arg to select different algorithm: louvain or louvainPlus
-                    algorithm = atoi(argv[i + 1]);
-                    i++;
-                    break;
-                case 'f': // input arg to select input file id
-                    fid = atoi(argv[i + 1]);
-                    i++;
-                    break;
-                case 'k':
-                    k = atoi(argv[i + 1]);
-                    i++;
-                    break;
-                case 'o':
-                    output = true;
-                    i++;
-                    break;
-                case 'n':
-                    thread_num = atoi(argv[i + 1]);
-                    i++;
-                    break;
-                case 'v':
-                    verbose = true;
-                    i++;
-                    break;
-                case 's':
-                    seed = atoi(argv[i + 1]);
-                    i++;
-                    break;
-                default:
-                    usage(argv[0], "Unknown option\n");
-            }
-        } else {
-            usage(argv[0], "Unknown option\n");
-        }
+void parameter(int argc, char** argv, unordered_map<string, string> &map){
+    for(int i=1;i<argc;i+=2){
+        map.insert({argv[i], argv[i+1]});
     }
 }
+
+
+
+
 
 void
 display_time(const char *str) {
@@ -137,13 +87,20 @@ display_time(const char *str) {
 
 
 int
-main(int argc, char **argv) {
-//    srand(time(NULL) + getpid());
-//    srand(1);
-    parse_args(argc, argv);
+main(int argc, char *argv[]) {
+    unordered_map<string, string> param;
+    parameter(argc, argv, param);
+
+    fname = param.count("-f")?param["-f"]:"amazon";
+    algorithm = stoi(param.count("-alg")?param["-alg"]:"1");
+    k = stoi(param.count("-k")?param["-k"]:"25");
+    output = stoi(param.count("-o")?param["-o"]:"0");
+    verbose = stoi(param.count("-v")?param["-verbose"]:"0");
+    seed = stoi(param.count("-s")?param["-s"]:"-1");
+
     double starttime;
 
-    string strFname = rootpath+"dataset/"+filelist[fid] +".bin";
+    string strFname = rootpath+"dataset/"+fname +".bin";
     filename = &strFname[0];
     cerr << filename << endl;
 
@@ -202,9 +159,9 @@ main(int argc, char **argv) {
             cout <<total_time<<endl;
             if (thread_num==1){
                 if (output){
-                    string hiename = rootpath+"louvain/hierachy-output/"+filelist[fid] +"_"+to_string(k)+".dat";
-                    string rootname = rootpath+"louvain/hierachy-output/"+filelist[fid] +"_"+to_string(k)+".root";
-                    string mapname = rootpath+"louvain/mapping-output/"+filelist[fid] +"_"+to_string(k)+".dat";
+                    string hiename = rootpath+"louvain/hierachy-output/"+fname +"_"+to_string(k)+".dat";
+                    string rootname = rootpath+"louvain/hierachy-output/"+fname +"_"+to_string(k)+".root";
+                    string mapname = rootpath+"louvain/mapping-output/"+fname +"_"+to_string(k)+".dat";
                     write_partition(hiename, mapname, rootname);
                 }
             }
