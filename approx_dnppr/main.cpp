@@ -9,6 +9,8 @@ void parameter(int argc, char** argv, unordered_map<string, string> &map){
 void param_config(string &alg){
     if(alg=="powiter"){ isPowerIter =1;}
     else if(alg=="fora"){ isRWIdx = 1;}
+    else if(alg=="foraplus"){ isRWIdx=1; isOptFORA = 1;}
+    else if(alg=="foraresacc"){ isResAcc = 1;isOnline= true;}
     else if(alg=="foratp"){ isRWIdx=1; isFORASN = 1;}
     else if(alg == "fpsn"){ isFPSN=1;isBPSN=0;}
     else if(alg == "taupush"){ isFPSN=1;isBPSN=1;}
@@ -17,14 +19,13 @@ void param_config(string &alg){
 int main(int argc,char *argv[]) {
     unordered_map<string, string> param;
     parameter(argc, argv, param);
-    int fileno;
+    string filename;
     int buildflag;
     int sample;
     double alpha;
     int random_query;
-    int full_mode;
     int k;
-    fileno = stoi(param.count("-f")?param["-f"]:"2");
+    filename = param.count("-f")?param["-f"]:"amazon";
     buildflag = stoi(param.count("-build")?param["-build"]:"0");
     verbose = stoi(param.count("-verbose")?param["-verbose"]:"0");
     alpha = stof(param.count("-a")?param["-a"]:"0.2");
@@ -34,11 +35,10 @@ int main(int argc,char *argv[]) {
     alg = param.count("-alg")?param["-alg"]:"taupush";
     random_query = stoi(param.count("-random")?param["-random"]:"1");
     embed_on = stoi(param.count("-embed")?param["-embed"]:"0");
-    full_mode = stoi(param.count("-full")?param["-full"]:"0");
     param_config(alg);
     int seed = stoi(param.count("-seed")?param["-seed"]:"2");
     srand(seed);
-    string datapath = "../dataset/"+filelist[fileno];
+    string datapath = "../dataset/"+filename;
 
 //    if (full_mode){
 //        vector<int> ks = {25,50,100,500,1000};
@@ -51,28 +51,31 @@ int main(int argc,char *argv[]) {
 //    }
 
     if (verbose)
-        cout << "dataset: "<<filelist[fileno]<<endl;
-    hiename = "../louvain/hierachy-output/"+filelist[fileno] +"_"+to_string(k)+".dat";
-    mapname = "../louvain/mapping-output/"+filelist[fileno] +"_"+to_string(k)+".dat";
-    rootname = "../louvain/hierachy-output/"+filelist[fileno] +"_"+to_string(k)+".root";
-    storepath = "../"+filelist[fileno]+"_idx/"+filelist[fileno]+"ds250" +"_"+to_string(k);
+        cout << "dataset: "<<filename<<endl;
+    hiename = "../louvain/hierachy-output/"+filename +"_"+to_string(k)+".dat";
+    mapname = "../louvain/mapping-output/"+filename +"_"+to_string(k)+".dat";
+    rootname = "../louvain/hierachy-output/"+filename +"_"+to_string(k)+".root";
+    storepath = "../"+filename+"_idx/"+filename+"ds250" +"_"+to_string(k);
 
     graph = Graph(datapath,alpha,k);
     int max_level = load_multilevel();
     graph.max_level = max_level;
 
+//#ifdef linux
+//    cerr << "Graph memory usage (MB):" << getMemory()<< endl << endl;
+//#endif
 
-    prpath = "../pr_idx/"+filelist[fileno]+".dnpr";
+    prpath = "../pr_idx/"+filename+".dnpr";
     if ((!buildflag && isFPSN) or (isBPSN)){
-        prpath = "../pr_idx/"+filelist[fileno]+".dnpr";
+        prpath = "../pr_idx/"+filename+".dnpr";
         deserialize_pr();
     }
 
     if (buildflag){
         if (isBPSN)
-            rwpath = "../bwd_idx/"+filelist[fileno];
+            rwpath = "../bwd_idx/"+filename;
         if (isRWIdx)
-            rwpath = "../rwidx/"+filelist[fileno]+"randwalks"+"_"+to_string(k);
+            rwpath = "../rwidx/"+filename+"randwalks";
 
 //        int threads[] = {64,32,16,8,4,2,1};
         int threads[] = {1};
@@ -84,22 +87,22 @@ int main(int argc,char *argv[]) {
             if (isFPSN and !isBPSN)
                 build_dnpr();
             if (isRWIdx)
-                build_rwidx_parallel();
-//                build_rwidx();
+                build_rwidx();
         }
-    } else{
+    }
+    else{
         // load rwidx
         if (isRWIdx){
-            rwpath = "../rwidx/"+filelist[fileno]+"randwalks"+"_"+alg+"_"+to_string(k);
+            rwpath = "../rwidx/"+filename+"randwalks"+"_"+alg;
             deserialize_idx();
         }
         if (isBPSN){
-            rwpath = "../bwd_idx/"+filelist[fileno];
+            rwpath = "../bwd_idx/"+filename;
             deserialize_bwd();
         }
         if (!random_query){
             if (!isFPSN){
-                prpath = "../pr_idx/"+filelist[fileno]+".dnpr";
+                prpath = "../pr_idx/"+filename+".dnpr";
                 deserialize_pr();
             }
             top_k_hub_cluster(sample);
@@ -122,7 +125,7 @@ int main(int argc,char *argv[]) {
                 }
                 interactive_visualize(path);
                 cerr <<timeElasped<<endl;
-                cout<<(timeElasped-embedTimeElapsed)<<endl;
+//                cout<<(timeElasped-embedTimeElapsed)<<endl;
                 totaldnpprtime += (timeElasped-embedTimeElapsed);
                 totalembedtime += embedTimeElapsed;
                 if (!random_query){
@@ -135,6 +138,8 @@ int main(int argc,char *argv[]) {
         }
 
     }
-
+//#ifdef linux
+//    cerr << "Total memory usage (MB):" << getMemory()<< endl << endl;
+//#endif
     return 0;
 }

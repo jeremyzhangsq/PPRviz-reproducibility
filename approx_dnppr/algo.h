@@ -56,7 +56,10 @@ double embedTimeElapsed;
 vector<float> pr;
 string alg;
 int isRWIdx = 0;
+int isOptFORA = 0;
+int isResAcc = 0;
 int isPowerIter = 0;
+bool isOnline = false;
 int isFORASN = 0;
 int isFPSN = 0;
 int isBPSN = 0;
@@ -80,6 +83,12 @@ inline int random_walk(int start, unsigned int &seed){
     if(graph.g[start].empty()){
         return start;
     }
+
+    if (isOptFORA){
+        k = lrand(seed)%graph.g[cur].size();
+        cur = graph.g[cur][ k ];
+    }
+
     while (true) {
         if (drand(seed) < graph.alpha) {
             return cur;
@@ -140,18 +149,9 @@ void parse_children(const string &supernode, int &level,vector<string>&partition
 }
 
 double getMemory(){ //Note: this value is in MB!
-    FILE* file = fopen("/proc/self/status", "r");
-    int result = -1;
-    char line[128];
-
-    while (fgets(line, 128, file) != NULL){
-        if (strncmp(line, "VmRSS:", 6) == 0){
-            result = parseLine(line);
-            break;
-        }
-    }
-    fclose(file);
-    return result/1024.0;
+    struct rusage r_usage;
+    getrusage(RUSAGE_SELF,&r_usage);
+    return r_usage.ru_maxrss/1024.0;
 }
 void generate_random_path(vector<string> &path, int maxlevel){
 
@@ -283,7 +283,9 @@ void build_rwidx(){
     {
         unsigned long num_rw;
         for(int source=0; source<graph.n; source++){ //from each node, do rand-walks
-            num_rw = ceil(graph.deg[source]*rmax*omega);
+            num_rw = 0;
+            if (isOptFORA) num_rw = ceil(graph.deg[source]*(1-graph.alpha)*rmax*omega);
+            else num_rw = ceil(graph.deg[source]*rmax*omega);
             rw_idx_info_offset[source] = rw_idx.size();
             rw_idx_info_size[source] = num_rw;
             for(unsigned long i=0; i<num_rw; i++){ //for each node, do some rand-walks
@@ -308,7 +310,7 @@ void build_rwidx_parallel(){
     double Delta;
     if (isFORASN) Delta = graph.k*graph.dbar; // Delta = k*dbar k=25
     else Delta = graph.dbar;
-    // todo: currently, use dbar*delta as deltap and tau = 1 for randwalk index construction
+
     double deltap = graph.dbar*graph.delta;
 //    double deltap = graph.dbar/graph.n;
     double rmax = epsilon*sqrt(deltap*Delta/(2+2*epsilon/3)/2/(double)graph.m/log(1/graph.pfail));
@@ -366,10 +368,6 @@ void build_rwidx_parallel(){
 
     cout<<omp_get_wtime()-stime<<endl;
 
-//    for (int i = 0; i < thread_num; ++i) {
-//        cout <<"thread "<<i<<" rwindextime:"<<thread_time[i]<<endl;
-//    }
-
     // merging
     // generate maps for source and its size and offset
     vector<vector<int>> locations(graph.n); // int[3]: thread-id offset size
@@ -395,26 +393,6 @@ void build_rwidx_parallel(){
     for (int k = 1; k < graph.n; ++k) {
         rw_idx_info_offset[k] = rw_idx_info_offset[k-1]+rw_idx_info_size[k-1];
     }
-
-//    for (int i = 0; i < graph.n; ++i) {
-//        cout<<rw_idx_info_size[i]<<" ";
-//    }
-//    cout<<endl;
-//    for (int i = 0; i < graph.n; ++i) {
-//        cout<<rw_idx_info_offset[i]<<" ";
-//    }
-//    cout<<endl;
-//
-//    for (int i = 0; i < graph.n; ++i) {
-//        cout<<"node "<<i<<endl;
-//        for (int j = rw_idx_info_offset[i]; j < rw_idx_info_offset[i]+rw_idx_info_size[i]; ++j) {
-//            cout<<rw_idx[j]<<" ";
-//        }
-//        cout<<endl;
-//    }
-
-//    for (auto each:rw_idx_info)
-//        cout << each.first<<" "<< each.second<<endl;
 
 
     {
@@ -636,7 +614,9 @@ inline void deserialize_pr(){
 
 inline void deserialize_bwd(){
     string file_name = rwpath+".target";
-    assert_file_exist("index file", file_name);
+    if (!exists_test(file_name)) {
+        return;
+    }
     std::ifstream ifs(file_name);
     boost::archive::binary_iarchive ia(ifs);
     ia >> bwd_idx_target;
@@ -717,14 +697,6 @@ void forward_push(vector<int> &q, unsigned long left,
             }
         }
     }
-    if(verbose){
-        double correct = 0;
-        for(long i=0; i < fwdidx.second.occur.m_num; i++){
-            int source = fwdidx.second.occur[i];
-            correct += fwdidx.second[source];
-        }
-        assert(abs(rsum-correct)<10e-6);
-    }
 }
 
 
@@ -771,53 +743,332 @@ void update_cache_virtual_fwd(int leaf, int tid){
     }
 }
 
+void forward_local_update_linear_topk(int s, double& rsum, double rmax, double lowest_rmax, vector<int>& forward_from, int tid){
+    double myeps = rmax;
+    Fwdidx &fwdidx = fwd_idx[tid];
+    vector<bool> in_forward(graph.n);
+    vector<bool> in_next_forward(graph.n);
+
+    std::fill(in_forward.begin(), in_forward.end(), false);
+    std::fill(in_next_forward.begin(), in_next_forward.end(), false);
+
+    vector<int> next_forward_from;
+    next_forward_from.reserve(graph.n);
+    for(auto &v: forward_from)
+        in_forward[v] = true;
+
+    unsigned long i=0;
+    while( i < forward_from.size() ){
+        int v = forward_from[i];
+        i++;
+        in_forward[v] = false;
+        if( fwdidx.second[v]/graph.deg[v] >= myeps ){
+            int out_neighbor = graph.deg[v];
+            double v_residue = fwdidx.second[v];
+            fwdidx.second[v] = 0;
+            if(!fwdidx.first.exist(v)){
+                fwdidx.first.insert( v, v_residue * graph.alpha );
+            }
+            else{
+                fwdidx.first[v] += v_residue * graph.alpha;
+            }
+
+            rsum -= v_residue*graph.alpha;
+            if(out_neighbor == 0){
+                fwdidx.second[s] += v_residue * (1-graph.alpha);
+                if(graph.deg[s]>0 && !in_forward[s] && fwdidx.second[s] / graph.deg[s] >= myeps){
+                    forward_from.push_back(s);
+                    in_forward[s] = true;
+                }
+                else{
+                    if(graph.deg[s]>=0 && !in_next_forward[s] && fwdidx.second[s] / graph.deg[s] >= lowest_rmax){
+                        next_forward_from.push_back(s);
+                        in_next_forward[s] = true;
+                    }
+                }
+                continue;
+            }
+            double avg_push_residual = ((1 - graph.alpha) * v_residue) / out_neighbor;
+            for( int next: graph.g[v] ){
+                if(!fwdidx.second.exist(next))
+                    fwdidx.second.insert(next, avg_push_residual);
+                else
+                    fwdidx.second[next] += avg_push_residual;
+
+                if(!in_forward[next] && fwdidx.second[next] / graph.deg[next] >= myeps ){
+                    forward_from.push_back(next);
+                    in_forward[next] = true;
+                }
+                else{
+                    if(!in_next_forward[next] && fwdidx.second[next] / graph.deg[next] >= lowest_rmax){
+                        next_forward_from.push_back(next);
+                        in_next_forward[next] = true;
+                    }
+                }
+            }
+        }
+        else{
+            if(!in_next_forward[v] && fwdidx.second[v] / graph.deg[v] >= lowest_rmax){
+                next_forward_from.push_back(v);
+                in_next_forward[v] = true;
+            }
+        }
+    }
+
+    forward_from = next_forward_from;
+}
+
+double estimated_random_walk_cost(double rsum, double omega, double rmax,double exact_rmax){
+    double estimated_random_walk_cost = 0.0;
+    double random_walk_time = 0.0000004;
+    double random_walk_index_time = random_walk_time/140;
+    if(rmax >= exact_rmax){
+        estimated_random_walk_cost = omega*rsum*(1-graph.alpha)*random_walk_time;
+    }else{
+        estimated_random_walk_cost = omega*rsum*(1-graph.alpha)*random_walk_index_time;
+    }
+    return estimated_random_walk_cost;
+}
+
+// kHopFWD with CL: automatically find the nodes in the khopset and k1layer
+// https://github.com/2danlin/ResAcc-Random-Walk-with-Restart
+void kHopFWD(int sourceNode, unordered_set<int> &k1HopLayer, double r_max_hop,int tid){
+    int k_hops = 2;
+    vector<int> hops_from_source;
+    hops_from_source.resize(graph.n);
+    for(int i = 0; i < graph.n; i++){
+        hops_from_source[i] = numeric_limits<int>::max();
+    }
+    hops_from_source[sourceNode] = 0;
+    unordered_set<int> kHopSet;
+    kHopSet.insert(sourceNode);
+    Fwdidx &fwdidx = fwd_idx[tid];
+    iMap<double> & reserve = fwdidx.first;
+    iMap<double> & residual = fwdidx.second;
+    queue<int> r_queue;
+    //queue<int> r_hub_queue;
+
+    static vector<bool> idx(graph.n);
+    //static vector<bool> hub_idx(g.n);
+    std::fill(idx.begin(), idx.end(), false);
+    //std::fill(hub_idx.begin(), hub_idx.end(),false);
+    //the very first push at source
+    reserve.insert(sourceNode, graph.alpha * residual[sourceNode]);
+    int out_deg = graph.deg[sourceNode];
+
+    double remain_residual = (1 - graph.alpha) * residual[sourceNode];
+    residual.insert(sourceNode, 0.0);
 
 
+    if (out_deg == 0) {
+        residual[sourceNode] += remain_residual;
+    } else {
+        double avg_push_residual = remain_residual / out_deg;
+        for (int next : graph.g[sourceNode]) {
+            hops_from_source[next] = 1;
+            kHopSet.insert(next);
+            if(!residual.exist(next)) residual.insert( next,  avg_push_residual);
+            else residual[next] += avg_push_residual;
 
-void forward_local_update_linear(int s, const string &Father, double& rsum, double rmax, int tid){
+            if(k_hops > 0 && next != sourceNode && (graph.deg[next] != 0) && (residual[next]/graph.deg[next] >= r_max_hop) && idx[next] != true) {
+                r_queue.push(next);
+                idx[next] = true;
+            }else if(k_hops == 0){
+                k1HopLayer.insert(next);
+            }
+
+        }
+    }
+
+    // run the forward push for other nodes with non-zero residual
+
+    while(!r_queue.empty()) {
+        int tempNode = r_queue.front();
+        r_queue.pop();
+        idx[tempNode] =false;
+        // cout<<"current node: " << tempNode << endl;
+        // cout<<"its residual: " << residual[tempNode] << endl;
+        double current_residual = residual[tempNode];
+        if(current_residual > 0.0){
+
+            residual[tempNode] = 0.0;
+            if(!reserve.exist(tempNode)) reserve.insert( tempNode,  graph.alpha * current_residual);
+            else reserve[tempNode] += graph.alpha * current_residual;
+            double remain_residual = (1 - graph.alpha) * current_residual;
+
+            int out_deg = graph.deg[tempNode];
+            if (out_deg == 0) {
+                residual[sourceNode] += remain_residual;
+                continue;
+            }
+
+            double avg_push_residual = remain_residual / out_deg;
+            int hops_of_tempNode = hops_from_source[tempNode];
+
+            for (int next : graph.g[tempNode]) {
+                if(!residual.exist(next)) residual.insert( next,  avg_push_residual);
+                else residual[next] += avg_push_residual;
+                //the can-pushed nodes to the queue
+                if(next != sourceNode){
+                    //check the hops between next and source
+                    if(hops_from_source[next] > hops_of_tempNode + 1){
+                        hops_from_source[next] = hops_of_tempNode +1;
+                    }
+                    if(hops_from_source[next] <= k_hops){
+                        // next is in the k-hop set of source, which is able to push its residue (in queue)
+                        if((graph.deg[next] != 0) && residual[next]/ graph.deg[next] >= r_max_hop){
+                            if(idx[next] != true){
+                                r_queue.push(next);
+                                idx[next] =true;
+                            }
+                        }
+
+                        if(kHopSet.count(next) == 0){
+                            kHopSet.insert(next);
+                            if(k1HopLayer.count(next) > 0){
+                                k1HopLayer.erase(next);
+                            }
+                        }
+                    }
+                    else if(hops_from_source[next] == k_hops+1){
+                        if(k1HopLayer.count(next) == 0){
+                            k1HopLayer.insert(next);
+                        }
+                    }
+
+                }
+                else{
+                    continue;
+                }
+            }
+        }
+
+    }
+    for(long j=0; j < residual.occur.m_num; j++){
+        int i = residual.occur[j];
+        if(graph.deg[i] == 0 && residual[i] != 0.0){
+            if(!reserve.exist(i)) reserve.insert( i,  graph.alpha * residual[i]);
+            else reserve[i] += graph.alpha * residual[i];
+            residual[sourceNode] += (1-graph.alpha) * residual[i];
+            residual[i] = 0;
+        }
+    }
+
+    if(k_hops > 0 && residual[sourceNode] != 0) {
+        double min_r_max = 1.0e-14;
+        unsigned long num_loop_from_source = (int) ceil(log(min_r_max * graph.deg[sourceNode]) / log(residual[sourceNode]));
+
+//        cout << "# of iteration from source: " << num_loop_from_source << endl;
+
+        double upper_scaler_reserve =
+                (1 - pow(residual[sourceNode], num_loop_from_source - 1)) / (1 - residual[sourceNode]);
+//        cout << "Scaler: " << upper_scaler_reserve << endl;
+
+        for (int tempNode : kHopSet) {
+            reserve[tempNode] = reserve[tempNode] * upper_scaler_reserve;
+            //check += reserve[tempNode];
+            if (tempNode != sourceNode) {
+                residual[tempNode] = residual[tempNode] * upper_scaler_reserve;
+            } else {
+                residual[tempNode] = pow(residual[tempNode], num_loop_from_source);
+            }
+
+        }
+        for (int tempNode : k1HopLayer) {
+            residual[tempNode] = residual[tempNode] * upper_scaler_reserve;
+        }
+    }
+
+}
+
+
+void forward_local_update_linear(int s, const string &Father, double& rsum, double rmax,double omega, int tid){
     double init_residual;
     vector<int> *ids;
     Fwdidx &fwdidx = fwd_idx[tid];
-
-    init_residual = graph.deg[s];
+    // make sure fwd_idx is clean before usage
+    assert(fwdidx.second.occur.m_num==0);
+    assert(fwdidx.first.occur.m_num==0);
 
     // load reserve and residue info from stack
     // initialize queue and fwd_idx by rescaling the cache results
     // set rmax for leaf forward push
     double myeps = rmax;
     // set rmax for leaf forward push
-    double r = init_residual;
+    double r = graph.deg[s];
     if(r / graph.deg[s] < myeps){
         rsum=r;
         return;
     }
 
-    vector<int> &q = queues[tid];
-    q.push_back(-1);
-    unsigned long left = 1;
-    // make sure fwd_idx is clean before usage
-    assert(fwdidx.second.occur.m_num==0);
-    assert(fwdidx.first.occur.m_num==0);
+    if(isOptFORA){
+        vector<int> forward_from;
+        forward_from.clear();
+        forward_from.reserve(graph.n);
+        forward_from.push_back(s);
+        fwdidx.second.insert(s, r);
+        double used_time = 0;
+        double exact_rmax = myeps;
+        double cur_rmax = 8*myeps;
+        while(estimated_random_walk_cost(r, omega, cur_rmax,exact_rmax)> used_time){
+            std::chrono::steady_clock::time_point startTime = std::chrono::steady_clock::now();
+            forward_local_update_linear_topk( s, r, cur_rmax, exact_rmax, forward_from,tid);
+            auto duration = std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::steady_clock::now() - startTime).count();
+            used_time +=duration/1.0e9;
+            double used_time_this_iteration = duration/1.0e9;
+            cur_rmax /=2;
+        }
+    }
+    else{
+        vector<int> &q = queues[tid];
+        q.push_back(-1);
+        unsigned long left = 1;
+        if(isResAcc) {
+            fwdidx.second.insert(s, 1.0);
+            unordered_set<int> k1HopLayer;
+            double r_max_hop = 1.0e-14;
+            kHopFWD(s, k1HopLayer, r_max_hop, tid);
+            for (int each:k1HopLayer){
+                q.push_back(each);
+            }
+            myeps = 1/(10.0*graph.m);
+            // scale with source degree
+            double rsum_tmp = 0;
+            for(long i=0; i < fwdidx.first.occur.m_num; i++){
+                int source = fwdidx.first.occur[i];
+                fwdidx.first[source]*=r;
+            }
+            for(long i=0; i < fwdidx.second.occur.m_num; i++){
+                int source = fwdidx.second.occur[i];
+                fwdidx.second[source]*=r;
+                rsum_tmp += fwdidx.second[source];
+            }
+            // update rsum
+            r = rsum_tmp;
 
-//    if (fwd_stack_top==0 || visual_mode==FULL_MODE){
-    // initial queue
-    q.push_back(s);
+        } else{ // FORA
+            // initial queue
+            fwdidx.second.insert(s, r);
+            q.push_back(s);
+        }
 
-    fwdidx.second.insert(s, r);
+        // start forward push
+        forward_push(q, left, r, myeps,tid);
+        q.clear();
+        q.reserve(graph.n);
+    }
 
-    // start forward push
-    forward_push(q, left, r, myeps,tid);
     // collect the rsum from each leaf source
     rsum=r;
-    q.clear();
-    q.reserve(graph.n);
-//    cout<<"nnz: "<<fwdidx.second.occur.m_num<<endl;
-//    fwd_idx.first.clean();
-//    fwd_idx.second.clean();
 }
 
+
+
+
+
+
 void forward_local_update_all_leaf(const string &S, const string &Father,
-                                   double& rsum, double rmax, int tid){
+                                   double& rsum, double rmax, double omega, int tid){
     vector<int> *ids;
 //    if(fwd_stack_top==0)//    else{
 //        ids = &leaf2id_stack[fwd_stack_top-1];
@@ -830,33 +1081,71 @@ void forward_local_update_all_leaf(const string &S, const string &Father,
 //        /graph.g[next].size() > myeps
         // set rmax for leaf forward push
         double r = graph.deg[leaf];
-        vector<int> &q = queues[tid];
-        q.push_back(-1);
-        unsigned long left = 1;
         // make sure fwd_idx is clean before usage
         pair<iMap<double>, iMap<double>> &fwdidx = fwd_idx[tid];
         assert(fwdidx.second.occur.m_num == 0);
         assert(fwdidx.first.occur.m_num == 0);
-        // set rmax for leaf forward push
-
-//        if(fwd_stack_top==0){
-        // initial queue
-        q.push_back(leaf);
-        // initial rsum
-        // rsums[leaf] = r;
-        // initial fwd_idx
-        fwdidx.second.insert(leaf, r);
-        // start forward push
-        forward_push(q, left, r, myeps,tid);
+        if (isOptFORA){
+            vector<int> forward_from;
+            forward_from.clear();
+            forward_from.reserve(graph.n);
+            forward_from.push_back(leaf);
+            fwdidx.second.insert( leaf, r);
+            double used_time = 0;
+            double exact_rmax = rmax;
+            double cur_rmax = 8*rmax;
+            while(estimated_random_walk_cost(r, omega, cur_rmax,exact_rmax)> used_time){
+                std::chrono::steady_clock::time_point startTime = std::chrono::steady_clock::now();
+                forward_local_update_linear_topk( leaf, r, cur_rmax, exact_rmax, forward_from,tid);
+                auto duration = std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::steady_clock::now() - startTime).count();
+                used_time +=duration/1.0e9;
+                double used_time_this_iteration = duration/1.0e9;
+                cur_rmax /=2;
+            }
+            // store fwd_idx info into cache and virtual_fwd_idx
+            update_cache_virtual_fwd(leaf,tid);
+        }
+        else{
+            vector<int> &q = queues[tid];
+            q.push_back(-1);
+            unsigned long left = 1;
+            if(isResAcc){
+                unordered_set<int> k1HopLayer;
+                double r_max_hop = 1.0e-14;
+                fwdidx.second.insert(leaf, 1.0);
+                kHopFWD(leaf, k1HopLayer, r_max_hop, tid);
+                for (int each:k1HopLayer){
+                    q.push_back(each);
+                }
+                myeps = 1/(10.0*graph.m);
+                // scale with source degree
+                double rsum_tmp = 0;
+                for(long i=0; i < fwdidx.first.occur.m_num; i++){
+                    int source = fwdidx.first.occur[i];
+                    fwdidx.first[source]*=r;
+                }
+                for(long i=0; i < fwdidx.second.occur.m_num; i++){
+                    int source = fwdidx.second.occur[i];
+                    fwdidx.second[source]*=r;
+                    rsum_tmp += fwdidx.second[source];
+                }
+                // update rsum
+                r = rsum_tmp;
+            } else{
+                fwdidx.second.insert(leaf, r);
+                q.push_back(leaf);
+            }
+            // start forward push
+            forward_push(q, left, r, myeps,tid);
+            // store fwd_idx info into cache and virtual_fwd_idx
+            update_cache_virtual_fwd(leaf,tid);
+            // total_rsum += rsum;
+            // clean fwd_idx
+            q.clear();
+            q.reserve(graph.n);
+        }
         // collect the rsum from each leaf source
         rsum+=r;
-        // store fwd_idx info into cache and virtual_fwd_idx
-        update_cache_virtual_fwd(leaf,tid);
-//        total_rsum += rsum;
-
-        // clean fwd_idx
-        q.clear();
-        q.reserve(graph.n);
         fwdidx.first.clean();
         fwdidx.second.clean();
     }
@@ -967,7 +1256,7 @@ void compute_ppr_with_fwdidx(int S, const string &Father,unsigned long long &num
     double ideal_walk_number = omega * check_rsum;
     double incre = check_rsum/ideal_walk_number;
     //rand walk online
-    if (graph.isOnline){
+    if (isOnline){
         fwdidx.second.occur.Sort();
         for(long i=0; i < fwdidx.second.occur.m_num; i++){
 //            if (num_random_walk>=ideal_walk_number)
@@ -1076,7 +1365,7 @@ void compute_super_ppr_with_fwdidx(const string &S, const string &Father,
     // INFO(num_random_walk);
     double incre = check_rsum/(double)ideal_walk_number;
     //rand walk online
-    if (graph.isOnline){
+    if (isOnline){
         vfwdidx.second.occur.Sort();
         for(long i=0; i < vfwdidx.second.occur.m_num; i++){
 //            if (num_random_walk>=ideal_walk_number)
@@ -1091,8 +1380,6 @@ void compute_super_ppr_with_fwdidx(const string &S, const string &Father,
 //            num_total_rw += num_s_rw;
 //            num_rw_level += num_s_rw;
             num_random_walk+=num_s_rw;
-
-
             for(unsigned long j=0; j<num_s_rw; j++){
                 int des = random_walk(source,seed);
                 int Tid = leaf2super[des];
@@ -1209,7 +1496,7 @@ void fora_super_pprdeg(const string &S, const string &Father,
 //    double start = omp_get_wtime();
     double rsum=0;
     //forward propagation, obtain reserve and residual
-    forward_local_update_all_leaf(S, Father, rsum, rmax,  tid);
+    forward_local_update_all_leaf(S, Father, rsum, rmax, omega, tid);
 
 //    fwdTime[rwTime.size()-level] += omp_get_wtime()-start;
     //reserve mem for superPPRDeg
@@ -1664,8 +1951,7 @@ void fora_pprdeg(int &S, const string &Father, double rmax, double omega,int lev
     double rsum=0;
     //forward propagation, obtain reserve and residual
     //normal forward push with loading stack
-    forward_local_update_linear(S,Father,rsum,rmax, tid);
-//    fwdTime[fwdTime.size()-level] += omp_get_wtime()-start;
+    forward_local_update_linear(S,Father,rsum,rmax,omega, tid);
     Fwdidx &fwdidx = fwd_idx[tid];
     spprs.reserve(fwdidx.first.occur.m_num);
     spprt.reserve(fwdidx.first.occur.m_num);
@@ -1704,7 +1990,7 @@ void taupush_pprdeg(int &S, const string &Father, double rmax, int level, int ti
     double rsum=0;
     //forward propagation, obtain reserve and residual
     //normal forward push with loading stack
-    forward_local_update_linear(S,Father,rsum,rmax, tid);
+    forward_local_update_linear(S,Father,rsum,rmax, -1, tid);
 //    cout<<"ssppr time:"<<omp_get_wtime()-start<<endl;
 //    fwdTime[fwdTime.size()-level] += omp_get_wtime()-start;
     Fwdidx &fwdidx = fwd_idx[tid];
@@ -2146,11 +2432,6 @@ void zoom_in(const string &supernode, int level, vector<string> &children){
         else
             allpair_super_pprdeg(supernode,level,children,node2id);
 //        cout<<"number of children: "<<children.size()<<endl;
-        if(verbose){
-            for(const auto& each:children)
-                cout<<each<<" ";
-            cout<<endl;
-        }
     }
 //    cerr << "ppr time: "<<timeBy(start)<<endl;
     if (embed_on){
@@ -2219,7 +2500,7 @@ void interactive_visualize(vector<string> &path){
 //    path = {"c0_l2_11","c0_l1_637"};
 //    path = {"c0_l3_0","c0_l2_11","c0_l1_637"};
 //    path = {"c0_l5_0","c0_l4_42","c0_l3_1734","c0_l2_11196","c0_l1_889018"};
-//    path = {"c0_l2_0"};
+//    path = {"c0_l2_57"};
 //    path = {"c0_l3_0", "c0_l2_49","c0_l1_5146"};
     for(const string& supernode:path){
 //        string supernode;

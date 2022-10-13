@@ -142,12 +142,12 @@ cmake -DCMAKE_BUILD_TYPE=Release .; make;
 #### Run DPPR approximation
 
 ```
-./approx_dnppr [-f file_no] [-alg algorithm] [-k size_limit] [-build build_mode] [-sample query_times] [-random query_mode] [-embed compute_embedding];
+./approx_dnppr [-f file] [-alg algorithm] [-k size_limit] [-build build_mode] [-sample query_times] [-random query_mode] [-embed compute_embedding];
 ```
 where
 ```
 -f: input file.
--alg: powiter; fora; foratp; fpsn; taupush.
+-alg: powiter; fora; foraplus; foraresacc; foratp; fpsn; taupush. Note that foratp and fpsn are GFRA and GBP(tau_max) in the paper
 -k: cluster size limit (default=25)
 -build: 1 is the mode of index construction and 0 otherwise.
 -sample: number of queries.

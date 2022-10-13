@@ -19,7 +19,6 @@ public:
     vector<int> nodes;
     int n;
     long long m;
-    bool isOnline;
     int max_level;
     double dbar;
     double alpha;
@@ -40,7 +39,6 @@ public:
         delta = 1.0/delta_scale/log(n);
         k=cluster_sze;
         tau = 1.0/pow(k*n,0.5);
-        isOnline = false;
         max_level=-1;
         epR = 0.5;
         if (verbose)

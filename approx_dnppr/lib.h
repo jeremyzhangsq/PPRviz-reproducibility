@@ -20,6 +20,9 @@
 #include <algorithm>
 #include <random>
 #include <queue>
+#include <sys/resource.h>
+#include <chrono>
+#include <unordered_set>
 #include "sparsehash/dense_hash_map"
 #include <Eigen/Dense>
 #include "omp.h"
@@ -420,7 +423,7 @@ typedef pair<iMap<double>, iMap<double>> Bwdidx;
 
 
 map<int, string> filelist = {{4,"trust"},{5,"scinet"},{6, "amazon"},{7, "youtube"},
-                             {8, "dblp"},{9, "orkut"},{10, "it"},{11, "tw"}};
+                             {8, "dblp"},{9, "orkut"},{10, "it"},{11, "tw"},{12,"enron"}};
 
 
 #endif //INTERACT_FORA_LIB_H
