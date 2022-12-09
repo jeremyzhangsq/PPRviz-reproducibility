@@ -1,6 +1,24 @@
 cmake_minimum_required(VERSION 3.10)
 project(louvainplus)
 
+if(APPLE)
+    set(CMAKE_C_COMPILER clang)
+    set(CMAKE_CXX_COMPILER clang++)
+
+    if(CMAKE_C_COMPILER_ID MATCHES "Clang\$")
+        set(OpenMP_C_FLAGS "-Xpreprocessor -fopenmp -I/usr/local/opt/libomp/include")
+        set(OpenMP_C_LIB_NAMES "omp")
+        set(OpenMP_omp_LIBRARY /usr/local/opt/libomp/lib/libomp.dylib)
+    endif()
+
+    if(CMAKE_CXX_COMPILER_ID MATCHES "Clang\$")
+        set(OpenMP_CXX_FLAGS "-Xpreprocessor -fopenmp -I/usr/local/opt/libomp/include")
+        set(OpenMP_CXX_LIB_NAMES "omp")
+        set(OpenMP_omp_LIBRARY /usr/local/opt/libomp/lib/libomp.dylib)
+    endif()
+
+endif()
+
 set(CMAKE_CXX_STANDARD 11)
 
 
@@ -18,14 +36,6 @@ IF (Boost_FOUND)
 endif()
 
 find_package(OpenMP REQUIRED)
-if(NOT TARGET OpenMP::OpenMP_CXX)
-    add_library(OpenMP_TARGET INTERFACE)
-    add_library(OpenMP::OpenMP_CXX ALIAS OpenMP_TARGET)
-    target_compile_options(OpenMP_TARGET INTERFACE ${OpenMP_CXX_FLAGS})
-    find_package(Threads REQUIRED)
-    target_link_libraries(OpenMP_TARGET INTERFACE Threads::Threads)
-    target_link_libraries(OpenMP_TARGET INTERFACE ${OpenMP_CXX_FLAGS})
-endif()
 
 include_directories(. ../approx_dnppr/)
 
@@ -38,4 +48,4 @@ add_executable(louvainplus
         graph_binary.h
         main_community.cpp)
 
-target_link_libraries(${PROJECT_NAME} OpenMP::OpenMP_CXX)
+target_link_libraries(${PROJECT_NAME} PRIVATE OpenMP::OpenMP_CXX)

@@ -4,8 +4,6 @@ import sys
 sys.path.insert(0, '../')
 matplotlib.use('Agg')
 from PPRVizS.pprviz import *
-from PPRVizS.config import filelist
-from PPRVizS.evaluate import eva, rescale_layout, best_fit_layout
 from scipy import sparse
 
 # global supernode_list, mapping_data, A, n
